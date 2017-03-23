@@ -38,11 +38,11 @@ http://winterwell.com/software/updatesite/
 链接[链接名称](http://gitcafe.com)
 引用>第一行引用文字>第二行引用文字
 水平线***
-代码`<hello
- world>`
-代码块高亮
-```ruby
-  
+代码
+`<hello world>  
+`代码块高亮  
+```ruby  
+
 def
  add(a, b)  
 return
