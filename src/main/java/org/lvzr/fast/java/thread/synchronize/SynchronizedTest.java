@@ -1,6 +1,6 @@
 package org.lvzr.fast.java.thread.synchronize;
 
-public class TestSynchronized {
+public class SynchronizedTest {
 	
 	public void test1() {
 		synchronized (this) {
@@ -27,7 +27,7 @@ public class TestSynchronized {
 	}
 
 	public static void main(String[] args) {
-		final TestSynchronized myt2 = new TestSynchronized();
+		final SynchronizedTest myt2 = new SynchronizedTest();
 		Thread test1 = new Thread(new Runnable() {
 			public void run() {
 				myt2.test1();
