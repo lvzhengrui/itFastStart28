@@ -2,6 +2,13 @@ package org.lvzr.fast.nosql.redis.simple;
 
 import java.io.IOException;
 import java.util.Properties;
+
+import org.junit.Test;
+import org.lvzr.fast.util.Const;
+import org.lvzr.fast.util.SerializeUtils;
+import org.lvzr.fast.vo.MyVo;
+
+import junit.framework.Assert;
 import redis.clients.jedis.Jedis;
 import redis.clients.jedis.JedisPool;
 import redis.clients.jedis.JedisPoolConfig;
@@ -38,12 +45,18 @@ public class MyJedisPool {
 
 	}
 
-	/** 获得jedis对象 */
+	/**
+	 * 获得jedis对象
+	 * @return
+	 */
 	public static Jedis getJedisObject() {
 		return pool.getResource();
 	}
 
-	/** 归还jedis对象 */
+	/**
+	 * 归还jedis对象
+	 * @param jedis
+	 */
 	public static void recycleJedisOjbect(Jedis jedis) {
 		pool.returnResource(jedis);
 	}
@@ -51,19 +64,34 @@ public class MyJedisPool {
 	/**
 	 * 测试jedis池方法
 	 */
-	public static void main(String[] args) {
+	@Test
+	public void MyTest() {
+		//获得jedis实例
+		Jedis jedis = getJedisObject();
 
-		Jedis jedis = getJedisObject();// 获得jedis实例
-
-		//获取jedis实例后可以对redis服务进行一系列的操作
-		jedis.set("name", "zhuxun");
-		System.out.println(jedis.get("name"));
-
-		jedis.del("name");
-		System.out.println(jedis.exists("name"));
-
-		recycleJedisOjbect(jedis); // 将获取的jedis实例对象还回迟中
-
+		//存字符串
+		jedis.set(Const.NAME_KEY, Const.NAME_VALUE);
+		//取字符串
+		Assert.assertEquals(Const.NAME_VALUE, jedis.get(Const.NAME_KEY));
+		//删除key
+		jedis.del(Const.NAME_KEY);
+		//判断key是否存在
+		Assert.assertFalse(jedis.exists(Const.NAME_KEY));
+		
+		//存序列化对象
+		MyVo inputVo = MyVo.getInstance();
+		jedis.set(Const.VO_KEY.getBytes(), SerializeUtils.serialize(inputVo));
+		//取序列化对象
+		MyVo outputVo = (MyVo)SerializeUtils.unserizlize(jedis.get(Const.VO_KEY.getBytes()));
+		Assert.assertTrue(inputVo.equals(outputVo));
+		Assert.assertEquals(Const.NAME_VALUE, outputVo.getName());
+		Assert.assertEquals(Const.CITY_VALUE, outputVo.getCity());
+ 
+		//将获取的jedis实例对象还回迟中
+		recycleJedisOjbect(jedis); 
 	}
+	
+	
+	
 
 }
