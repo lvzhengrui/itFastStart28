@@ -36,10 +36,10 @@ public class HBaseFilter {
     private static final String TABLE_NAME = "t1";  
   
     public static void main(String[] args) throws IOException {  
-         Configuration conf = HBaseConfiguration.create();  
+        Configuration conf = HBaseConfiguration.create();  
         conf.addResource("hbase-site.xml");
 
-         Connection conn = ConnectionFactory.createConnection(conf);  
+        Connection conn = ConnectionFactory.createConnection(conf);  
 
         HTable table = (HTable) conn.getTable(TableName.valueOf(TABLE_NAME));  
 
