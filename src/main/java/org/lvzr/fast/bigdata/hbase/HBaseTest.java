@@ -3,9 +3,12 @@ package org.lvzr.fast.bigdata.hbase;
 import java.io.IOException;
 
 import org.apache.hadoop.conf.Configuration;
+import org.apache.hadoop.hbase.Cell;
+import org.apache.hadoop.hbase.CellUtil;
 import org.apache.hadoop.hbase.HBaseConfiguration;
 import org.apache.hadoop.hbase.HColumnDescriptor;
 import org.apache.hadoop.hbase.HTableDescriptor;
+import org.apache.hadoop.hbase.TableName;
 import org.apache.hadoop.hbase.client.HBaseAdmin;
 import org.apache.hadoop.hbase.client.HTable;
 import org.apache.hadoop.hbase.client.Put;
@@ -88,7 +91,7 @@ public class HBaseTest {
 			//if(HBaseTest.delete(tableName)==true){
 			//	System.out.println("delete table "+ tableName+"success");
 			//}
-			
+ 
 		} catch (Exception e) {
 			// TODO: handle exception
 			e.printStackTrace();
