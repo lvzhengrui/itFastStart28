@@ -97,12 +97,18 @@
 		    <artifactId>spring-data-redis</artifactId>  
 		    <version>1.6.0.RELEASE</version>  
 		</dependency>  
+		
+		
 		<dependency>  
 		    <groupId>redis.clients</groupId>  
 		    <artifactId>jedis</artifactId>  
 		    <version>2.7.3</version>  
 		</dependency>  
-
+		<dependency>
+		  <groupId>org.mongodb</groupId>
+		  <artifactId>mongo-java-driver</artifactId>
+		  <version>2.10.1</version>
+		</dependency>
 
 
 
@@ -142,6 +148,8 @@
 			<artifactId>hbase-client</artifactId>
 			<version>${hbase.version}</version>
 		</dependency>
+		
+		
 		
   </dependencies>
   
