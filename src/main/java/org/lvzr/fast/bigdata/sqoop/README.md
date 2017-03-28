@@ -1,0 +1,2 @@
+Sqoop是SQL-to-Hadoop的缩写，主要用于传统数据库和Hadoop之前传输数据。
+数据的导入和导出本质上是Mapreduce程序，充分利用了MR的并行化和容错性。
