@@ -9,6 +9,8 @@ import org.elasticsearch.action.index.IndexResponse;
 import org.elasticsearch.action.search.SearchResponse;
 import org.elasticsearch.action.search.SearchType;
 import org.elasticsearch.client.transport.TransportClient;
+import org.elasticsearch.common.settings.ImmutableSettings;
+import org.elasticsearch.common.settings.Settings;
 import org.elasticsearch.common.transport.InetSocketTransportAddress;
 import org.elasticsearch.common.unit.TimeValue;
 import org.elasticsearch.index.query.QueryBuilder;
@@ -20,8 +22,17 @@ public class TestEs {
 	private TransportClient client;
 
 	public TestEs() {
-		this.client = new TransportClient().addTransportAddress(
+		Settings settings = ImmutableSettings.settingsBuilder()  
+                .put("client.transport.sniff", true)  
+                .put("client", true)  
+                .put("data",false)  
+                .put("clusterName","elasticsearch")  
+                .build();  
+		this.client = new TransportClient(settings).addTransportAddress(
 				new InetSocketTransportAddress("127.0.0.1", 9300));
+		
+		//this.client = new TransportClient().addTransportAddress(
+		//new InetSocketTransportAddress("127.0.0.1", 9300));
 	}
  
 	/**
@@ -43,6 +54,17 @@ public class TestEs {
 	public void getIndex() {
 		GetResponse response = client.prepareGet("twitter", "tweet", "1")
 			.execute().actionGet();
+		// 索引名称
+		String _index = response.getIndex();
+		// 类型名称
+		String _type = response.getType();
+		// 文档id
+		String _id = response.getId();
+		// 版本(if it's the first time you index this document, you will get: 1)
+		long _version = response.getVersion();
+		// 是否被创建is true if the document is a new one, false if it has been updated
+		//boolean created = response.isCreated();
+		
 		Map<String, Object> rpMap = response.getSource();
 		if (rpMap == null) {
 			System.out.println("empty");
