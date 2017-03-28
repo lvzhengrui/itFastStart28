@@ -76,6 +76,7 @@ public class TestEs {
 			scrollResp = client.prepareSearchScroll(scrollResp.getScrollId())
 				.setScroll(new TimeValue(60000))
 				.execute().actionGet();
+			
 			for (SearchHit hit : scrollResp.getHits()) {
 				Iterator<Entry<String, Object>> rpItor = hit.getSource().entrySet().iterator();
 				while (rpItor.hasNext()) {
