@@ -24,6 +24,9 @@
      	<ojdbc14.version>10.2.0.4.0</ojdbc14.version>
      	<mysql.version>5.1.25</mysql.version>
 
+		<hadoop.version>2.6.0</hadoop.version>
+		<hbase.version>1.2.0</hbase.version>
+		
   </properties>
   
   
@@ -82,6 +85,8 @@
             <version>${hamcrest.version}</version>
         </dependency>
         
+        
+        
         <dependency>  
 	        <groupId>org.springframework</groupId>  
 	        <artifactId>spring-core</artifactId>  
@@ -99,6 +104,45 @@
 		</dependency>  
 
 
+
+
+		<dependency>
+			<groupId>org.apache.hadoop</groupId>
+			<artifactId>hadoop-common</artifactId>
+			<version>${hadoop.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.hadoop</groupId>
+			<artifactId>hadoop-hdfs</artifactId>
+			<version>${hadoop.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.hadoop</groupId>
+			<artifactId>hadoop-mapreduce-client-core</artifactId>
+			<version>${hadoop.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.hadoop</groupId>
+			<artifactId>hadoop-mapreduce-client-jobclient</artifactId>
+			<version>${hadoop.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.hadoop</groupId>
+			<artifactId>hadoop-mapreduce-client-common</artifactId>
+			<version>${hadoop.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.hbase</groupId>
+			<artifactId>hbase-common</artifactId>
+			<version>${hbase.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.hbase</groupId>
+			<artifactId>hbase-client</artifactId>
+			<version>${hbase.version}</version>
+		</dependency>
+		
   </dependencies>
   
   
