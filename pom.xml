@@ -170,6 +170,12 @@
             <artifactId>solr-solrj</artifactId>
             <version>5.3.1</version>
 		</dependency>
+		<dependency>
+		  <groupId>org.elasticsearch</groupId>
+		  <artifactId>elasticsearch</artifactId>
+		  <version>1.0.2</version>
+		</dependency>
+
 
 
 		
