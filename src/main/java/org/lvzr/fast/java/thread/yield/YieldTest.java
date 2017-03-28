@@ -2,8 +2,7 @@ package org.lvzr.fast.java.thread.yield;
 
 /**  
  * 线程让步，让本线程进入就绪状态,让出cup来给其他的线程  
- * 但是不排除下一个运行的还是本线程  
- * @author lzz  
+ * 但是不排除下一个运行的还是本线程   
  */  
 public class YieldTest extends Thread{  
     
