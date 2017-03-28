@@ -8,7 +8,11 @@ import java.io.ObjectOutputStream;
 
 public class SerializeUtils{
 	
-	//序列化 
+	/**
+	 * 序列化 
+	 * @param obj
+	 * @return
+	 */
     public static byte [] serialize(Object obj){
         ObjectOutputStream obi=null;
         ByteArrayOutputStream bai=null;
@@ -24,7 +28,11 @@ public class SerializeUtils{
         return null;
     }
     
-    //反序列化
+    /**
+     * 反序列化
+     * @param byt
+     * @return
+     */
     public static Object unserizlize(byte[] byt){
         ObjectInputStream oii=null;
         ByteArrayInputStream bis=null;
