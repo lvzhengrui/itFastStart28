@@ -9,3 +9,13 @@ Python以及对应的库numpy、scipy、scikit-learn（实现了ML的一些算法，可以直接用）、
 R语言、weka
 如果用到深度学习的算法，cuda、caffe也可以用
 
+
+机器学习入门资源不完全汇总
+http://www.open-open.com/lib/view/open1420957787359.html
+
+斯坦福大学Andrew Ng教授主讲的《机器学习》公开课观后感
+http://blog.csdn.net/myarrow/article/details/50518020
+
+
+
+
