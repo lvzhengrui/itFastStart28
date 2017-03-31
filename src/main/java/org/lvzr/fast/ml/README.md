@@ -1,10 +1,13 @@
 
+常见的七种回归技术
+http://www.jianshu.com/p/15dd20f8d02c
+
+
 看完《机器学习》的总结与心得
 http://www.ppvke.com/Blog/archives/34551
 
 【原】数据分析/数据挖掘/机器学习---- 必读书目
 http://www.cnblogs.com/charlotte77/p/5381681.html
-
 
 斯坦福大学机器学习课程个人笔记完整版
 https://wenku.baidu.com/view/99b86f70650e52ea54189862.html
@@ -88,18 +91,6 @@ http://ms.csdn.net/share/FF07FCF78F722ABA7A4E7970B5E724CE_1_IPHONE_APP
 降维
 所谓的降维，即是多属性意味着是高维空间，在很多时候可以等价的映射到低维而不丢失主要信息。从空间映射的角度看，我们可以通过主成分
 分析PCA（线性映射）和核化主成分分析（非线性映射）来达到降维的目的。（补充：PCA是无监督降维方法，线性判别分析LDA则是监督降维防范）
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
