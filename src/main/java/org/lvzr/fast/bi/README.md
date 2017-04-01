@@ -13,7 +13,7 @@ https://wenku.baidu.com/view/16ad9cdbaeaad1f346933fb1.html
 http://shenhaolaoshi.blog.sohu.com/133694659.html
 
 
-分析方法：聚类分析、因子分析、相关分析、对应分析、回归分析、方差分析F检验
+分析方法：聚类分析、因子分析、相关分析、对应分析、回归分析、方差分析(ANOVA/F检验)
 数据分析工具：SPSS、SAS、SYSSTAT、tableau
 发展方向：R语言和Pythone
 
