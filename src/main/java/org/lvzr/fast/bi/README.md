@@ -1,4 +1,7 @@
 
+入门书
+Pang-Ning Tan, Michael Steinbach  ， Vipin Kumar， 数据挖掘导论
+
 
 统计分析/机器学习吐血整理最强指南http://mp.weixin.qq.com/s?
 http://www.cnblogs.com/hark0623/p/5533798.html
@@ -14,6 +17,9 @@ http://shenhaolaoshi.blog.sohu.com/133694659.html
 
 BI分析:基本统计分析、分组统计、相关分析、方差分析、进度分析、ABC分析、TOPN分析、雷达图分析、预警分析
 BI数据挖掘：决策树分析、时间序列预测分析、多元线性回归分析、关联分析、聚类分析
+
+PCA（主成份分析）
+实验发现，PCA对于线性模型（不使用Lasso）非常有效，但是对于随机森林模型没有提高。
 
 
 分析方法：聚类分析、因子分析、相关分析、对应分析、回归分析、方差分析(ANOVA/F检验/不同组别指标的差异显著性水平)、T检验
