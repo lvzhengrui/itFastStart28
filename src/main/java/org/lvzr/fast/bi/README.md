@@ -1,6 +1,8 @@
 
 入门书
 Pang-Ning Tan, Michael Steinbach  ， Vipin Kumar， 数据挖掘导论
+分类、关联、聚类
+
 
 
 统计分析/机器学习吐血整理最强指南http://mp.weixin.qq.com/s?
