@@ -42,7 +42,7 @@ http://www.cnblogs.com/skyme/p/4651331.html
 
 ###条件随机场
 基于隐马尔柯夫模型+最大熵模型
-
+http://www.cnblogs.com/liufanping/p/4899842.html
 
 
 
