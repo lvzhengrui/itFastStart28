@@ -8,5 +8,8 @@ failover 故障切换
 余弦相关度
 http://www.36dsj.com/archives/24325
 相关度=协方差/两个属性的方差乘积
+无偏估计
+熵
+信息增益
 
 
