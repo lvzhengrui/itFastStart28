@@ -26,6 +26,7 @@ EM迭代算法
 
 
 ###贝叶斯网络
+https://www.zhihu.com/question/28006799
 
 
 ###逻辑斯帝与最大熵模型
