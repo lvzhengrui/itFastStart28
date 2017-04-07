@@ -6,10 +6,10 @@ Pang-Ning Tan, Michael Steinbach  ， Vipin Kumar， 数据挖掘导论
 分类、关联、聚类
 分类：决策树、随机森林、基于规则的分类、神经网络、支持向量机、朴素贝叶斯分类、K最近邻
 关联：
-聚类：K均值、凝聚的层次聚类、DBSCAN
+聚类：K均值、凝聚的层次聚类、DBSCAN、EM期望最大迭代算法
 
-EM迭代算法
-决策树：Hunt算法->ID3、C4.5、CART、信息熵增溢
+
+决策树：Hunt算法->ID3、C4.5、随机森林、CART、信息熵增溢
 提升方法Adaboost
 
 
@@ -19,6 +19,15 @@ EM迭代算法
 拉格朗日对偶性
 损失函数
 最大似然估计
+
+
+EM期望最大迭代算法
+http://www.360doc.com/content/16/0530/23/33848074_563668859.shtml
+http://m.blog.csdn.net/article/details?id=51516497
+
+高斯混合模型--GMM（Gaussian Mixture Model）
+http://blog.sina.com.cn/s/blog_54d460e40101ec00.html
+
 
 
 -------------------------------------------------------------------------------------------------
