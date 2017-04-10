@@ -68,14 +68,25 @@ https://zhidao.baidu.com/question/553517218706419892.html
 P(A|B)=P(AB|Ω)/P(B|Ω),则P(AB|Ω)=P(B|Ω)P(A|B)
 P(AB|Ω)=P(AB)
 P(B|Ω)=P(B)
+
 AB为独立事件时，P(AB)=P(A)P(B)
 
+条件概率P(A|B)=P(B|A)P(A)/P(B)
 
-全样本空间=n个样本空间划分组成,则贝叶斯率=某个事件在某个样本空间划分中相对全样本空间占比/某个事件的在n个样本空间划分中相对全样本空间占比之和
+条件概率+独立事件P(A|BC)=P(BC|A)P(A)/P(BC)=P(B|A)P(C|A)P(A)/P(B)P(C)
 
+全样本空间=n个样本空间划分组成,则贝叶斯概率=某个事件在某个样本空间划分中相对全样本空间占比/某个事件的在n个样本空间划分中相对全样本空间占比之和
+P(Bi|A)=P(Bi)P(A|Bi)/P(A)=P(Bi)P(A|Bi)/A全概率
+
+				
+朴素贝叶斯分类P(C|F1F2F2...Fn)=P(F1|C)P(F2|C)P(F3|C)..P(Fn|C)P(C)
+
+
+根据方差、均值，求出某个连续样本点的密度函数的值=(此样本点在连续样本空间中的概率相对值)
 
 贝叶斯推导原理
 http://www.ruanyifeng.com/blog/2011/08/bayesian_inference_part_one.html
+
 
 
 
