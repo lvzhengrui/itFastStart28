@@ -28,6 +28,7 @@
 《漫画线性代数.pdf》
 《轻松解读 概率统计超入门.pdf》
 《概率率与数量统计PPT》 https://wenku.baidu.com/view/5265bb472e3f5727a5e9625a.html
+ http://www.ruanyifeng.com/blog/2011/08/bayesian_inference_part_one.html
 
 《漫画统计学.pdf》
 《漫画统计学之回归分析.pdf》
@@ -58,6 +59,22 @@ https://www.douban.com/doulist/1577728/
 相对通俗一点的有日本人写的漫画线性代数，高一点的有线性代数应该这样样学。都是经典。
  
 https://zhidao.baidu.com/question/553517218706419892.html
+
+
+------------------------------------------------
+概率论重要概念
+条件概率->全概率->贝叶斯中最重要的理解是利用AB交集文氏图和相对全样本空间(全样本空间=Ω,AB为A和B的样本空间的交集)
+P(A|B)=P(AB|Ω)/P(B|Ω),则P(AB|Ω)=P(B|Ω)P(A|B)
+P(AB|Ω)=P(AB)
+P(B|Ω)=P(B)
+
+全样本空间=n个样本空间划分组成,则贝叶斯率=某个事件在某个样本空间划分中相对全样本空间占比/某个事件的在n个样本空间划分中相对全样本空间占比之和
+
+
+贝叶斯推导原理
+http://www.ruanyifeng.com/blog/2011/08/bayesian_inference_part_one.html
+
+
 
 
 ------------------------------------------
