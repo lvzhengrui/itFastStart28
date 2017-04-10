@@ -82,7 +82,7 @@ P(Bi|A)=P(Bi)P(A|Bi)/P(A)=P(Bi)P(A|Bi)/A全概率
 朴素贝叶斯分类P(C|F1F2F2...Fn)=P(F1|C)P(F2|C)P(F3|C)..P(Fn|C)P(C)
 
 
-根据方差、均值，求出某个连续样本点的密度函数的值=(此样本点在连续样本空间中的概率相对值)
+根据方差、均值，求出某个连续样本点的概率密度函数的值=(此样本点在连续样本空间中的概率相对值)
 
 贝叶斯推导原理
 http://www.ruanyifeng.com/blog/2011/08/bayesian_inference_part_one.html
