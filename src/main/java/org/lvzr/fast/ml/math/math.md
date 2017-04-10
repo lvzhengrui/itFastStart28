@@ -29,7 +29,8 @@
 《轻松解读 概率统计超入门.pdf》
 《概率率与数量统计PPT》 https://wenku.baidu.com/view/5265bb472e3f5727a5e9625a.html
  http://www.ruanyifeng.com/blog/2011/08/bayesian_inference_part_one.html
-
+ http://www.cnblogs.com/leoo2sk/archive/2010/09/17/1829190.html
+ 
 《漫画统计学.pdf》
 《漫画统计学之回归分析.pdf》
 《漫画统计学之因子分析.pdf》
