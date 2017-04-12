@@ -4,6 +4,9 @@ http://www.admin5.com/article/20170320/727695.shtml
 机器学习笔记整理全解
 http://m.blog.csdn.net/article/details?id=69488610&from=singlemessage&isappinstalled=1
 
+应用scikit-learn做文本分类
+http://blog.csdn.net/abcjennifer/article/details/23615947
+
 
 Scikit-learn的安装过程
 http://blog.csdn.net/shizhixin/article/details/50488520
