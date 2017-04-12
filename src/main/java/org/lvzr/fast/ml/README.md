@@ -1,4 +1,12 @@
 
+
+Spark入门实战系列--8.Spark MLlib（上）--机器学习及SparkMLlib简介
+http://www.cnblogs.com/shishanyuan/p/4747761.html
+
+
+
+
+
 机器学习笔记整理全解
 http://m.blog.csdn.net/article/details?id=69488610&from=singlemessage&isappinstalled=1
 
