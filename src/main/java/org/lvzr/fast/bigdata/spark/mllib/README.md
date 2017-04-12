@@ -65,6 +65,20 @@ MLlib 会抛出一个link error，如果没有安装native Fortran routines。
 
 
 -------------------------------------------
+MLlib基于RDD，天生就可以与Spark SQL、GraphX、Spark Streaming无缝集成，以RDD为基石，4个子框架可联手构建大数据计算中心！
+
+MLlib是MLBase一部分，其中MLBase分为四部分：MLlib、MLI、ML Optimizer和MLRuntime。
+
+ML Optimizer会选择它认为最适合的已经在内部实现好了的机器学习算法和相关参数，来处理用户输入的数据，并返回模型或别的帮助分析的结果；
+
+MLI 是一个进行特征抽取和高级ML编程抽象的算法实现的API或平台；
+
+MLlib是Spark实现一些常见的机器学习算法和实用程序，包括分类、回归、聚类、协同过滤、降维以及底层优化，该算法可以进行可扩充； 
+MLRuntime 基于Spark计算框架，将Spark的分布式计算应用到机器学习领域。
+
+
+
+
 
 
 
