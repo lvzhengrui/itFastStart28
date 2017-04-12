@@ -23,6 +23,7 @@ http://blog.csdn.net/u012162613/article/details/41929171
 Python csv模块的使用
 http://blog.csdn.net/u012162613/article/details/41915859
 
+----------------------
 首先，想解决上面的题目，还是需要一点ML算法的基础的，另外就是要会用编程语言和相应的第三方库来实现算法，常用的有：
 Python以及对应的库numpy、scipy、scikit-learn（实现了ML的一些算法，可以直接用）、theano（DeepLearning的算法包）。
 R语言、weka
@@ -44,13 +45,14 @@ http://blog.csdn.net/myarrow/article/details/50518020
 3. Peter Harrington 机器学习实践
 
 
-
+------------------------
 方差是各个数据分别与其平均数之差的平方的和的平均数
 http://blog.csdn.net/Leyvi_Hsing/article/details/54022612
 标准差为方差的开根号
 高斯分布/正态分布=与平均数U有几个标准差Q的样本数占到全样本数的百分之九十几，概率分布状况
 伯努利分布，高斯分布，泊松分布，贝塔分布，狄特里特分布都属于指数分布。
 
+-------------------------
 logistic回归
 逻辑回归
 sigmoid回归
@@ -99,6 +101,7 @@ http://ms.csdn.net/share/FF07FCF78F722ABA7A4E7970B5E724CE_1_IPHONE_APP
 分析PCA（线性映射）和核化主成分分析（非线性映射）来达到降维的目的。（补充：PCA是无监督降维方法，线性判别分析LDA则是监督降维防范）
 
 
+--------------------------------
 ###如何去选择回归模型
 面对如此多的回归模型，最重要的是根据自变量因变量的类型、数据的维数和其他数据的重要特征去选择最合适的方法。以下是我们选择正确回归模型时要主要考虑的因素：
 
@@ -113,6 +116,41 @@ http://ms.csdn.net/share/FF07FCF78F722ABA7A4E7970B5E724CE_1_IPHONE_APP
 5.不强大的模型往往容易建立，而强大的模型很难建立。
 
 6.回归正则方法在高维度和多重共线性的情况下表现的很好。
+
+
+-----------------
+###基本概念
+训练集(training set/data)/训练样例（training examples): 用来进行训练，也就是产生模型或者算法的数据集
+测试集(testing set/data)/测试样例 (testing examples)：用来专门进行测试已经学习好的模型或者算法的数据集
+特征向量(features/feature vector)：属性的集合，通常用一个向量来表示，附属于一个实例
+标记(label): c(x), 实例类别的标记
+正例(positive example)
+反例(negative example)
+
+###机器学习类别
+有监督学习(supervised learning)： 训练集有类别标记(class label)
+无监督学习(unsupervised learning)： 无类别标记(class label)
+半监督学习（semi-supervised learning)：有类别标记的训练集 + 无标记的训练集
+
+###机器学习步骤框架
+把数据拆分为训练集和测试集
+用训练集和训练集的特征向量来训练算法
+用学习来的算法运用在测试集上来评估算法 （可能要设计到调整参数（parameter tuning), 用验证集（validation set）
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

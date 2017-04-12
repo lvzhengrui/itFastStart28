@@ -3,4 +3,7 @@ EGit git≤÷ø‚
 Hibernate Tools
 Spring IDE
 
+eclipse¿Ô÷¥––cmd√¸¡Ó
+https://www.oschina.net/question/28_46291
+
 
