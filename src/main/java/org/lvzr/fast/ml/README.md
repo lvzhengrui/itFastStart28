@@ -1,4 +1,8 @@
 
+机器学习笔记整理全解
+http://m.blog.csdn.net/article/details?id=69488610&from=singlemessage&isappinstalled=1
+
+
 常见的七种回归技术
 http://www.jianshu.com/p/15dd20f8d02c
 https://www.analyticsvidhya.com/blog/2015/08/comprehensive-guide-regression/
