@@ -1,4 +1,4 @@
-alt+/ 补全
+
 
 eclipse快捷键
 http://www.cnblogs.com/iamfy/archive/2012/07/11/2586869.html
@@ -6,6 +6,8 @@ http://www.cnblogs.com/iamfy/archive/2012/07/11/2586869.html
 
 ctrl+shift+o 导入所有没导入的包
 shift+ctrl+m导入你鼠标当前所在的地方的未导入的包
+
+alt+/ 代码补全(输入main之后，按alt+/自动生成main方法)
 
 
 ctrl+shift+r 查找类
