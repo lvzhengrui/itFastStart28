@@ -14,12 +14,12 @@ import org.apache.spark.api.java.JavaPairRDD;
 import org.apache.spark.api.java.JavaRDD;
 import org.apache.spark.api.java.JavaSparkContext;
 import org.apache.spark.api.java.function.FlatMapFunction;
+import scala.Serializable;
 import org.apache.spark.api.java.function.Function2;
 import org.apache.spark.api.java.function.PairFunction;
 //import org.shirdrn.spark.job.maxmind.Country;
 //import org.shirdrn.spark.job.maxmind.LookupService;
 
-import scala.Serializable;
 import scala.Tuple2;
 
 /**
