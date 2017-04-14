@@ -98,4 +98,18 @@ tomcat中的server.xml元素详解见server.xml.jpg
 
 
 
+----------------------------------------
+###mysql数据源
+<Resource name="jdbc/mysql_c3p0" scope="Shareable"  
+    type="com.mchange.v2.c3p0.ComboPooledDataSource"   
+    factory="org.apache.naming.factory.BeanFactory"  
+    jdbcUrl="jdbc:mysql://localhost:3306/test" driverClass="com.mysql.jdbc.Driver"  
+    user="root" password="root" />  
+    
+    
+    
 
+    
+    
+    
+    
