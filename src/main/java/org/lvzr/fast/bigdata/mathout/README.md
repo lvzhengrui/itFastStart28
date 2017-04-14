@@ -8,12 +8,18 @@ http://itindex.net/detail/49323-mahout-%E5%AD%A6%E4%B9%A0-mahout
 
 Mahout学习路线图
 http://blog.fens.me/hadoop-mahout-roadmap/
-
-Mahout分步式程序开发 聚类Kmeans
-http://blog.fens.me/hadoop-mahout-kmeans/
  
 用Maven构建Mahout项目
 http://blog.fens.me/hadoop-mahout-maven-eclipse/
+
+
+
+--------------------------------
+上传测试数据
+hadoop fs -put synthetic_control.data /user/root/testdata
+
+使用Mahout中的kmeans聚类算法，执行命令：
+mahout -core  org.apache.mahout.clustering.syntheticcontrol.kmeans.Job
 
 
 
