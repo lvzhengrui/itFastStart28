@@ -1,10 +1,5 @@
-
-
-
-
-
-
-###eclipse配置项目部署到到本地tomcat
+ 
+###eclipse配置项目部署到到本地tomcat(部署多个项目)
 
 一、发现问题
 在eclipse中新建Dynamic Web Project，配置好本地的tomcat并写好代码后选择Run on Server,但运行后发现在tomcat的安
