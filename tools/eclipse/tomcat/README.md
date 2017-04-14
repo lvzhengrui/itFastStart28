@@ -1,3 +1,8 @@
+
+###eclipse4.6 tomcat插件地址
+http://download.csdn.net/detail/qq_36731677/9756375
+http://blog.csdn.net/qq_36731677/article/details/55308457?locationNum=13&fps=1
+
  
 ###eclipse配置项目部署到到本地tomcat(部署多个项目)
 
