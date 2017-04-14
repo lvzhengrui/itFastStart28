@@ -3,6 +3,16 @@
 http://download.csdn.net/detail/qq_36731677/9756375
 http://blog.csdn.net/qq_36731677/article/details/55308457?locationNum=13&fps=1
 
+###eclipse tomcat内存配置
+-Xms512m -Xmx512m -XX:PermSize=512M
+
+###tomcat /bin/catalina.bat配置
+TOMCAT_HOME/bin/catalina.bat
+set JAVA_OPTS="-server -XX:PermSize=64M -XX:MaxPermSize=128m
+set JAVA_OPTS="-server -Xms800m -Xmx800m  -XX:MaxNewSize=256m"
+
+
+
  
 ###eclipse配置项目部署到到本地tomcat(部署多个项目)
 
