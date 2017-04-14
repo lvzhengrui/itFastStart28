@@ -1,6 +1,6 @@
 
 
-eclipseÅäÖÃÏîÄ¿²¿Êğµ½µ½±¾µØtomcat
+###eclipseÅäÖÃÏîÄ¿²¿Êğµ½µ½±¾µØtomcat
 
 Ò»¡¢·¢ÏÖÎÊÌâ
 ÔÚeclipseÖĞĞÂ½¨Dynamic Web Project£¬ÅäÖÃºÃ±¾µØµÄtomcat²¢Ğ´ºÃ´úÂëºóÑ¡ÔñRun on Server,µ«ÔËĞĞºó·¢ÏÖÔÚtomcatµÄ°²
@@ -21,12 +21,76 @@ eclipse²»ÏñMyEclipseÄ¬ÈÏ½«ÏîÄ¿²¿Êğµ½tomcat°²×°Ä¿Â¼ÏÂµÄwebappsÖĞ£¬¶øÄ¬ÈÏ²¿Êğµ½¹¤×
 ¢ÙÍ£Ö¹eclipseÄÚµÄTomcat·şÎñÆ÷(stop) 
 ¢ÚÉ¾³ı¸ÃÈİÆ÷ÖĞ²¿ÊğµÄÏîÄ¿(add and remove) 
 ¢ÛÇå³ı¸ÃÈİÆ÷Ïà¹ØÊı¾İ(clean) 
-¢Ü´ò¿ªtomcatµÄĞŞ¸Ä½çÃæ(open)
+¢Ü***´ò¿ªtomcatµÄĞŞ¸Ä½çÃæ(open)*** ****moduleÅäÖÃContext°ü****
 ¢İÕÒµ½servers location£¬Ñ¡ÔñµÚ¶ş¸ö(User tomcat Installation) 
 ¢ŞĞŞ¸Ädeploy pathÎªwebapps 
 ¢ß±£´æ¹Ø±Õ
 
+
+
 ĞèÒªËµÃ÷µÄÊÇ¢Ù¢Ú¢Û±ØĞë²Ù×÷£¬·ñÔòÏÂÃæµÄ²½Öè»á±»ÖÃ»ÒÎŞ·¨²Ù×÷¡£
+
+
+
+--------------------------------------------------------
+##tomcat context.xmlÅäÖÃ
+http://blog.csdn.net/heqingsong1/article/details/8539163
+
+###1. ÔÚtomcat 5.5Ö®Ç°£º
+ContextÌåÏÖÔÚ/conf/server.xmlÖĞµÄHostÀïµÄ<Context>ÔªËØ£¬ËüÓÉContext½Ó¿Ú¶¨Òå¡£Ã¿¸ö<ContextÔªËØ´ú±íÁËÔËĞĞÔÚĞéÄâÖ÷»úÉÏµÄµ¥¸öWebÓ¦ÓÃ
+
+[html] view plain copy
+<Context path="/kaka" docBase="kaka" debug="0" reloadbale="true">   
+	<ResourceLink global="jdbc/RONE4" name="jdbc/RONE4" type="javax.sql.DataSource"/> 
+</Context>
+
+1>path£º¼´Òª½¨Á¢µÄĞéÄâÄ¿Â¼£¬,×¢ÒâÊÇ/kaka£¬ËüÖ¸¶¨·ÃÎÊWebÓ¦ÓÃµÄURLÈë¿Ú£¬Èçhttp://localhost:8080/kaka/****
+2>docBase£ºÎªÊµ¼ÊÄ¿Â¼ÔÚÓ²ÅÌÉÏµÄÎ»ÖÃ£¨Ó¦ÓÃ³ÌĞòµÄÂ·¾¶»òÕßÊÇWARÎÄ¼ş´æ·ÅµÄÂ·¾¶£©
+3>reloadable£ºÈç¹ûÕâ¸öÊôĞÔÉèÎªtrue£¬Tomcat·şÎñÆ÷ÔÚÔËĞĞ×´Ì¬ÏÂ»á¼àÊÓÔÚWEB-INF/classesºÍWeb-INF/libÄ¿Â¼CLASSÎÄ¼şµÄ¸Ä±ä£¬
+Èç¹û¼àÊÓµ½ÓĞclassÎÄ¼ş±»¸üĞÂ£¬·şÎñÆ÷×Ô¶¯ÖØĞÂ¼ÓÔØWebÓ¦ÓÃ£¬ÕâÑùÎÒÃÇ¿ÉÒÔÔÚ²»ÖØÆğtomcatµÄÇé¿öÏÂ¸Ä±äÓ¦ÓÃ³ÌĞò
+
+Ò»¸öHostÔªËØÖĞÇ¶Ì×ÈÎÒâ¶àµÄContextÔªËØ¡£Ã¿¸öContextµÄÂ·¾¶±ØĞëÊÇÎ©Ò»µÄ£¬ÓÉpathÊôĞÔ¶¨Òå¡£ÁíÍâ£¬Äã±ØĞë¶¨ÒåÒ»¸öpath=¡°¡±µÄcontext£¬
+Õâ¸öContext³ÆÎª¸ÃĞéÄâÖ÷»úµÄÈ±Ê¡webÓ¦ÓÃ£¬ÓÃÀ´´¦ÀíÄÇĞ©²»ÄÜÆ¥ÅäÈÎºÎContextµÄContextÂ·¾¶µÄÇëÇó¡£
+
+4>ResourceLink¶ÔÓ¦µÄÊı¾İÔ´ÅäÖÃ£¬±ØĞëÏÈÔÚGlobalNamingResourcesÅäÖÃÏàÓ¦µÄÊı¾İÔ´
+
+
+
+###2. ÔÚtomcat 5.5Ö®ºó£º
+
+²»ÍÆ¼öÔÚserver.xmlÖĞ½øĞĞÅäÖÃ£¬¶øÊÇÔÚ/conf/context.xmlÖĞ½øĞĞ¶ÀÁ¢µÄÅäÖÃ¡£ÒòÎªserver.xmlÊÇ²»¿É¶¯Ì¬ÖØ¼ÓÔØµÄ×ÊÔ´£¬·şÎñÆ÷Ò»µ©
+Æô¶¯ÁËÒÔºó£¬ÒªĞŞ¸ÄÕâ¸öÎÄ¼ş£¬¾ÍµÃÖØÆô·şÎñÆ÷²ÅÄÜÖØĞÂ¼ÓÔØ¡£¶øcontext.xmlÎÄ¼şÔò²»È»£¬tomcat·şÎñÆ÷»á¶¨Ê±È¥É¨ÃèÕâ¸öÎÄ¼ş¡£Ò»µ©·¢
+ÏÖÎÄ¼ş±»ĞŞ¸Ä£¨Ê±¼ä´Á¸Ä±äÁË£©£¬¾Í»á×Ô¶¯ÖØĞÂ¼ÓÔØÕâ¸öÎÄ¼ş£¬¶ø²»ĞèÒªÖØÆô·şÎñÆ÷¡£
+
+<Context path="/kaka" docBase="kaka" debug="0" reloadbale="true" privileged="true">  
+	<WatchedResource>WEB-INF/web.xml</WatchedResource>  
+  
+	<WatchedResource>WEB-INF/kaka.xml</WatchedResource> ¼à¿Ø×ÊÔ´ÎÄ¼ş£¬Èç¹ûweb.xml || kaka.xml¸Ä±äÁË£¬Ôò×Ô¶¯ÖØĞÂ¼ÓÔØ¸ÄÓ¦ÓÃ¡£  
+	  
+	<Resource name="jdbc/testSiteds" ±íÊ¾Ö¸¶¨µÄjndiÃû³Æ  
+		auth="Container" ±íÊ¾ÈÏÖ¤·½Ê½£¬Ò»°ãÎªContainer  
+		type="javax.sql.DataSource"  
+		maxActive="100" Á¬½Ó³ØÖ§³ÖµÄ×î´óÁ¬½ÓÊı  
+		maxIdle="30" Á¬½Ó³ØÖĞ×î¶à¿É¿ÕÏĞmaxIdle¸öÁ¬½Ó  
+		maxWait="10000" Á¬½Ó³ØÖĞÁ¬½ÓÓÃÍêÊ±,ĞÂµÄÇëÇóµÈ´ıÊ±¼ä,ºÁÃë  
+		username="root" ±íÊ¾Êı¾İ¿âÓÃ»§Ãû  
+		password="root" ±íÊ¾Êı¾İ¿âÓÃ»§µÄÃÜÂë  
+		driverClassName="com.mysql.jdbc.Driver" ±íÊ¾JDBC DRIVER  
+		url="jdbc:mysql://localhost:3306/testSite" /> ±íÊ¾Êı¾İ¿âURLµØÖ·  
+</Context>  
+
+##¸½context.xmlµÄÈı¸ö×÷ÓÃ·¶Î§£º
+
+1. tomcat server¼¶±ğ£º
+	ÔÚ/conf/context.xmlÀïÅäÖÃ
+
+2. Host¼¶±ğ£º
+	ÔÚ/conf/Catalina/${hostName}ÀïÌí¼Ócontext.xml£¬¼Ì¶ø½øĞĞÅäÖÃ
+
+3. web app ¼¶±ğ£º
+	ÔÚ/conf/Catalina/${hostName}ÀïÌí¼Ó${webAppName}.xml£¬¼Ì¶ø½øĞĞÅäÖÃ
+
+tomcatÖĞµÄserver.xmlÔªËØÏê½â¼ûserver.xml.jpg
 
 
 

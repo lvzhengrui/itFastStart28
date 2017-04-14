@@ -1,0 +1,7 @@
+  <Context path="/tlcomCellAPI" docBase="e:\project\ws\ac01_tlcomCellAPI\web\" debug="99" reloadable="true">
+ 
+   <ResourceLink global="jdbc/CELL" name="jdbc/CELL" type="javax.sql.DataSource"/>
+   <ResourceLink global="jdbc/RONE4" name="ResourceOne/DataSource" type="javax.sql.DataSource"/>
+   
+</Context>
+

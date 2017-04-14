@@ -1,0 +1,2004 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Server>
+  <Listener className="org.apache.catalina.mbeans.ServerLifecycleListener"/>
+  <Listener className="org.apache.catalina.mbeans.GlobalResourcesLifecycleListener"/>
+  <GlobalNamingResources>
+    <Environment name="simpleValue" type="java.lang.Integer" value="30"/>
+    <Resource auth="Container" description="User database that can be updated and saved" name="UserDatabase" type="org.apache.catalina.UserDatabase"/>
+         <ResourceParams name="UserDatabase">
+      <parameter>
+        <name>factory</name>
+        <value>org.apache.catalina.users.MemoryUserDatabaseFactory</value>
+      </parameter>
+      <parameter>
+        <name>pathname</name>
+        <value>conf/tomcat-users.xml</value>
+      </parameter>
+    </ResourceParams>
+  
+
+   <Resource name="ResourceOne/DataSource" type="javax.sql.DataSource"/> 
+   <ResourceParams name="ResourceOne/DataSource">
+      <parameter>
+        <name>maxWait</name>
+        <value>5000</value>
+      </parameter>
+      <parameter>
+        <name>maxActive</name>
+        <value>40</value>
+      </parameter>
+      <parameter>
+        <name>password</name>
+        <value>rone4</value>
+      </parameter>
+      <parameter>
+        <name>url</name>
+	    <value>jdbc:oracle:thin:@10.188.182.15:1521:ORCL</value>			
+      </parameter>
+      <parameter>
+        <name>driverClassName</name>
+        <value>oracle.jdbc.OracleDriver</value>
+      </parameter>
+      <parameter>
+        <name>maxIdle</name>
+        <value>20</value>
+      </parameter>
+      <parameter>
+        <name>username</name>
+        <value>rone4</value>
+      </parameter>
+   </ResourceParams>
+
+ 
+   <Resource name="jdbc/RONE4" type="javax.sql.DataSource"/>
+   <ResourceParams name="jdbc/RONE4"> 
+      <parameter>
+        <name>maxWait</name>
+        <value>5000</value>
+      </parameter>
+      <parameter>
+        <name>maxActive</name>
+        <value>40</value>
+      </parameter>
+      <parameter>
+        <name>password</name>
+        <value>rone4</value>
+      </parameter>
+      <parameter>
+        <name>url</name>
+		<value>jdbc:oracle:thin:@10.188.182.15:1521:ORCL</value>			
+      </parameter>
+      <parameter>
+        <name>driverClassName</name>
+        <value>oracle.jdbc.OracleDriver</value>
+      </parameter>
+      <parameter>
+        <name>maxIdle</name>
+        <value>20</value>
+      </parameter>
+      <parameter>
+        <name>username</name>
+        <value>rone4</value>
+      </parameter>
+   </ResourceParams>
+   
+   
+   <Resource name="jdbc/CELL" type="javax.sql.DataSource"/>
+   <ResourceParams name="jdbc/CELL">
+      <parameter>
+        <name>maxWait</name>
+        <value>5000</value>
+      </parameter>
+      <parameter>
+        <name>maxActive</name>
+        <value>40</value>
+      </parameter>
+      <parameter>
+        <name>password</name>
+        <value>celltest</value>
+      </parameter>
+      <parameter>
+        <name>url</name>
+        <value>jdbc:db2://10.188.180.231:50000/CELL</value>
+      </parameter>
+      <parameter>
+        <name>driverClassName</name>
+        <value>com.ibm.db2.jcc.DB2Driver</value>
+      </parameter>
+      <parameter>
+        <name>maxIdle</name>
+        <value>20</value>
+      </parameter>
+      <parameter>
+        <name>username</name>
+        <value>cell</value>
+      </parameter>
+   </ResourceParams>
+ 
+   <Resource name="jdbc/DCCELL" type="javax.sql.DataSource"/>
+   <ResourceParams name="jdbc/DCCELL">
+      <parameter>
+        <name>maxWait</name>
+        <value>5000</value>
+      </parameter>
+      <parameter>
+        <name>maxActive</name>
+        <value>40</value>
+      </parameter>
+      <parameter>
+        <name>password</name>
+        <value>dccelltest</value>
+      </parameter>
+      <parameter>
+        <name>url</name>
+        <value>jdbc:db2://10.188.180.231:50000/DCCELL</value>
+      </parameter>
+      <parameter>
+        <name>driverClassName</name>
+        <value>com.ibm.db2.jcc.DB2Driver</value>
+      </parameter>
+      <parameter>
+        <name>maxIdle</name>
+        <value>20</value>
+      </parameter>
+      <parameter>
+        <name>username</name>
+        <value>dccell</value>
+      </parameter>
+   </ResourceParams>
+ 
+ 
+ 
+    <Resource name="jdbc/TSO" type="javax.sql.DataSource"/>
+   <ResourceParams name="jdbc/TSO">
+      <parameter>
+        <name>maxWait</name>
+        <value>5000</value>
+      </parameter>
+      <parameter>
+        <name>maxActive</name>
+        <value>40</value>
+      </parameter>
+      <parameter>
+        <name>password</name>
+        <value>tso</value>
+      </parameter>
+      <parameter>
+        <name>url</name>
+		<value>jdbc:oracle:thin:@10.188.180.208:1521:TSO</value>			
+      </parameter>
+      <parameter>
+        <name>driverClassName</name>
+        <value>oracle.jdbc.OracleDriver</value>
+      </parameter>
+      <parameter>
+        <name>maxIdle</name>
+        <value>20</value>
+      </parameter>
+      <parameter>
+        <name>username</name>
+        <value>tso</value>
+      </parameter>
+   </ResourceParams>
+
+
+   
+
+
+
+   <!--
+   
+   
+    <Resource name="jdbc/TSO" type="javax.sql.DataSource"/>
+   <ResourceParams name="jdbc/TSO">
+      <parameter>
+        <name>maxWait</name>
+        <value>5000</value>
+      </parameter>
+      <parameter>
+        <name>maxActive</name>
+        <value>40</value>
+      </parameter>
+      <parameter>
+        <name>password</name>
+        <value>tso</value>
+      </parameter>
+      <parameter>
+        <name>url</name>
+		<value>jdbc:oracle:thin:@10.188.180.237:1521:TSO</value>			
+      </parameter>
+      <parameter>
+        <name>driverClassName</name>
+        <value>oracle.jdbc.OracleDriver</value>
+      </parameter>
+      <parameter>
+        <name>maxIdle</name>
+        <value>20</value>
+      </parameter>
+      <parameter>
+        <name>username</name>
+        <value>tso</value>
+      </parameter>
+   </ResourceParams>
+
+   
+   
+        <Resource name="jdbc/TSO" type="javax.sql.DataSource"/>
+   <ResourceParams name="jdbc/TSO">
+      <parameter>
+        <name>maxWait</name>
+        <value>5000</value>
+      </parameter>
+      <parameter>
+        <name>maxActive</name>
+        <value>40</value>
+      </parameter>
+      <parameter>
+        <name>password</name>
+        <value>tso</value>
+      </parameter>
+      <parameter>
+        <name>url</name>
+		<value>jdbc:oracle:thin:@10.188.180.209:1521:tsoyn</value>			
+      </parameter>
+      <parameter>
+        <name>driverClassName</name>
+        <value>oracle.jdbc.OracleDriver</value>
+      </parameter>
+      <parameter>
+        <name>maxIdle</name>
+        <value>20</value>
+      </parameter>
+      <parameter>
+        <name>username</name>
+        <value>tso</value>
+      </parameter>
+   </ResourceParams>
+   
+   
+   
+    <Resource name="jdbc/TSO" type="javax.sql.DataSource"/>
+   <ResourceParams name="jdbc/TSO">
+      <parameter>
+        <name>maxWait</name>
+        <value>5000</value>
+      </parameter>
+      <parameter>
+        <name>maxActive</name>
+        <value>40</value>
+      </parameter>
+      <parameter>
+        <name>password</name>
+        <value>tso</value>
+      </parameter>
+      <parameter>
+        <name>url</name>
+		<value>jdbc:oracle:thin:@10.188.182.91:1521:orcl</value>			
+      </parameter>
+      <parameter>
+        <name>driverClassName</name>
+        <value>oracle.jdbc.driver.OracleDriver</value>
+      </parameter>
+      <parameter>
+        <name>maxIdle</name>
+        <value>20</value>
+      </parameter>
+      <parameter>
+        <name>username</name>
+        <value>tsodev</value>
+      </parameter>
+   </ResourceParams>
+   
+   
+   <Resource name="ResourceOne/DataSource" type="javax.sql.DataSource"/> 
+   <ResourceParams name="ResourceOne/DataSource">
+      <parameter>
+        <name>maxWait</name>
+        <value>5000</value>
+      </parameter>
+      <parameter>
+        <name>maxActive</name>
+        <value>40</value>
+      </parameter>
+      <parameter>
+        <name>password</name>
+        <value>rone4</value>
+      </parameter>
+      <parameter>
+        <name>url</name>
+			  <value>jdbc:oracle:thin:@10.188.182.15:1521:ORCL</value>			
+      </parameter>
+      <parameter>
+        <name>driverClassName</name>
+        <value>oracle.jdbc.OracleDriver</value>
+      </parameter>
+      <parameter>
+        <name>maxIdle</name>
+        <value>20</value>
+      </parameter>
+      <parameter>
+        <name>username</name>
+        <value>rone4</value>
+      </parameter>
+   </ResourceParams>
+
+ 
+   <Resource name="jdbc/RONE4" type="javax.sql.DataSource"/>
+   <ResourceParams name="jdbc/RONE4"> 
+      <parameter>
+        <name>maxWait</name>
+        <value>5000</value>
+      </parameter>
+      <parameter>
+        <name>maxActive</name>
+        <value>40</value>
+      </parameter>
+      <parameter>
+        <name>password</name>
+        <value>rone4</value>
+      </parameter>
+      <parameter>
+        <name>url</name>
+			  <value>jdbc:oracle:thin:@10.188.182.15:1521:ORCL</value>			
+      </parameter>
+      <parameter>
+        <name>driverClassName</name>
+        <value>oracle.jdbc.OracleDriver</value>
+      </parameter>
+      <parameter>
+        <name>maxIdle</name>
+        <value>20</value>
+      </parameter>
+      <parameter>
+        <name>username</name>
+        <value>rone4</value>
+      </parameter>
+   </ResourceParams>
+   
+   
+         <Resource name="jdbc/TSO" type="javax.sql.DataSource"/>
+   <ResourceParams name="jdbc/TSO">
+      <parameter>
+        <name>maxWait</name>
+        <value>5000</value>
+      </parameter>
+      <parameter>
+        <name>maxActive</name>
+        <value>40</value>
+      </parameter>
+      <parameter>
+        <name>password</name>
+        <value>tsotest</value>
+      </parameter>
+      <parameter>
+        <name>url</name>
+		<value>jdbc:db2://10.188.180.171:50000/tso</value>			
+      </parameter>
+      <parameter>
+        <name>driverClassName</name>
+        <value>com.ibm.db2.jcc.DB2Driver</value>
+      </parameter>
+      <parameter>
+        <name>maxIdle</name>
+        <value>20</value>
+      </parameter>
+      <parameter>
+        <name>username</name>
+        <value>tso</value>
+      </parameter>
+   </ResourceParams>
+
+   
+   
+         <Resource name="jdbc/TSO" type="javax.sql.DataSource"/>
+   <ResourceParams name="jdbc/TSO">
+      <parameter>
+        <name>maxWait</name>
+        <value>5000</value>
+      </parameter>
+      <parameter>
+        <name>maxActive</name>
+        <value>40</value>
+      </parameter>
+      <parameter>
+        <name>password</name>
+        <value>tso</value>
+      </parameter>
+      <parameter>
+        <name>url</name>
+		<value>jdbc:db2://10.188.182.105:50000/tso</value>			
+      </parameter>
+      <parameter>
+        <name>driverClassName</name>
+        <value>com.ibm.db2.jcc.DB2Driver</value>
+      </parameter>
+      <parameter>
+        <name>maxIdle</name>
+        <value>20</value>
+      </parameter>
+      <parameter>
+        <name>username</name>
+        <value>tso</value>
+      </parameter>
+   </ResourceParams>
+   
+   
+      <Resource name="jdbc/TSO" type="javax.sql.DataSource"/>
+   <ResourceParams name="jdbc/TSO">
+      <parameter>
+        <name>maxWait</name>
+        <value>5000</value>
+      </parameter>
+      <parameter>
+        <name>maxActive</name>
+        <value>40</value>
+      </parameter>
+      <parameter>
+        <name>password</name>
+        <value>tso</value>
+      </parameter>
+      <parameter>
+        <name>url</name>
+		<value>jdbc:oracle:thin:@10.188.180.237:1521:TSO</value>			
+      </parameter>
+      <parameter>
+        <name>driverClassName</name>
+        <value>oracle.jdbc.OracleDriver</value>
+      </parameter>
+      <parameter>
+        <name>maxIdle</name>
+        <value>20</value>
+      </parameter>
+      <parameter>
+        <name>username</name>
+        <value>tso</value>
+      </parameter>
+   </ResourceParams>
+
+   
+   
+   
+        <Resource name="jdbc/DCCELL" type="javax.sql.DataSource"/>
+   <ResourceParams name="jdbc/DCCELL">
+      <parameter>
+        <name>maxWait</name>
+        <value>5000</value>
+      </parameter>
+      <parameter>
+        <name>maxActive</name>
+        <value>40</value>
+      </parameter>
+      <parameter>
+        <name>password</name>
+        <value>dccell</value>
+      </parameter>
+      <parameter>
+        <name>url</name>
+		<value>jdbc:oracle:thin:@10.188.180.237:1521:TSO</value>			
+      </parameter>
+      <parameter>
+        <name>driverClassName</name>
+        <value>oracle.jdbc.OracleDriver</value>
+      </parameter>
+      <parameter>
+        <name>maxIdle</name>
+        <value>20</value>
+      </parameter>
+      <parameter>
+        <name>username</name>
+        <value>dccell</value>
+      </parameter>
+   </ResourceParams>
+   
+   
+     
+    <Resource name="jdbc/TSO" type="javax.sql.DataSource"/>
+   <ResourceParams name="jdbc/TSO">
+      <parameter>
+        <name>maxWait</name>
+        <value>5000</value>
+      </parameter>
+      <parameter>
+        <name>maxActive</name>
+        <value>40</value>
+      </parameter>
+      <parameter>
+        <name>password</name>
+        <value>issue_tso</value>
+      </parameter>
+      <parameter>
+        <name>url</name>
+		<value>jdbc:oracle:thin:@10.188.182.15:1521:ISSUE</value>			
+      </parameter>
+      <parameter>
+        <name>driverClassName</name>
+        <value>oracle.jdbc.OracleDriver</value>
+      </parameter>
+      <parameter>
+        <name>maxIdle</name>
+        <value>20</value>
+      </parameter>
+      <parameter>
+        <name>username</name>
+        <value>issue_tso</value>
+      </parameter>
+   </ResourceParams>
+   
+   
+   
+
+         
+    <Resource name="jdbc/DCCELL" type="javax.sql.DataSource"/>
+    <ResourceParams name="jdbc/DCCELL">
+      <parameter>
+        <name>maxWait</name>
+        <value>5000</value>
+      </parameter>
+      <parameter>
+        <name>maxActive</name>
+        <value>40</value>
+      </parameter>
+      <parameter>
+        <name>password</name>
+        <value>tso</value>
+      </parameter>
+      <parameter>
+        <name>url</name>
+		<value>jdbc:oracle:thin:@10.188.182.98:1521:TSO</value>			
+      </parameter>
+      <parameter>
+        <name>driverClassName</name>
+        <value>oracle.jdbc.OracleDriver</value>
+      </parameter>
+      <parameter>
+        <name>maxIdle</name>
+        <value>20</value>
+      </parameter>
+      <parameter>
+        <name>username</name>
+        <value>tsodev</value>
+      </parameter>
+   </ResourceParams>
+  
+   	
+	
+	
+        <Resource name="jdbc/DCCELL" type="javax.sql.DataSource"/>
+   <ResourceParams name="jdbc/DCCELL">
+      <parameter>
+        <name>maxWait</name>
+        <value>5000</value>
+      </parameter>
+      <parameter>
+        <name>maxActive</name>
+        <value>40</value>
+      </parameter>
+      <parameter>
+        <name>password</name>
+        <value>dccell</value>
+      </parameter>
+      <parameter>
+        <name>url</name>
+		<value>jdbc:oracle:thin:@10.188.180.237:1521:TSO</value>			
+      </parameter>
+      <parameter>
+        <name>driverClassName</name>
+        <value>oracle.jdbc.OracleDriver</value>
+      </parameter>
+      <parameter>
+        <name>maxIdle</name>
+        <value>20</value>
+      </parameter>
+      <parameter>
+        <name>username</name>
+        <value>dccell</value>
+      </parameter>
+   </ResourceParams>
+   
+	
+    <Resource name="jdbc/TSO" type="javax.sql.DataSource"/>
+   <ResourceParams name="jdbc/TSO">
+      <parameter>
+        <name>maxWait</name>
+        <value>5000</value>
+      </parameter>
+      <parameter>
+        <name>maxActive</name>
+        <value>40</value>
+      </parameter>
+      <parameter>
+        <name>password</name>
+        <value>tso</value>
+      </parameter>
+      <parameter>
+        <name>url</name>
+		<value>jdbc:oracle:thin:@10.188.180.237:1521:TSO</value>			
+      </parameter>
+      <parameter>
+        <name>driverClassName</name>
+        <value>oracle.jdbc.OracleDriver</value>
+      </parameter>
+      <parameter>
+        <name>maxIdle</name>
+        <value>20</value>
+      </parameter>
+      <parameter>
+        <name>username</name>
+        <value>tso</value>
+      </parameter>
+   </ResourceParams>
+ 
+ 
+ 
+      <Resource name="jdbc/DCCELL" type="javax.sql.DataSource"/>
+   <ResourceParams name="jdbc/DCCELL">
+      <parameter>
+        <name>maxWait</name>
+        <value>5000</value>
+      </parameter>
+      <parameter>
+        <name>maxActive</name>
+        <value>40</value>
+      </parameter>
+      <parameter>
+        <name>password</name>
+        <value>tso</value>
+      </parameter>
+      <parameter>
+        <name>url</name>
+		<value>jdbc:oracle:thin:@10.188.182.98:1521:TSO</value>			
+      </parameter>
+      <parameter>
+        <name>driverClassName</name>
+        <value>oracle.jdbc.OracleDriver</value>
+      </parameter>
+      <parameter>
+        <name>maxIdle</name>
+        <value>20</value>
+      </parameter>
+      <parameter>
+        <name>username</name>
+        <value>tsodev</value>
+      </parameter>
+   </ResourceParams>
+   
+   
+       
+     <Resource name="jdbc/DCCELL" type="javax.sql.DataSource"/>
+   <ResourceParams name="jdbc/DCCELL">
+      <parameter>
+        <name>maxWait</name>
+        <value>5000</value>
+      </parameter>
+      <parameter>
+        <name>maxActive</name>
+        <value>40</value>
+      </parameter>
+      <parameter>
+        <name>password</name>
+        <value>dccell</value>
+      </parameter>
+      <parameter>
+        <name>url</name>
+		<value>jdbc:oracle:thin:@10.188.180.237:1521:TSO</value>			
+      </parameter>
+      <parameter>
+        <name>driverClassName</name>
+        <value>oracle.jdbc.OracleDriver</value>
+      </parameter>
+      <parameter>
+        <name>maxIdle</name>
+        <value>20</value>
+      </parameter>
+      <parameter>
+        <name>username</name>
+        <value>dccell</value>
+      </parameter>
+   </ResourceParams>
+   
+   
+          <Resource name="jdbc/TSO" type="javax.sql.DataSource"/>
+   <ResourceParams name="jdbc/TSO">
+      <parameter>
+        <name>maxWait</name>
+        <value>5000</value>
+      </parameter>
+      <parameter>
+        <name>maxActive</name>
+        <value>40</value>
+      </parameter>
+      <parameter>
+        <name>password</name>
+        <value>tso</value>
+      </parameter>
+      <parameter>
+        <name>url</name>
+		<value>jdbc:oracle:thin:@10.188.180.237:1521:TSO</value>			
+      </parameter>
+      <parameter>
+        <name>driverClassName</name>
+        <value>oracle.jdbc.OracleDriver</value>
+      </parameter>
+      <parameter>
+        <name>maxIdle</name>
+        <value>20</value>
+      </parameter>
+      <parameter>
+        <name>username</name>
+        <value>tso</value>
+      </parameter>
+   </ResourceParams>
+   
+   
+   
+      	
+    <Resource name="jdbc/TSO" type="javax.sql.DataSource"/>
+   <ResourceParams name="jdbc/TSO">
+      <parameter>
+        <name>maxWait</name>
+        <value>5000</value>
+      </parameter>
+      <parameter>
+        <name>maxActive</name>
+        <value>40</value>
+      </parameter>
+      <parameter>
+        <name>password</name>
+        <value>tso</value>
+      </parameter>
+      <parameter>
+        <name>url</name>
+		<value>jdbc:db2://10.188.180.231:50000/TSO</value>			
+      </parameter>
+      <parameter>
+        <name>driverClassName</name>
+        <value>com.ibm.db2.jcc.DB2Driver</value>
+      </parameter>
+      <parameter>
+        <name>maxIdle</name>
+        <value>20</value>
+      </parameter>
+      <parameter>
+        <name>username</name>
+        <value>tso</value>
+      </parameter>
+   </ResourceParams>
+   
+   
+   
+    <Resource name="jdbc/TSO" type="javax.sql.DataSource"/>
+   <ResourceParams name="jdbc/TSO">
+      <parameter>
+        <name>maxWait</name>
+        <value>5000</value>
+      </parameter>
+      <parameter>
+        <name>maxActive</name>
+        <value>40</value>
+      </parameter>
+      <parameter>
+        <name>password</name>
+        <value>celltest</value>
+      </parameter>
+      <parameter>
+        <name>url</name>
+		<value>jdbc:db2://10.188.180.231:50000/CELL</value>			
+      </parameter>
+      <parameter>
+        <name>driverClassName</name>
+        <value>com.ibm.db2.jcc.DB2Driver</value>
+      </parameter>
+      <parameter>
+        <name>maxIdle</name>
+        <value>20</value>
+      </parameter>
+      <parameter>
+        <name>username</name>
+        <value>cell</value>
+      </parameter>
+   </ResourceParams>
+   
+   
+   
+       <Resource name="jdbc/TSO" type="javax.sql.DataSource"/>
+   <ResourceParams name="jdbc/TSO">
+      <parameter>
+        <name>maxWait</name>
+        <value>5000</value>
+      </parameter>
+      <parameter>
+        <name>maxActive</name>
+        <value>40</value>
+      </parameter>
+      <parameter>
+        <name>password</name>
+        <value>tso</value>
+      </parameter>
+      <parameter>
+        <name>url</name>
+		<value>jdbc:oracle:thin:@10.188.180.237:1521:TSO</value>			
+      </parameter>
+      <parameter>
+        <name>driverClassName</name>
+        <value>oracle.jdbc.OracleDriver</value>
+      </parameter>
+      <parameter>
+        <name>maxIdle</name>
+        <value>20</value>
+      </parameter>
+      <parameter>
+        <name>username</name>
+        <value>tso</value>
+      </parameter>
+   </ResourceParams>
+   
+   
+   
+      <Resource name="jdbc/TSO" type="javax.sql.DataSource"/>
+   <ResourceParams name="jdbc/TSO">
+      <parameter>
+        <name>maxWait</name>
+        <value>5000</value>
+      </parameter>
+      <parameter>
+        <name>maxActive</name>
+        <value>40</value>
+      </parameter>
+      <parameter>
+        <name>password</name>
+        <value>tso</value>
+      </parameter>
+      <parameter>
+        <name>url</name>
+		<value>jdbc:oracle:thin:@10.188.74.223:1521:orcl</value>			
+      </parameter>
+      <parameter>
+        <name>driverClassName</name>
+        <value>oracle.jdbc.OracleDriver</value>
+      </parameter>
+      <parameter>
+        <name>maxIdle</name>
+        <value>20</value>
+      </parameter>
+      <parameter>
+        <name>username</name>
+        <value>tso</value>
+      </parameter>
+   </ResourceParams>
+   
+   
+   
+   
+      <Resource name="jdbc/TSO" type="javax.sql.DataSource"/>
+   <ResourceParams name="jdbc/TSO">
+      <parameter>
+        <name>maxWait</name>
+        <value>5000</value>
+      </parameter>
+      <parameter>
+        <name>maxActive</name>
+        <value>40</value>
+      </parameter>
+      <parameter>
+        <name>password</name>
+        <value>tso</value>
+      </parameter>
+      <parameter>
+        <name>url</name>
+		<value>jdbc:oracle:thin:@10.188.180.237:1521:TSO</value>			
+      </parameter>
+      <parameter>
+        <name>driverClassName</name>
+        <value>oracle.jdbc.OracleDriver</value>
+      </parameter>
+      <parameter>
+        <name>maxIdle</name>
+        <value>20</value>
+      </parameter>
+      <parameter>
+        <name>username</name>
+        <value>tso</value>
+      </parameter>
+   </ResourceParams>
+ 
+ 
+ 
+   
+      <Resource name="jdbc/TSO" type="javax.sql.DataSource"/>
+   <ResourceParams name="jdbc/TSO">
+      <parameter>
+        <name>maxWait</name>
+        <value>5000</value>
+      </parameter>
+      <parameter>
+        <name>maxActive</name>
+        <value>40</value>
+      </parameter>
+      <parameter>
+        <name>password</name>
+        <value>dccell</value>
+      </parameter>
+      <parameter>
+        <name>url</name>
+		<value>jdbc:oracle:thin:@10.188.180.237:1521:TSO</value>			
+      </parameter>
+      <parameter>
+        <name>driverClassName</name>
+        <value>oracle.jdbc.OracleDriver</value>
+      </parameter>
+      <parameter>
+        <name>maxIdle</name>
+        <value>20</value>
+      </parameter>
+      <parameter>
+        <name>username</name>
+        <value>dccell</value>
+      </parameter>
+   </ResourceParams>
+ 
+   
+   
+     <Resource name="jdbc/DCCELL" type="javax.sql.DataSource"/>
+   <ResourceParams name="jdbc/DCCELL">
+      <parameter>
+        <name>maxWait</name>
+        <value>5000</value>
+      </parameter>
+      <parameter>
+        <name>maxActive</name>
+        <value>40</value>
+      </parameter>
+      <parameter>
+        <name>password</name>
+        <value>dccell</value>
+      </parameter>
+      <parameter>
+        <name>url</name>
+		<value>jdbc:oracle:thin:@10.188.180.237:1521:TSO</value>			
+      </parameter>
+      <parameter>
+        <name>driverClassName</name>
+        <value>oracle.jdbc.OracleDriver</value>
+      </parameter>
+      <parameter>
+        <name>maxIdle</name>
+        <value>20</value>
+      </parameter>
+      <parameter>
+        <name>username</name>
+        <value>dccell</value>
+      </parameter>
+   </ResourceParams>
+   
+      	
+   <Resource name="jdbc/TSO" type="javax.sql.DataSource"/>
+   <ResourceParams name="jdbc/TSO">
+      <parameter>
+        <name>maxWait</name>
+        <value>5000</value>
+      </parameter>
+      <parameter>
+        <name>maxActive</name>
+        <value>40</value>
+      </parameter>
+      <parameter>
+        <name>password</name>
+        <value>tso</value>
+      </parameter>
+      <parameter>
+        <name>url</name>
+		<value>jdbc:db2://10.188.180.231:50000/CELL</value>			
+      </parameter>
+      <parameter>
+        <name>driverClassName</name>
+        <value>com.ibm.db2.jcc.DB2Driver</value>
+      </parameter>
+      <parameter>
+        <name>maxIdle</name>
+        <value>20</value>
+      </parameter>
+      <parameter>
+        <name>username</name>
+        <value>tso</value>
+      </parameter>
+   </ResourceParams>
+ 
+ 
+   
+      <Resource name="jdbc/TSO" type="javax.sql.DataSource"/>
+   <ResourceParams name="jdbc/TSO">
+      <parameter>
+        <name>maxWait</name>
+        <value>5000</value>
+      </parameter>
+      <parameter>
+        <name>maxActive</name>
+        <value>40</value>
+      </parameter>
+      <parameter>
+        <name>password</name>
+        <value>tso</value>
+      </parameter>
+      <parameter>
+        <name>url</name>
+		<value>jdbc:oracle:thin:@10.188.180.237:1521:TSO</value>			
+      </parameter>
+      <parameter>
+        <name>driverClassName</name>
+        <value>oracle.jdbc.OracleDriver</value>
+      </parameter>
+      <parameter>
+        <name>maxIdle</name>
+        <value>20</value>
+      </parameter>
+      <parameter>
+        <name>username</name>
+        <value>tso</value>
+      </parameter>
+   </ResourceParams>
+   
+   
+   
+      <Resource name="jdbc/TSO" type="javax.sql.DataSource"/>
+   <ResourceParams name="jdbc/TSO">
+      <parameter>
+        <name>maxWait</name>
+        <value>5000</value>
+      </parameter>
+      <parameter>
+        <name>maxActive</name>
+        <value>40</value>
+      </parameter>
+      <parameter>
+        <name>password</name>
+        <value>tso</value>
+      </parameter>
+      <parameter>
+        <name>url</name>
+		<value>jdbc:db2://10.188.182.161:50000/tso</value>			
+      </parameter>
+      <parameter>
+        <name>driverClassName</name>
+        <value>com.ibm.db2.jcc.DB2Driver</value>
+      </parameter>
+      <parameter>
+        <name>maxIdle</name>
+        <value>20</value>
+      </parameter>
+      <parameter>
+        <name>username</name>
+        <value>tso</value>
+      </parameter>
+   </ResourceParams>
+   
+   
+     
+  <Resource name="jdbc/TSO" type="javax.sql.DataSource"/>
+   <ResourceParams name="jdbc/TSO">
+      <parameter>
+        <name>maxWait</name>
+        <value>5000</value>
+      </parameter>
+      <parameter>
+        <name>maxActive</name>
+        <value>40</value>
+      </parameter>
+      <parameter>
+        <name>password</name>
+        <value>tso</value>
+      </parameter>
+      <parameter>
+        <name>url</name>
+		<value>jdbc:db2://10.188.182.105:50000/tso</value>			
+      </parameter>
+      <parameter>
+        <name>driverClassName</name>
+        <value>com.ibm.db2.jcc.DB2Driver</value>
+      </parameter>
+      <parameter>
+        <name>maxIdle</name>
+        <value>20</value>
+      </parameter>
+      <parameter>
+        <name>username</name>
+        <value>tso</value>
+      </parameter>
+   </ResourceParams>
+   
+
+      
+   <Resource name="jdbc/TSO" type="javax.sql.DataSource"/>
+   <ResourceParams name="jdbc/TSO">
+      <parameter>
+        <name>maxWait</name>
+        <value>5000</value>
+      </parameter>
+      <parameter>
+        <name>maxActive</name>
+        <value>40</value>
+      </parameter>
+      <parameter>
+        <name>password</name>
+        <value>tso</value>
+      </parameter>
+      <parameter>
+        <name>url</name>
+		<value>jdbc:oracle:thin:@10.188.182.91:1521:orcl</value>			
+      </parameter>
+      <parameter>
+        <name>driverClassName</name>
+        <value>oracle.jdbc.OracleDriver</value>
+      </parameter>
+      <parameter>
+        <name>maxIdle</name>
+        <value>20</value>
+      </parameter>
+      <parameter>
+        <name>username</name>
+        <value>tsodev</value>
+      </parameter>
+   </ResourceParams>
+   
+   
+  <Resource name="jdbc/DCCELL" type="javax.sql.DataSource"/>
+   <ResourceParams name="jdbc/DCCELL">
+      <parameter>
+        <name>maxWait</name>
+        <value>5000</value>
+      </parameter>
+      <parameter>
+        <name>maxActive</name>
+        <value>40</value>
+      </parameter>
+      <parameter>
+        <name>password</name>
+        <value>dccelltest</value>
+      </parameter>
+      <parameter>
+        <name>url</name>
+		<value>jdbc:db2://10.188.180.231:50000/DCCELL</value>			
+      </parameter>
+      <parameter>
+        <name>driverClassName</name>
+        <value>com.ibm.db2.jcc.DB2Driver</value>
+      </parameter>
+      <parameter>
+        <name>maxIdle</name>
+        <value>20</value>
+      </parameter>
+      <parameter>
+        <name>username</name>
+        <value>dccell</value>
+      </parameter>
+   </ResourceParams>
+
+   
+   
+    <Resource name="jdbc/TSO" type="javax.sql.DataSource"/>
+   <ResourceParams name="jdbc/TSO">
+      <parameter>
+        <name>maxWait</name>
+        <value>5000</value>
+      </parameter>
+      <parameter>
+        <name>maxActive</name>
+        <value>40</value>
+      </parameter>
+      <parameter>
+        <name>password</name>
+        <value>tso</value>
+      </parameter>
+      <parameter>
+        <name>url</name>
+		<value>jdbc:oracle:thin:@10.188.180.237:1521:TSO</value>			
+      </parameter>
+      <parameter>
+        <name>driverClassName</name>
+        <value>oracle.jdbc.OracleDriver</value>
+      </parameter>
+      <parameter>
+        <name>maxIdle</name>
+        <value>20</value>
+      </parameter>
+      <parameter>
+        <name>username</name>
+        <value>tso</value>
+      </parameter>
+   </ResourceParams>
+   
+   
+
+   
+     <Resource name="jdbc/DCCELL" type="javax.sql.DataSource"/>
+   <ResourceParams name="jdbc/DCCELL">
+      <parameter>
+        <name>maxWait</name>
+        <value>5000</value>
+      </parameter>
+      <parameter>
+        <name>maxActive</name>
+        <value>40</value>
+      </parameter>
+      <parameter>
+        <name>password</name>
+        <value>dccell</value>
+      </parameter>
+      <parameter>
+        <name>url</name>
+			  <value>jdbc:oracle:thin:@127.0.0.1:1521:IHMIS</value>			
+      </parameter>
+      <parameter>
+        <name>driverClassName</name>
+        <value>oracle.jdbc.OracleDriver</value>
+      </parameter>
+      <parameter>
+        <name>maxIdle</name>
+        <value>20</value>
+      </parameter>
+      <parameter>
+        <name>username</name>
+        <value>dccell</value>
+      </parameter>
+   </ResourceParams>
+   
+   
+   
+       <ResourceParams name="ResourceOne/DataSource">
+      <parameter>
+        <name>maxWait</name>
+        <value>5000</value>
+      </parameter>
+      <parameter>
+        <name>maxActive</name>
+        <value>40</value>
+      </parameter>
+      <parameter>
+        <name>password</name>
+        <value>rone4</value>
+      </parameter>
+      <parameter>
+        <name>url</name>
+			  <value>jdbc:oracle:thin:@127.0.0.1:1521:IHMIS</value>			
+      </parameter>
+      <parameter>
+        <name>driverClassName</name>
+        <value>oracle.jdbc.OracleDriver</value>
+      </parameter>
+      <parameter>
+        <name>maxIdle</name>
+        <value>20</value>
+      </parameter>
+      <parameter>
+        <name>username</name>
+        <value>rone4</value>
+      </parameter>
+   </ResourceParams>
+   
+
+      <Resource name="ResourceOne/DataSource" type="javax.sql.DataSource"/>
+   <ResourceParams name="ResourceOne/DataSource">
+      <parameter>
+        <name>maxWait</name>
+        <value>5000</value>
+      </parameter>
+      <parameter>
+        <name>maxActive</name>
+        <value>40</value>
+      </parameter>
+      <parameter>
+        <name>password</name>
+        <value>rone4</value>
+      </parameter>
+      <parameter>
+        <name>url</name>
+		<value>jdbc:oracle:thin:@10.188.182.15:1521:orcl</value>			
+      </parameter>
+      <parameter>
+        <name>driverClassName</name>
+        <value>oracle.jdbc.OracleDriver</value>
+      </parameter>
+      <parameter>
+        <name>maxIdle</name>
+        <value>20</value>
+      </parameter>
+      <parameter>
+        <name>username</name>
+        <value>rone4</value>
+      </parameter>
+   </ResourceParams>
+
+
+
+    <Resource name="jdbc/TSO" type="javax.sql.DataSource"/>
+   <ResourceParams name="jdbc/TSO">
+      <parameter>
+        <name>maxWait</name>
+        <value>5000</value>
+      </parameter>
+      <parameter>
+        <name>maxActive</name>
+        <value>40</value>
+      </parameter>
+      <parameter>
+        <name>password</name>
+        <value>tso</value>
+      </parameter>
+      <parameter>
+        <name>url</name>
+		<value>jdbc:oracle:thin:@10.188.182.141:1521:orclgbk</value>			
+      </parameter>
+      <parameter>
+        <name>driverClassName</name>
+        <value>oracle.jdbc.OracleDriver</value>
+      </parameter>
+      <parameter>
+        <name>maxIdle</name>
+        <value>20</value>
+      </parameter>
+      <parameter>
+        <name>username</name>
+        <value>tso</value>
+      </parameter>
+   </ResourceParams>
+   
+   
+   
+  <Resource name="jdbc/DCCELL" type="javax.sql.DataSource"/>
+   <ResourceParams name="jdbc/DCCELL">
+      <parameter>
+        <name>maxWait</name>
+        <value>5000</value>
+      </parameter>
+      <parameter>
+        <name>maxActive</name>
+        <value>40</value>
+      </parameter>
+      <parameter>
+        <name>password</name>
+        <value>dccell</value>
+      </parameter>
+      <parameter>
+        <name>url</name>
+			  <value>jdbc:oracle:thin:@127.0.0.1:1521:IHMIS</value>			
+      </parameter>
+      <parameter>
+        <name>driverClassName</name>
+        <value>oracle.jdbc.OracleDriver</value>
+      </parameter>
+      <parameter>
+        <name>maxIdle</name>
+        <value>20</value>
+      </parameter>
+      <parameter>
+        <name>username</name>
+        <value>dccell</value>
+      </parameter>
+   </ResourceParams>
+ 
+
+
+  <Resource name="jdbc/DCCELL" type="javax.sql.DataSource"/>
+   <ResourceParams name="jdbc/DCCELL">
+      <parameter>
+        <name>maxWait</name>
+        <value>5000</value>
+      </parameter>
+      <parameter>
+        <name>maxActive</name>
+        <value>40</value>
+      </parameter>
+      <parameter>
+        <name>password</name>
+        <value>dccell</value>
+      </parameter>
+      <parameter>
+        <name>url</name>
+        <value>jdbc:oracle:thin:@10.188.182.91:1521:tso</value>
+      </parameter>
+      <parameter>
+        <name>driverClassName</name>
+        <value>oracle.jdbc.OracleDriver</value>
+      </parameter>
+      <parameter>
+        <name>maxIdle</name>
+        <value>20</value>
+      </parameter>
+      <parameter>
+        <name>username</name>
+        <value>dccell</value>
+      </parameter>
+   </ResourceParams>
+
+ <Resource name="jdbc/TSO" type="javax.sql.DataSource"/>
+   <ResourceParams name="jdbc/TSO">
+      <parameter>
+        <name>maxWait</name>
+        <value>5000</value>
+      </parameter>
+      <parameter>
+        <name>maxActive</name>
+        <value>40</value>
+      </parameter>
+      <parameter>
+        <name>password</name>
+        <value>cell</value>
+      </parameter>
+      <parameter>
+        <name>url</name>
+		<value>jdbc:sqlserver://127.0.0.1:1433;DatabaseName=53250201A</value>			
+      </parameter>
+      <parameter>
+        <name>driverClassName</name>
+        <value>com.microsoft.sqlserver.jdbc.SQLServerDriver</value>
+      </parameter>
+      <parameter>
+        <name>maxIdle</name>
+        <value>20</value>
+      </parameter>
+      <parameter>
+        <name>username</name>
+        <value>cell</value>
+      </parameter>
+   </ResourceParams>
+
+
+   <Resource name="jdbc/TSO" type="javax.sql.DataSource"/>
+   <ResourceParams name="jdbc/TSO">
+      <parameter>
+        <name>maxWait</name>
+        <value>5000</value>
+      </parameter>
+      <parameter>
+        <name>maxActive</name>
+        <value>40</value>
+      </parameter>
+      <parameter>
+        <name>password</name>
+        <value>tso</value>
+      </parameter>
+      <parameter>
+        <name>url</name>
+		<value>jdbc:oracle:thin:@10.188.182.141:1521:orclgbk</value>			
+      </parameter>
+      <parameter>
+        <name>driverClassName</name>
+        <value>oracle.jdbc.OracleDriver</value>
+      </parameter>
+      <parameter>
+        <name>maxIdle</name>
+        <value>20</value>
+      </parameter>
+      <parameter>
+        <name>username</name>
+        <value>tso</value>
+      </parameter>
+   </ResourceParams>
+ 
+
+
+ <Resource name="jdbc/TSO" type="javax.sql.DataSource"/>
+   <ResourceParams name="jdbc/TSO">
+      <parameter>
+        <name>maxWait</name>
+        <value>5000</value>
+      </parameter>
+      <parameter>
+        <name>maxActive</name>
+        <value>40</value>
+      </parameter>
+      <parameter>
+        <name>password</name>
+        <value>tso</value>
+      </parameter>
+      <parameter>
+        <name>url</name>
+		<value>jdbc:db2://10.188.180.171:50000/TSO</value>			
+      </parameter>
+      <parameter>
+        <name>driverClassName</name>
+        <value>com.ibm.db2.jcc.DB2Driver</value>
+      </parameter>
+      <parameter>
+        <name>maxIdle</name>
+        <value>20</value>
+      </parameter>
+      <parameter>
+        <name>username</name>
+        <value>tso</value>
+      </parameter>
+   </ResourceParams>
+
+
+   <Resource name="jdbc/TSO" type="javax.sql.DataSource"/>
+   <ResourceParams name="jdbc/TSO">
+      <parameter>
+        <name>maxWait</name>
+        <value>5000</value>
+      </parameter>
+      <parameter>
+        <name>maxActive</name>
+        <value>40</value>
+      </parameter>
+      <parameter>
+        <name>password</name>
+        <value>tso</value>
+      </parameter>
+      <parameter>
+        <name>url</name>
+		<value>jdbc:db2://10.188.180.171:50000/TSO</value>			
+      </parameter>
+      <parameter>
+        <name>driverClassName</name>
+        <value>com.ibm.db2.jcc.DB2Driver</value>
+      </parameter>
+      <parameter>
+        <name>maxIdle</name>
+        <value>20</value>
+      </parameter>
+      <parameter>
+        <name>username</name>
+        <value>tso</value>
+      </parameter>
+   </ResourceParams>
+ 
+   <Resource name="jdbc/TSO" type="javax.sql.DataSource"/>
+   <ResourceParams name="jdbc/TSO">
+      <parameter>
+        <name>maxWait</name>
+        <value>5000</value>
+      </parameter>
+      <parameter>
+        <name>maxActive</name>
+        <value>40</value>
+      </parameter>
+      <parameter>
+        <name>password</name>
+        <value>tso</value>
+      </parameter>
+      <parameter>
+        <name>url</name>
+		<value>jdbc:db2://10.188.182.105:50000/tso</value>			
+      </parameter>
+      <parameter>
+        <name>driverClassName</name>
+        <value>com.ibm.db2.jcc.DB2Driver</value>
+      </parameter>
+      <parameter>
+        <name>maxIdle</name>
+        <value>20</value>
+      </parameter>
+      <parameter>
+        <name>username</name>
+        <value>tso</value>
+      </parameter>
+   </ResourceParams>
+
+
+    
+
+   <Resource name="jdbc/TSO" type="javax.sql.DataSource"/>
+   <ResourceParams name="jdbc/TSO">
+      <parameter>
+        <name>maxWait</name>
+        <value>5000</value>
+      </parameter>
+      <parameter>
+        <name>maxActive</name>
+        <value>40</value>
+      </parameter>
+      <parameter>
+        <name>password</name>
+        <value>tso</value>
+      </parameter>
+      <parameter>
+        <name>url</name>
+		<value>jdbc:oracle:thin:@10.188.182.141:1521:orclgbk</value>			
+      </parameter>
+      <parameter>
+        <name>driverClassName</name>
+        <value>oracle.jdbc.OracleDriver</value>
+      </parameter>
+      <parameter>
+        <name>maxIdle</name>
+        <value>20</value>
+      </parameter>
+      <parameter>
+        <name>username</name>
+        <value>tso</value>
+      </parameter>
+   </ResourceParams>
+
+
+
+
+   	
+   <Resource name="jdbc/DCCELL" type="javax.sql.DataSource"/>
+   <ResourceParams name="jdbc/DCCELL">
+      <parameter>
+        <name>maxWait</name>
+        <value>5000</value>
+      </parameter>
+      <parameter>
+        <name>maxActive</name>
+        <value>40</value>
+      </parameter>
+      <parameter>
+        <name>password</name>
+        <value>dccelltest</value>
+      </parameter>
+      <parameter>
+        <name>url</name>
+       <value>jdbc:db2://10.188.180.231:50000/DCCELL</value>
+      </parameter>
+      <parameter>
+        <name>driverClassName</name>
+        <value>com.ibm.db2.jcc.DB2Driver</value>
+      </parameter>
+      <parameter>
+        <name>maxIdle</name>
+        <value>20</value>
+      </parameter>
+      <parameter>
+        <name>username</name>
+        <value>dccell</value>
+      </parameter>
+   </ResourceParams>
+ 
+
+
+   
+   qiaob  hbyy1234
+   
+         <Resource name="jdbc/TSO" type="javax.sql.DataSource"/>
+   <ResourceParams name="jdbc/TSO">
+      <parameter>
+        <name>maxWait</name>
+        <value>5000</value>
+      </parameter>
+      <parameter>
+        <name>maxActive</name>
+        <value>40</value>
+      </parameter>
+      <parameter>
+        <name>password</name>
+        <value>ynpt</value>
+      </parameter>
+      <parameter>
+        <name>url</name>
+			  <value>jdbc:oracle:thin:@10.188.180.140:1521:orcl</value>			
+      </parameter>
+      <parameter>
+        <name>driverClassName</name>
+        <value>oracle.jdbc.OracleDriver</value>
+      </parameter>
+      <parameter>
+        <name>maxIdle</name>
+        <value>20</value>
+      </parameter>
+      <parameter>
+        <name>username</name>
+        <value>ynpt</value>
+      </parameter>
+   </ResourceParams>
+
+
+      <Resource name="ResourceOne/DataSource" type="javax.sql.DataSource"/>
+   <ResourceParams name="ResourceOne/DataSource">
+      <parameter>
+        <name>maxWait</name>
+        <value>5000</value>
+      </parameter>
+      <parameter>
+        <name>maxActive</name>
+        <value>40</value>
+      </parameter>
+      <parameter>
+        <name>password</name>
+        <value>hsithbyy42wh</value>
+      </parameter>
+      <parameter>
+        <name>url</name>
+        <value>jdbc:db2://10.68.63.10:50000/rone</value>
+      </parameter>
+      <parameter>
+        <name>driverClassName</name>
+        <value>com.ibm.db2.jcc.DB2Driver</value>
+      </parameter>
+      <parameter>
+        <name>maxIdle</name>
+        <value>20</value>
+      </parameter>
+      <parameter>
+        <name>username</name>
+        <value>db2admin</value>
+      </parameter>
+   </ResourceParams>
+
+
+   <Resource name="jdbc/DCCELL" type="javax.sql.DataSource"/>
+   <ResourceParams name="jdbc/DCCELL">
+      <parameter>
+        <name>maxWait</name>
+        <value>5000</value>
+      </parameter>
+      <parameter>
+        <name>maxActive</name>
+        <value>40</value>
+      </parameter>
+      <parameter>
+        <name>password</name>
+        <value>hsithbyy42wh</value>
+      </parameter>
+      <parameter>
+        <name>url</name>
+        <value>jdbc:db2://10.68.63.10:50000/dccell</value>
+      </parameter>
+      <parameter>
+        <name>driverClassName</name>
+        <value>com.ibm.db2.jcc.DB2Driver</value>
+      </parameter>
+      <parameter>
+        <name>maxIdle</name>
+        <value>20</value>
+      </parameter>
+      <parameter>
+        <name>username</name>
+        <value>dccell</value>
+      </parameter>
+   </ResourceParams>  
+    
+    
+    
+      
+   <Resource name="ResourceOne/DataSource" type="javax.sql.DataSource"/>
+   <ResourceParams name="ResourceOne/DataSource">
+      <parameter>
+        <name>maxWait</name>
+        <value>5000</value>
+      </parameter>
+      <parameter>
+        <name>maxActive</name>
+        <value>40</value>
+      </parameter>
+      <parameter>
+        <name>password</name>
+        <value>rone4</value>
+      </parameter>
+      <parameter>
+        <name>url</name>
+			  <value>jdbc:oracle:thin:@127.0.0.1:1521:IHMIS</value>			
+      </parameter>
+      <parameter>
+        <name>driverClassName</name>
+        <value>oracle.jdbc.OracleDriver</value>
+      </parameter>
+      <parameter>
+        <name>maxIdle</name>
+        <value>20</value>
+      </parameter>
+      <parameter>
+        <name>username</name>
+        <value>rone4</value>
+      </parameter>
+   </ResourceParams>
+   
+   
+   
+   <Resource name="jdbc/DCCELL" type="javax.sql.DataSource"/>
+   <ResourceParams name="jdbc/DCCELL">
+      <parameter>
+        <name>maxWait</name>
+        <value>5000</value>
+      </parameter>
+      <parameter>
+        <name>maxActive</name>
+        <value>40</value>
+      </parameter>
+      <parameter>
+        <name>password</name>
+        <value>dccell</value>
+      </parameter>
+      <parameter>
+        <name>url</name> 			  
+			  <value>jdbc:oracle:thin:@127.0.0.1:1521:IHMIS</value>			
+      </parameter>
+      <parameter>
+        <name>driverClassName</name>
+        <value>oracle.jdbc.OracleDriver</value>
+      </parameter>
+      <parameter>
+        <name>maxIdle</name>
+        <value>20</value>
+      </parameter>
+      <parameter>
+        <name>username</name>
+        <value>dccell</value>
+      </parameter>
+   </ResourceParams>
+   -->
+   
+   
+   
+            
+  <!--
+  <Resource name="jdbc/DCCELL" type="javax.sql.DataSource"/>
+   <ResourceParams name="jdbc/DCCELL">
+      <parameter>
+        <name>maxWait</name>
+        <value>5000</value>
+      </parameter>
+      <parameter>
+        <name>maxActive</name>
+        <value>40</value>
+      </parameter>
+      <parameter>
+        <name>password</name>
+        <value>tso</value>
+      </parameter>
+      <parameter>
+        <name>url</name>
+        <value>jdbc:oracle:thin:@10.188.182.91:1521:tso</value>
+      </parameter>
+      <parameter>
+        <name>driverClassName</name>
+        <value>oracle.jdbc.OracleDriver</value>
+      </parameter>
+      <parameter>
+        <name>maxIdle</name>
+        <value>20</value>
+      </parameter>
+      <parameter>
+        <name>username</name>
+        <value>tso</value>
+      </parameter>
+   </ResourceParams>
+   -->
+      
+ 
+
+      
+  <!--
+  <Resource name="jdbc/DCCELL" type="javax.sql.DataSource"/>
+   <ResourceParams name="jdbc/DCCELL">
+      <parameter>
+        <name>maxWait</name>
+        <value>5000</value>
+      </parameter>
+      <parameter>
+        <name>maxActive</name>
+        <value>40</value>
+      </parameter>
+      <parameter>
+        <name>password</name>
+        <value>dccell</value>
+      </parameter>
+      <parameter>
+        <name>url</name>
+        <value>jdbc:oracle:thin:@10.188.182.91:1521:tso</value>
+      </parameter>
+      <parameter>
+        <name>driverClassName</name>
+        <value>oracle.jdbc.OracleDriver</value>
+      </parameter>
+      <parameter>
+        <name>maxIdle</name>
+        <value>20</value>
+      </parameter>
+      <parameter>
+        <name>username</name>
+        <value>dccell</value>
+      </parameter>
+   </ResourceParams>
+    -->
+ 
+      
+      
+   <!--   
+      
+   <Resource name="jdbc/DCCELL" type="javax.sql.DataSource"/>
+   <ResourceParams name="jdbc/DCCELL">
+      <parameter>
+        <name>maxWait</name>
+        <value>5000</value>
+      </parameter>
+      <parameter>
+        <name>maxActive</name>
+        <value>40</value>
+      </parameter>
+      <parameter>
+        <name>password</name>
+        <value>dccelltest</value>
+      </parameter>
+      <parameter>
+        <name>url</name>
+       <value>jdbc:oracle:thin:@10.188.180.203:1521:CELL</value>
+      </parameter>
+      <parameter>
+        <name>driverClassName</name>
+        <value>oracle.jdbc.OracleDriver</value>
+      </parameter>
+      <parameter>
+        <name>maxIdle</name>
+        <value>20</value>
+      </parameter>
+      <parameter>
+        <name>username</name>
+        <value>dccell</value>
+      </parameter>
+   </ResourceParams>
+      
+      -->
+      
+         
+
+	<!--
+	
+	   <Resource name="jdbc/DCCELL" type="javax.sql.DataSource"/>
+   <ResourceParams name="jdbc/DCCELL">
+      <parameter>
+        <name>maxWait</name>
+        <value>5000</value>
+      </parameter>
+      <parameter>
+        <name>maxActive</name>
+        <value>40</value>
+      </parameter>
+      <parameter>
+        <name>password</name>
+        <value>dccelltest</value>
+      </parameter>
+      <parameter>
+        <name>url</name>
+       <value>jdbc:db2://10.188.180.231:50000/DCCELL</value>
+      </parameter>
+      <parameter>
+        <name>driverClassName</name>
+        <value>com.ibm.db2.jcc.DB2Driver</value>
+      </parameter>
+      <parameter>
+        <name>maxIdle</name>
+        <value>20</value>
+      </parameter>
+      <parameter>
+        <name>username</name>
+        <value>dccell</value>
+      </parameter>
+   </ResourceParams>
+   
+   
+	-->         
+         
+      
+
+  </GlobalNamingResources>    
+
+  <Service name="Catalina">
+    <Connector URIEncoding="GBK" acceptCount="100" connectionTimeout="20000" disableUploadTimeout="true" port="9980" redirectPort="8434">
+
+    </Connector>
+    <Connector port="8019" protocol="AJP/1.3" protocolHandlerClassName="org.apache.jk.server.JkCoyoteHandler" redirectPort="8146">
+    </Connector>
+    <Engine defaultHost="localhost" name="Catalina">
+      <Host appBase="webapps" name="localhost">
+        <Logger className="org.apache.catalina.logger.FileLogger" prefix="localhost_log." suffix=".txt" timestamp="true"/>
+      
+	  
+	  <Context docBase="E:\project\wlsapp\R1Framework-4.1-b20100319" path="/rone4" reloadable="true">
+	     <ResourceLink global="jdbc/RONE4" name="jdbc/RONE4" type="javax.sql.DataSource"/>
+		 <ResourceLink global="ResourceOne/DataSource" name="ResourceOne/DataSource" type="javax.sql.DataSource"/>
+	  </Context>
+	  
+	  <Context docBase="E:\project\ws\ac01_tlcomCellAPI\web" path="/tlcomCellAPI" reloadable="true">
+		<ResourceLink global="jdbc/CELL" name="jdbc/CELL" type="javax.sql.DataSource"/>
+		<ResourceLink global="jdbc/RONE4" name="ResourceOne/DataSource" type="javax.sql.DataSource"/>
+	  </Context>
+	  
+      </Host>
+	  
+	  
+	  <Logger className="org.apache.catalina.logger.FileLogger" prefix="catalina_log." suffix=".txt" timestamp="true"/>
+      <Realm className="org.apache.catalina.realm.UserDatabaseRealm"/>
+    
+    </Engine>
+  </Service>
+</Server>

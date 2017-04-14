@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- The contents of this file will be loaded for each web application --><Context>
+
+		<Resource auth="Container" driverClassName="com.ibm.db2.jcc.DB2Driver" factory="org.apache.commons.dbcp.BasicDataSourceFactory" maxActive="10" name="ResourceOne/DataSource" password="rone4test" type="javax.sql.DataSource" url="jdbc:db2://10.188.180.231:50000/RONE4" username="rone4"/>
+		
+		<Resource auth="Container" driverClassName="com.ibm.db2.jcc.DB2Driver" factory="org.apache.commons.dbcp.BasicDataSourceFactory" maxActive="10" name="jdbc/RONE4" password="rone4test" type="javax.sql.DataSource" url="jdbc:db2://10.188.180.231:50000/RONE4" username="rone4"/>
+ 
+		<Resource auth="Container" driverClassName="com.ibm.db2.jcc.DB2Driver" factory="org.apache.commons.dbcp.BasicDataSourceFactory" maxActive="10" name="jdbc/CELL" password="celltest" type="javax.sql.DataSource" url="jdbc:db2://10.188.180.231:50000/CELL" username="cell"/>
+ 
+ 
+    <!-- Default set of monitored resources -->
+    <WatchedResource>WEB-INF/web.xml</WatchedResource>
+	
+    <!-- Uncomment this to disable session persistence across Tomcat restarts -->
+    <!--
+    <Manager pathname="" />
+    -->
+
+</Context>

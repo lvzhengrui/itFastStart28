@@ -1,0 +1,8 @@
+  <Context path="/rone4" docBase="e:\project\wlsapp\R1Framework-4.1-b20100319\" debug="99" reloadable="true">
+ 
+ 
+   <ResourceLink global="jdbc/RONE4" name="jdbc/RONE4" type="javax.sql.DataSource"/>
+   <ResourceLink global="ResourceOne/DataSource" name="ResourceOne/DataSource" type="javax.sql.DataSource"/>
+  
+</Context>
+
