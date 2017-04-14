@@ -9,6 +9,9 @@ http://blog.csdn.net/u013468917/article/details/51199808
 GraphX中Pregel单源点最短路径
 http://blog.csdn.net/li385805776/article/details/20487219
 
+Google后Hadoop时代的新“三驾马车”——Caffeine、Pregel、Dremel
+http://www.csdn.net/article/2012-08-20/2808870
+
 
 ---------------------------------------
 Pregel模式
