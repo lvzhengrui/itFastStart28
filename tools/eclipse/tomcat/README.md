@@ -1,5 +1,9 @@
 
 
+
+
+
+
 ###eclipseÅäÖÃÏîÄ¿²¿Êğµ½µ½±¾µØtomcat
 
 Ò»¡¢·¢ÏÖÎÊÌâ
@@ -21,7 +25,7 @@ eclipse²»ÏñMyEclipseÄ¬ÈÏ½«ÏîÄ¿²¿Êğµ½tomcat°²×°Ä¿Â¼ÏÂµÄwebappsÖĞ£¬¶øÄ¬ÈÏ²¿Êğµ½¹¤×
 ¢ÙÍ£Ö¹eclipseÄÚµÄTomcat·şÎñÆ÷(stop) 
 ¢ÚÉ¾³ı¸ÃÈİÆ÷ÖĞ²¿ÊğµÄÏîÄ¿(add and remove) 
 ¢ÛÇå³ı¸ÃÈİÆ÷Ïà¹ØÊı¾İ(clean) 
-¢Ü***´ò¿ªtomcatµÄĞŞ¸Ä½çÃæ(open)*** ****moduleÅäÖÃContext°ü****
+¢Ü***´ò¿ªtomcatµÄĞŞ¸Ä½çÃæ(open)£¬ÅäÖÃÆô¶¯¶à¸öÏîÄ¿Ê±£¬ÔÚmoduleÅäÖÃContext°ü****
 ¢İÕÒµ½servers location£¬Ñ¡ÔñµÚ¶ş¸ö(User tomcat Installation) 
 ¢ŞĞŞ¸Ädeploy pathÎªwebapps 
 ¢ß±£´æ¹Ø±Õ
