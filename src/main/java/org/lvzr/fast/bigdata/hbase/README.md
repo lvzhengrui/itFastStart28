@@ -5,3 +5,135 @@ HBaseÊÇÒ»¸öÕë¶Ô½á¹¹»¯Êı¾İµÄ¿ÉÉìËõ¡¢¸ß¿É¿¿¡¢¸ßĞÔÄÜ¡¢·Ö²¼Ê½ºÍÃæÏòÁĞµÄ¶¯Ì¬Ä£Ê½Êı¾İ¿
 HBaseÖĞ±£´æµÄÊı¾İ¿ÉÒÔÊ¹ÓÃMapReduceÀ´´¦Àí£¬Ëü½«Êı¾İ´æ´¢ºÍ²¢ĞĞ¼ÆËãÍêÃÀµØ½áºÏÔÚÒ»Æğ¡£
 Êı¾İÄ£ĞÍ£ºSchema-->Table-->Column Family-->Column-->RowKey-->TimeStamp-->Value
 
+------------------------------------------
+###ÉîÈëHBase¼Ü¹¹½âÎö£¨Ò»£©
+http://www.blogjava.net/DLevin/archive/2015/08/22/426877.html
+ 
+###hbase Ñ§Ï°±Ê¼ÇÒ»---»ù±¾¸ÅÄî
+http://blog.csdn.net/zhouleilei/article/details/12653243
+
+
+---------------------------------------------------
+###Apache HBase 2015Äê·¢Õ¹»Ø¹ËÓëÎ´À´Õ¹Íû
+http://chuansong.me/n/2112995
+
+ÔÚ HBase ÖĞ£¬Table ±»ºáÏò»®·ÖÎª Region£¬ËüÊÇÒ»¶ÎÊı¾İµÄ¹ÜÀíÕß£¬Region ±»·Ö·¢µ½ RegionServer ÉÏ½øĞĞ¹ÜÀí£¬
+Ò»¸ö Region Ö»±»Ò»¸ö RegionServer ¹ÜÀí£¬ËüµÄÊı¾İ´æ´¢ÔÚ HDFS ÉÏ£¬ÊÇ¿ÉÒÔÓĞ¶à¸ö¸±±¾µÄ¡£
+
+Ò²¾ÍÊÇËµ£º¹ÜÀíÕß (Region) Ö»ÓĞÒ»¸ö£¬Êı¾İÓĞ¶à¸ö¸±±¾¡£
+
+HBase µÄÒÔÇ°ÊµÏÖHbase0.8ÖĞ£¬µ±Ò»Ì¨ RegionServer ²»¿ÉÓÃÊ±£¬ĞèÒªÊıÊ®ÃëÉõÖÁÊı·ÖÖÓ²Å¿ÉÒÔÍê³É·¢ÏÖºÍ»Ö¸´¹¤×÷£¬ÔÚÕâ¶ÎÊ±¼äÄÚ£¬
+ÕâÌ¨ RegionServer ÉÏµÄ Region ÊÇ²»¿ÉÓÃµÄ¡£µ±Ò»¸ö Region ²»¿ÉÓÃÊ±£¬ËüĞèÒªÒ»¶ÎÊ±¼ä²Å¿ÉÒÔ±»ÆäËû RegionServer ½Ó¹Ü¡£
+
+ÔÚ×îĞÂHbase1.0µÄÊµÏÖÖĞ£¬Ò»¸ö Region ¿ÉÒÔÓĞ¶à¸ö¸±±¾£¨Region ÊÇÊı¾İµÄ¹ÜÀíÕß£¬ÊÇÊµ¼ÊÊı¾İµÄ³éÏó£©£¬·Ö²¼ÔÚ¶à¸ö RegionServer ÉÏ¡£
+
+ 
+
+ 
+------------------------------------------
+###ÆäÖĞHMaster½ÚµãÓÃÓÚ£º
+¹ÜÀíHRegionServer£¬ÊµÏÖÆä¸ºÔØ¾ùºâ¡£
+¹ÜÀíºÍ·ÖÅäHRegion£¬±ÈÈçÔÚHRegion splitÊ±·ÖÅäĞÂµÄHRegion£»ÔÚHRegionServerÍË³öÊ±Ç¨ÒÆÆäÄÚµÄHRegionµ½ÆäËûHRegionServerÉÏ¡£
+ÊµÏÖDDL²Ù×÷£¨Data Definition Language£¬namespaceºÍtableµÄÔöÉ¾¸Ä£¬column familiyµÄÔöÉ¾¸ÄµÈ£©¡£
+¹ÜÀínamespaceºÍtableµÄÔªÊı¾İ£¨Êµ¼Ê´æ´¢ÔÚHDFSÉÏ£©¡£
+È¨ÏŞ¿ØÖÆ£¨ACL£©¡£
+
+###HRegionServer½ÚµãÓÃÓÚ£º
+´æ·ÅºÍ¹ÜÀí±¾µØHRegion¡£
+¶ÁĞ´HDFS£¬¹ÜÀíTableÖĞµÄÊı¾İ¡£
+ClientÖ±½ÓÍ¨¹ıHRegionServer¶ÁĞ´Êı¾İ£¨´ÓHMasterÖĞ»ñÈ¡ÔªÊı¾İ£¬ÕÒµ½RowKeyËùÔÚµÄHRegion/HRegionServerºó£©¡£
+
+###ZooKeeper¼¯ÈºÊÇĞ­µ÷ÏµÍ³£¬ÓÃÓÚ£º
+´æ·ÅÕû¸ö HBase¼¯ÈºµÄÔªÊı¾İÒÔ¼°¼¯ÈºµÄ×´Ì¬ĞÅÏ¢¡£
+ÊµÏÖHMasterÖ÷´Ó½ÚµãµÄfailover¡£
+
+HBase ClientÍ¨¹ıRPC·½Ê½ºÍHMaster¡¢HRegionServerÍ¨ĞÅ£»Ò»¸öHRegionServer¿ÉÒÔ´æ·Å1000¸öHRegion£»µ×²ãTableÊı¾İ´æ´¢ÓÚHDFSÖĞ£¬
+¶øHRegionËù´¦ÀíµÄÊı¾İ¾¡Á¿ºÍÊı¾İËùÔÚµÄDataNodeÔÚÒ»Æğ£¬ÊµÏÖÊı¾İµÄ±¾µØ»¯£»Êı¾İ±¾µØ»¯²¢²»ÊÇ×ÜÄÜÊµÏÖ£¬±ÈÈçÔÚHRegionÒÆ¶¯(ÈçÒòSplit)Ê±£¬
+ĞèÒªµÈÏÂÒ»´ÎCompact²ÅÄÜ¼ÌĞø»Øµ½±¾µØ»¯¡£
+
+
+Õâ¸ö¼Ü¹¹Í¼±È½ÏÇåÎúµÄ±í´ïÁËHMasterºÍNameNode¶¼Ö§³Ö¶à¸öÈÈ±¸·İ£¬Ê¹ÓÃZooKeeperÀ´×öĞ­µ÷£»ZooKeeper²¢²»ÊÇÔÆ°ãÉñÃØ£¬
+ËüÒ»°ãÓÉÈıÌ¨»úÆ÷×é³ÉÒ»¸ö¼¯Èº£¬ÄÚ²¿Ê¹ÓÃPAXOSËã·¨Ö§³ÖÈıÌ¨ServerÖĞµÄÒ»Ì¨å´»ú£¬Ò²ÓĞÊ¹ÓÃÎåÌ¨»úÆ÷µÄ£¬´ËÊ±Ôò¿ÉÒÔÖ§³ÖÍ¬
+Ê±Á½Ì¨å´»ú£¬¼ÈÉÙÓÚ°ëÊıµÄå´»ú£¬È»¶øËæ×Å»úÆ÷µÄÔö¼Ó£¬ËüµÄĞÔÄÜÒ²»áÏÂ½µ£»RegionServerºÍDataNodeÒ»°ã»á·ÅÔÚÏàÍ¬µÄServerÉÏÊµÏÖÊı¾İµÄ±¾µØ»¯¡£
+
+-------------------------------------
+###HRegion
+HBaseÊ¹ÓÃRowKey½«±íË®Æ½ÇĞ¸î³É¶à¸öHRegion£¬***´ÓHMasterµÄ½Ç¶È£¬Ã¿¸öHRegion¶¼¼ÍÂ¼ÁËËüµÄStartKeyºÍEndKey***
+£¨µÚÒ»¸öHRegionµÄStartKeyÎª¿Õ£¬×îºóÒ»¸öHRegionµÄEndKeyÎª¿Õ£©£¬ÓÉÓÚRowKeyÊÇÅÅĞòµÄ£¬Òò¶øClient¿ÉÒÔÍ¨¹ıHMaster¿ìËÙµÄ¶¨Î»Ã¿¸öRowKeyÔÚÄÄ¸öHRegionÖĞ
+¡£***HRegionÓÉHMaster·ÖÅäµ½ÏàÓ¦µÄHRegionServerÖĞ***£¬È»ºóÓÉHRegionServer¸ºÔğHRegionµÄÆô¶¯ºÍ¹ÜÀí£¬ºÍClientµÄÍ¨ĞÅ£¬
+¸ºÔğÊı¾İµÄ¶Á(Ê¹ÓÃHDFS)¡£Ã¿¸öHRegionServer¿ÉÒÔÍ¬Ê±¹ÜÀí1000¸ö×óÓÒµÄHRegion£¨Õâ¸öÊı×ÖÔõÃ´À´µÄ£¿Ã»ÓĞ´Ó´úÂëÖĞ¿´µ½ÏŞÖÆ£¬
+ÄÑµÀÊÇ³öÓÚ¾­Ñé£¿³¬¹ı1000¸ö»áÒıÆğĞÔÄÜÎÊÌâ£¿À´»Ø´ğÕâ¸öÎÊÌâ£º¸Ğ¾õÕâ¸ö1000µÄÊı×ÖÊÇ´ÓBigTableµÄÂÛÎÄÖĞÀ´µÄ£¨5 Implementation½Ú£©£º
+Each tablet server manages a set of tablets(typically we have somewhere between ten to a thousand tablets per tablet server)£©¡£
+
+
+###HMaster
+***HMasterÃ»ÓĞµ¥µã¹ÊÕÏÎÊÌâ£¬¿ÉÒÔÆô¶¯¶à¸öHMaster£¬Í¨¹ıZooKeeperµÄMaster Election»úÖÆ±£Ö¤Í¬Ê±Ö»ÓĞÒ»¸öHMaster³öÓÚActive×´Ì¬***£¬
+ÆäËûµÄHMasterÔò´¦ÓÚÈÈ±¸·İ×´Ì¬¡£Ò»°ãÇé¿öÏÂ»áÆô¶¯Á½¸öHMaster£¬·ÇActiveµÄHMaster»á¶¨ÆÚµÄºÍActive HMasterÍ¨ĞÅÒÔ»ñÈ¡Æä×îĞÂ×´Ì¬£¬
+´Ó¶ø±£Ö¤ËüÊÇÊµÊ±¸üĞÂµÄ£¬Òò¶øÈç¹ûÆô¶¯ÁË¶à¸öHMaster·´¶øÔö¼ÓÁËActive HMasterµÄ¸ºµ£¡£Ç°ÎÄÒÑ¾­½éÉÜ¹ıÁËHMasterµÄÖ÷ÒªÓÃÓÚHRegionµÄ·ÖÅäºÍ
+¹ÜÀí£¬DDL(Data Definition Language£¬¼ÈTableµÄĞÂ½¨¡¢É¾³ı¡¢ĞŞ¸ÄµÈ)µÄÊµÏÖµÈ£¬¼ÈËüÖ÷ÒªÓĞÁ½·½ÃæµÄÖ°Ôğ£º
+Ğ­µ÷HRegionServer
+	Æô¶¯Ê±HRegionµÄ·ÖÅä£¬ÒÔ¼°¸ºÔØ¾ùºâºÍĞŞ¸´Ê±HRegionµÄÖØĞÂ·ÖÅä¡£
+	¼à¿Ø¼¯ÈºÖĞËùÓĞHRegionServerµÄ×´Ì¬(Í¨¹ıHeartbeatºÍ¼àÌıZooKeeperÖĞµÄ×´Ì¬)¡£
+AdminÖ°ÄÜ
+	´´½¨¡¢É¾³ı¡¢ĞŞ¸ÄTableµÄ¶¨Òå¡£
+
+
+###ZooKeeper£ºĞ­µ÷Õß
+ZooKeeperÎªHBase¼¯ÈºÌá¹©Ğ­µ÷·şÎñ£¬Ëü***¹ÜÀí×ÅHMasterºÍHRegionServerµÄ×´Ì¬(available/aliveµÈ)£¬²¢ÇÒ»áÔÚËüÃÇå´»úÊ±Í¨Öª¸øHMaster***£¬
+´Ó¶øHMaster¿ÉÒÔÊµÏÖHMasterÖ®¼äµÄfailover£¬»ò¶Ôå´»úµÄHRegionServerÖĞµÄHRegion¼¯ºÏµÄĞŞ¸´(½«ËüÃÇ·ÖÅä¸øÆäËûµÄHRegionServer)¡£
+ZooKeeper¼¯Èº±¾ÉíÊ¹ÓÃÒ»ÖÂĞÔĞ­Òé(PAXOSĞ­Òé)±£Ö¤Ã¿¸ö½Úµã×´Ì¬µÄÒ»ÖÂĞÔ¡£
+
+--------------------------------------------
+###¿Í»§¶ËÔÚµÚÒ»´Î·ÃÎÊÓÃ»§TableµÄÁ÷³Ì
+´ÓZooKeeper(/hbase/meta-region-server)ÖĞ»ñÈ¡hbase:metaµÄÎ»ÖÃ£¨HRegionServerµÄÎ»ÖÃ£©£¬»º´æ¸ÃÎ»ÖÃĞÅÏ¢¡£
+´ÓHRegionServerÖĞ²éÑ¯ÓÃ»§Table¶ÔÓ¦ÇëÇóµÄRowKeyËùÔÚµÄHRegionServer£¬»º´æ¸ÃÎ»ÖÃĞÅÏ¢¡£
+´Ó²éÑ¯µ½HRegionServerÖĞ¶ÁÈ¡Row¡£
+
+---------------------------------------------
+###HRegionServerÏê½â
+HRegionÊÇÒ»¸öTableÖĞµÄÒ»¸öRegionÔÚÒ»¸öHRegionServerÖĞµÄ±í´ï¡£Ò»¸öTable¿ÉÒÔÓĞÒ»¸ö»ò¶à¸öRegion£¬ËûÃÇ¿ÉÒÔÔÚÒ»¸ö
+ÏàÍ¬µÄHRegionServerÉÏ£¬Ò²¿ÉÒÔ·Ö²¼ÔÚ²»Í¬µÄHRegionServerÉÏ£¬Ò»¸öHRegionServer¿ÉÒÔÓĞ¶à¸öHRegion£¬ËûÃÇ·Ö±ğÊôÓÚ
+²»Í¬µÄTable¡£****HRegionÓÉ¶à¸öStore(HStore)¹¹³É£¬Ã¿¸öHStore¶ÔÓ¦ÁËÒ»¸öTableÔÚÕâ¸öHRegionÖĞµÄÒ»¸öColumn Family****£¬¼´
+Ã¿¸öColumn Family¾ÍÊÇÒ»¸ö¼¯ÖĞµÄ´æ´¢µ¥Ôª£¬Òò¶ø×îºÃ½«¾ßÓĞÏà½üIOÌØĞÔµÄColumn´æ´¢ÔÚÒ»¸öColumn Family£¬ÒÔÊµÏÖ¸ßĞ§¶Á
+È¡(Êı¾İ¾Ö²¿ĞÔÔ­Àí£¬¿ÉÒÔÌá¸ß»º´æµÄÃüÖĞÂÊ)¡£***HStoreÊÇHBaseÖĞ´æ´¢µÄºËĞÄ£¬ËüÊµÏÖÁË¶ÁĞ´HDFS¹¦ÄÜ£¬Ò»¸öHStoreÓÉÒ»¸öMemStore ºÍ0¸ö»ò¶à¸öStoreFile×é³É***¡£
+MemStoreÊÇÒ»¸öĞ´»º´æ(In Memory Sorted Buffer)£¬ËùÓĞÊı¾İµÄĞ´ÔÚÍê³ÉWALÈÕÖ¾Ğ´ºó£¬»á Ğ´ÈëMemStoreÖĞ£¬ÓÉMemStore¸ù
+¾İÒ»¶¨µÄËã·¨½«Êı¾İFlushµ½µØ²ãHDFSÎÄ¼şÖĞ(HFile)£¬Í¨³£Ã¿¸öHRegionÖĞµÄÃ¿¸ö Column FamilyÓĞÒ»¸ö×Ô¼ºµÄMemStore¡£
+HFile(StoreFile) ÓÃÓÚ´æ´¢HBaseµÄÊı¾İ(Cell/KeyValue)¡£ÔÚHFileÖĞµÄÊı¾İÊÇ°´RowKey¡¢Column Family¡¢ColumnÅÅĞò£¬¶ÔÏà
+Í¬µÄCell(¼´ÕâÈı¸öÖµ¶¼Ò»Ñù)£¬Ôò°´timestampµ¹ĞòÅÅÁĞ¡£
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
