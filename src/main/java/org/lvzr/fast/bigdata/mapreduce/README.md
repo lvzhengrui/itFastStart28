@@ -9,10 +9,12 @@ Map Task：解析每条数据记录，传递给用户编写的map(),并执行，将输出结果写入本地磁盘
 Reducer Task：从Map Task的执行结果中，远程读取输入数据，对数据进行排序，将数据按照分组传递给用户编写的reduce函数执行。
 
 
-MapReduce处理流程
-http://www.toutiao.com/i6409526349823738369/?tt_from=weixin&utm_campaign=client_share&from=singlemessage&app=news_article&utm_source=weixin&isappinstalled=1&iid=7841861916&utm_medium=toutiao_ios&wxshare_count=2&pbid=41749390721
 
 --------------------------------------------
+###MapReduce处理流程
+http://www.toutiao.com/i6409526349823738369/?tt_from=weixin&utm_campaign=client_share&from=singlemessage&app=news_article&utm_source=weixin&isappinstalled=1&iid=7841861916&utm_medium=toutiao_ios&wxshare_count=2&pbid=41749390721
+
+
 ###yarn组件
 YARN是Hadoop2.x框架下的资源管理系统，其组成部分为：
 1）全局资源管理器（global resource manager）：整个系统的资源管理和调配。
