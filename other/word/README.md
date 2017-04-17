@@ -12,5 +12,6 @@ http://www.36dsj.com/archives/24325
 熵
 信息增益
 PAXOS协议（ZooKeeper集群本身使用一致性协议(PAXOS协议)保证每个节点状态的一致性）
+区块链技术
 
 
