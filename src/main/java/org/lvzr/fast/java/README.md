@@ -5,3 +5,7 @@ VectorÓëArrayListÒ»Ñù£¬Ò²ÊÇÍ¨¹ıÊı×éÊµÏÖµÄ£¬²»Í¬µÄÊÇËüÖ§³ÖÏß³ÌµÄÍ¬²½£¬¼´Ä³Ò»Ê±¿ÌÖ
 ±ÜÃâ¶àÏß³ÌÍ¬Ê±Ğ´¶øÒıÆğµÄ²»Ò»ÖÂĞÔ£¬µ«ÊµÏÖÍ¬²½ĞèÒªºÜ¸ßµÄ»¨·Ñ£¬Òò´Ë£¬·ÃÎÊËü±È·ÃÎÊArrayListÂı¡£
 
 
+###Ê¹ÓÃJavaĞòÁĞ»¯°Ñ¶ÔÏó´æ´¢µ½ÎÄ¼şÖĞ£¬ObjectOutputStreamºÍObjectInputStreamÀ´½øĞĞ¶ÔÏóµÄ¶ÁÈ¡
+http://blog.csdn.net/it_wangxiangpan/article/details/5781941
+
+
