@@ -1,5 +1,10 @@
 
 
+###强烈推荐电子书
+《大型网站系统与JAVA中间件实践》
+
+
+
 ###Vector
 Vector与ArrayList一样，也是通过数组实现的，不同的是它支持线程的同步，即某一时刻只有一个线程能够写Vector，
 避免多线程同时写而引起的不一致性，但实现同步需要很高的花费，因此，访问它比访问ArrayList慢。
@@ -13,6 +18,18 @@ http://blog.csdn.net/it_wangxiangpan/article/details/5781941
 一个定义为volatile的变量是说这变量可能会被意想不到地改变，这样，编译器就不会去假设这个变量的值了。精确地说就是，
 优化器在用到这个变量时必须每次都小心地重新读取这个变量的值，而不是使用保存在寄存器里的备份
 
+
+###lvs、haproxy、nginx 负载均衡的比较分析
+http://blog.csdn.net/gzh0222/article/details/8540604
+
+###LVS：三种负载均衡方式比较
+http://soft.chinabyte.com/25/13169025.shtml
+
+
+###线程、进程、分布锁
+
+
+###字节码增强
 
 
 
