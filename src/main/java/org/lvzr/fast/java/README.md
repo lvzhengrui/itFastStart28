@@ -2,6 +2,7 @@
 
 ###强烈推荐电子书
 《大型网站系统与JAVA中间件实践》
+http://download.csdn.net/detail/yangle20081982/8863423
 
 
 
@@ -29,7 +30,7 @@ http://soft.chinabyte.com/25/13169025.shtml
 ###线程、进程、分布锁
 
 
-###字节码增强
+###动态代理、反射、字节码增强
 
 
 
