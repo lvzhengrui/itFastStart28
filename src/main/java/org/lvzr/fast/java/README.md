@@ -9,5 +9,10 @@ VectorÓëArrayListÒ»Ñù£¬Ò²ÊÇÍ¨¹ýÊý×éÊµÏÖµÄ£¬²»Í¬µÄÊÇËüÖ§³ÖÏß³ÌµÄÍ¬²½£¬¼´Ä³Ò»Ê±¿ÌÖ
 http://blog.csdn.net/it_wangxiangpan/article/details/5781941
 
 
+###volatile
+Ò»¸ö¶¨ÒåÎªvolatileµÄ±äÁ¿ÊÇËµÕâ±äÁ¿¿ÉÄÜ»á±»ÒâÏë²»µ½µØ¸Ä±ä£¬ÕâÑù£¬±àÒëÆ÷¾Í²»»áÈ¥¼ÙÉèÕâ¸ö±äÁ¿µÄÖµÁË¡£¾«È·µØËµ¾ÍÊÇ£¬
+ÓÅ»¯Æ÷ÔÚÓÃµ½Õâ¸ö±äÁ¿Ê±±ØÐëÃ¿´Î¶¼Ð¡ÐÄµØÖØÐÂ¶ÁÈ¡Õâ¸ö±äÁ¿µÄÖµ£¬¶ø²»ÊÇÊ¹ÓÃ±£´æÔÚ¼Ä´æÆ÷ÀïµÄ±¸·Ý
+
+
 
 
