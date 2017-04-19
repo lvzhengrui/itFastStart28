@@ -1,17 +1,26 @@
 
 
 ###推荐电子书
+《淘宝技术这十年》
+http://download.csdn.net/detail/eastmount/8770187
+
 《架构探险 从零开始写javaweb框架》
 http://download.csdn.net/download/laoge/9447089
 
 《大型网站系统与JAVA中间件实践》
 http://download.csdn.net/detail/yangle20081982/8863423
 
-《淘宝技术这十年》
-http://download.csdn.net/detail/eastmount/8770187
 
 
 --------------------------------------------------------------
+
+###ClassLoader类加载机制
+p112
+p128 funture
+p152 分布式事务
+
+
+
 
 ###泛型
 http://www.cnblogs.com/lzq198754/p/5780426.html
