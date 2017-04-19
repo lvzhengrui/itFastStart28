@@ -4,11 +4,17 @@
 《架构探险 从零开始写javaweb框架》
 http://download.csdn.net/download/laoge/9447089
 
-
 《大型网站系统与JAVA中间件实践》
 http://download.csdn.net/detail/yangle20081982/8863423
 
 
+###Java正则表达式的语法与示例
+http://www.cnblogs.com/lzq198754/p/5780340.html
+
+
+###泛型
+http://www.cnblogs.com/lzq198754/p/5780426.html
+http://blog.csdn.net/yangguanghaozi/article/details/54632477
 
 
 ###Vector
@@ -35,7 +41,7 @@ http://soft.chinabyte.com/25/13169025.shtml
 ###线程、进程、分布锁
 
 
-###动态代理、反射、字节码增强
+###动态代理、反射、字节码增强asm/cglib
 
 
 
