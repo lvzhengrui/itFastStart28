@@ -7,10 +7,11 @@ http://download.csdn.net/download/laoge/9447089
 《大型网站系统与JAVA中间件实践》
 http://download.csdn.net/detail/yangle20081982/8863423
 
+《淘宝技术这十年》
+http://download.csdn.net/detail/eastmount/8770187
 
-###Java正则表达式的语法与示例
-http://www.cnblogs.com/lzq198754/p/5780340.html
 
+--------------------------------------------------------------
 
 ###泛型
 http://www.cnblogs.com/lzq198754/p/5780426.html
