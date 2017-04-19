@@ -1,8 +1,13 @@
 
 
-###强烈推荐电子书
+###推荐电子书
+《架构探险 从零开始写javaweb框架》
+http://download.csdn.net/download/laoge/9447089
+
+
 《大型网站系统与JAVA中间件实践》
 http://download.csdn.net/detail/yangle20081982/8863423
+
 
 
 
