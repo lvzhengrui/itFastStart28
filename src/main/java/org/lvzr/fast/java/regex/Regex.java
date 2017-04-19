@@ -111,6 +111,7 @@ public class Regex {
 		Assert.assertFalse(Pattern.compile("[^scf]")
 				.matcher("s")
 				.matches());
+ 
 		
 		// \d限定数值类型
 		Assert.assertTrue(Pattern.compile("\\d")
@@ -260,9 +261,34 @@ public class Regex {
 				.matcher("aa")
 				.matches());
 		
+		// (?:)、(?=)、(?<=)、(?!)、(?<!)
 		
+		// (?:)不返匹配结果
+		Assert.assertTrue(Pattern.compile("industry|industries")
+				.matcher("industry")
+				.matches());
+		Assert.assertTrue(Pattern.compile("industry|industries")
+				.matcher("industries")
+				.matches());
 		
-		//$
+		Assert.assertFalse(Pattern.compile("industry|industries")
+				.matcher("industr")
+				.matches());
+		
+		Assert.assertTrue(Pattern.compile("industr(?:y|ies)")
+				.matcher("industry")
+				.matches());
+		Assert.assertTrue(Pattern.compile("industr(?:y|ies)")
+				.matcher("industries")
+				.matches());
+		
+		Assert.assertTrue(Pattern.compile("industr(y|ies)")
+				.matcher("industry")
+				.matches());
+		Assert.assertFalse(Pattern.compile("industr(y|ies)")
+				.matcher("industrx")
+				.matches());
+  
 
 		// \w等价于任何单词字符[A-Za-z0-9_]  \W等价于任何非单词字符[^A-Za-z0-9_]
 
