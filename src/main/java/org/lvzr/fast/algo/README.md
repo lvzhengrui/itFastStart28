@@ -35,6 +35,10 @@ http://www.cnblogs.com/netfocus/p/3622184.html#tt_daymode=1&tt_font=m
 http://baike.baidu.com/link?url=K5wQkUPA1aUoaMOAMWVmZeZT1HWQ9IDeGmpYFMrqzxiBPD_jTJ1FGNn54J1z7UMVxC7u24yJMyfLii2KeAdmYCeOrxfDYRJBD4JOyzjVUBoAOKRmh3pVUxYvycwThiwI
 
 
+###vector clock
+对每一份数据都加上<修改者，版本号>
+
+
 
 
 

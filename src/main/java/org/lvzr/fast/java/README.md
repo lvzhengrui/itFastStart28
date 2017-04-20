@@ -11,6 +11,14 @@ http://download.csdn.net/download/laoge/9447089
 http://download.csdn.net/detail/yangle20081982/8863423
 
 
+###XA分布式事务协议
+
+
+
+
+###阿里的java架构历史
+https://wenku.baidu.com/view/c63c606510661ed9ad51f363.html
+
 
 --------------------------------------------------------------
 
