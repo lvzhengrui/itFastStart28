@@ -30,6 +30,8 @@ p152 分布式事务
 #transient
 修饰不被序列化的属性
 
+###ConcurrentMap.putIfAbsent(key,value) 用法讨论
+http://wxl24life.iteye.com/blog/1746794
 
 
 ###泛型
