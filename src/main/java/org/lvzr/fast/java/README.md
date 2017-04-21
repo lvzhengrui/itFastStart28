@@ -27,6 +27,8 @@ p112
 p128 funture
 p152 分布式事务
 
+#transient
+修饰不被序列化的属性
 
 
 
