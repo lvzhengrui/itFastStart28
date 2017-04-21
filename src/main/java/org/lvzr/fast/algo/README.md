@@ -22,9 +22,7 @@ epoch号可采用高位时间戳+低位机器IP组成，保存全局唯一，而且递增
 2. 新(大)的epochNo到了之后，旧(小)的就不再生效，它所有的请求都会被拒绝
 3. 新(epochNo大)的Proposal, 要认可旧值，帮助促成旧值达到一致
 
-
  
-
 
 ###分布式系统之Quorum （NRW）算法
 http://www.cnblogs.com/netfocus/p/3622184.html#tt_daymode=1&tt_font=m
@@ -37,6 +35,12 @@ http://baike.baidu.com/link?url=K5wQkUPA1aUoaMOAMWVmZeZT1HWQ9IDeGmpYFMrqzxiBPD_j
 
 ###vector clock
 对每一份数据都加上<修改者，版本号>
+
+
+###五分钟理解一致性哈希算法(consistent hashing)
+http://blog.csdn.net/cywosp/article/details/23397179/
+
+
 
 
 

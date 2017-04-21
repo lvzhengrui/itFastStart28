@@ -66,4 +66,9 @@ http://soft.chinabyte.com/25/13169025.shtml
 ###动态代理、反射、字节码增强asm/cglib
 
 
+###写给分布式神器fourinone
+《大规模分布式系统架构与设计实战》
+https://www.oschina.net/question/923302_153907
+
+
 

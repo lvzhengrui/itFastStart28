@@ -19,4 +19,8 @@ jdk动态代理创建速度快，运行慢
 
 ##AspectJ
 
+##spring rmi&spring cloud
+
+
+
 
