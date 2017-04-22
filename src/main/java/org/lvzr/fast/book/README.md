@@ -1,4 +1,15 @@
 
+阿里巴巴集团技术丛书
+
+亿级流量网站架构核心技术
+尽在双11
+秒杀系统架构分析与实战
+大数据是这样计算的:XLab实例入门
+
+http://blog.csdn.net/u012515285/article/details/51395055
+http://www.kuqin.com/shuoit/20141203/343669.html
+
+
 
 ###淘宝大牛推荐阅读的书籍
 http://cardyn.iteye.com/blog/820665
