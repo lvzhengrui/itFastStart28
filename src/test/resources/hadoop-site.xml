@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<configuration>
+	<property>
+		<name>fs.defaultFS</name>
+		<value>hdfs://192.168.91.133:9000</value>
+	</property>
+	<property>
+		<name>hadoop.job.ugi</name>
+		<value>hadoop-user,hadoop-user</value>
+	</property>
+</configuration>
+    

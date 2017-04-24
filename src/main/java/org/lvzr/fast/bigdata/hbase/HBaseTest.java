@@ -3,12 +3,9 @@ package org.lvzr.fast.bigdata.hbase;
 import java.io.IOException;
 
 import org.apache.hadoop.conf.Configuration;
-import org.apache.hadoop.hbase.Cell;
-import org.apache.hadoop.hbase.CellUtil;
 import org.apache.hadoop.hbase.HBaseConfiguration;
 import org.apache.hadoop.hbase.HColumnDescriptor;
 import org.apache.hadoop.hbase.HTableDescriptor;
-import org.apache.hadoop.hbase.TableName;
 import org.apache.hadoop.hbase.client.HBaseAdmin;
 import org.apache.hadoop.hbase.client.HTable;
 import org.apache.hadoop.hbase.client.Put;
@@ -26,7 +23,8 @@ public class HBaseTest {
         cfg.addResource("hbase-site.xml");
     }
     
- 	public static void create(String tableName, String columnFamily) throws Exception{
+	//通过HBaseAdmin HTableDescriptor来创建一个新表
+	public static void create(String tableName, String columnFamily) throws Exception{
 		HBaseAdmin admin = new HBaseAdmin(cfg);
 		if(admin.tableExists(tableName)){
 			System.out.println("Table exist");
@@ -40,7 +38,8 @@ public class HBaseTest {
 		}
 	}
 	
- 	public static void put(String tableName,String row,String columnFamily,String column,String data) throws IOException{
+	//添加一条数据，通过HTable Put为已存在的表添加数据
+	public static void put(String tableName,String row,String columnFamily,String column,String data) throws IOException{
 		HTable table = new HTable(cfg, tableName);
 		Put put = new Put(Bytes.toBytes(row));
 		put.add(Bytes.toBytes(columnFamily),Bytes.toBytes(column),Bytes.toBytes(data));
@@ -48,14 +47,16 @@ public class HBaseTest {
 		System.out.println("put success");
 	}
 	
- 	public static void get(String tableName,String row) throws IOException{
+	//获取tableName表里列为row的结果集
+	public static void get(String tableName,String row) throws IOException{
 		HTable table = new HTable(cfg, tableName);
 		Get get = new Get(Bytes.toBytes(row));
 		Result result = table.get(get);
 		System.out.println("get "+ result);	
 	}
 	
- 	public static void scan (String tableName) throws IOException{
+	//通过HTable Scan来获取tableName表的所有数据信息
+	public static void scan (String tableName) throws IOException{
 		HTable table = new HTable(cfg, tableName);
 		Scan scan = new Scan();
 		ResultScanner resultScanner = table.getScanner(scan);
@@ -91,7 +92,7 @@ public class HBaseTest {
 			//if(HBaseTest.delete(tableName)==true){
 			//	System.out.println("delete table "+ tableName+"success");
 			//}
- 
+			
 		} catch (Exception e) {
 			// TODO: handle exception
 			e.printStackTrace();
