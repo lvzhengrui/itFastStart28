@@ -1,3 +1,94 @@
+
+
+
+###配置
+HBASE_HOME=E:\开源项目\bigdata\hbase-1.3.1
+Path=%HBASE_HOME%\bin
+echo %HBASE_HOME%
+
+###启停命令
+cd E:\开源项目\bigdata\hbase-1.3.1\bin
+bin>start-hbase
+bin>stop-hbase
+
+启动hbase，自动在hadoop中创建hbase.rootdir目录
+bin>hadoop fs -ls /
+
+
+###前台页面
+http://127.0.0.1:16010/
+
+###常用shell命令
+bin>hbase shell
+
+查看表
+bin>list
+
+删除表
+bin>disable 't1'
+bin>drop 't1'
+
+查看表结构
+bin>describe 't1'
+
+查看表数据
+bin>scan 'hbase:meta'
+
+创建表和列族
+bin>create 't1','f1','f2'
+
+增加列族
+bin>alter 't1','f3','f4'
+
+操作数据
+bin>put 't1','r1','f1:c1','value0'
+bin>get 't1','r1'
+bin>get 't1','r1','f1'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------------------------
 源自Google的Bigtable论文，发表于2006年11月，HBase是Google Bigtable克隆版
 HBase是一个针对结构化数据的可伸缩、高可靠、高性能、分布式和面向列的动态模式数据库。
 和传统关系数据库不同，HBase采用了BigTable的数据模型：增强的稀疏排序映射表（Key/Value），
