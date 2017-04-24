@@ -1,5 +1,26 @@
 ###命令
 
+telnet 127.0.0.1 11211
+
+memcached.exe -d install 安装memcached服务
+memcached -d start 启动memcached服务
+
+memcached -d uninstall 卸载memcached服
+memcached -d restart 重起memcached服务
+memcached -d stop|shutdown 关闭正在运行的memcached服务
+memcached -p 监听的端口
+memcached -l 连接的IP地址, 默认是本机
+memcached -u 以的身份运行 (仅在以root运行的时候有效
+memcached -m 最大内存使用，单位MB。默认64M
+memcached -M 内存耗尽时返回错误，而不是删除
+memcached -c 最大同时连接数，默认是102
+memcached -f 块大小增长因子，默认是1.2
+memcached -n 最小分配空间，key+value+flags默认是4
+memcached -h 显示帮助
+  
+netstat -an
+  
+
 
 ###memcached简介
 一、 概念

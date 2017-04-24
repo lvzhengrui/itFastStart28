@@ -1,4 +1,4 @@
-package org.lvzr.fast.nosql.redis.simple;
+package org.lvzr.fast.nosql.redis;
 
 import java.io.IOException;
 import java.util.Properties;
