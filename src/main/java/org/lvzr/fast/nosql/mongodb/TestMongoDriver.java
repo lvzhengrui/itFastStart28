@@ -9,6 +9,8 @@ import com.mongodb.DBObject;
 import com.mongodb.Mongo;
 import com.mongodb.util.JSON;
 
+import junit.framework.Assert;
+
 import java.net.UnknownHostException;
 import java.util.Calendar;
 import java.util.Date;
@@ -27,14 +29,14 @@ public class TestMongoDriver {
  		
           //连接到mongodb
           Mongo mongo = new Mongo("127.0.0.1", 27017);
-  
+          
           //打开数据库test
           DB db = mongo.getDB("test");
   
           //遍历所有集合的名字
           Set<String> colls = db.getCollectionNames();
           for (String s : colls) {
-              System.out.println(s);
+              System.out.println("search all:"+s);
               //先删除所有Collection(类似于关系数据库中的"表")
              if (!s.equals("system.indexes")) {
                  db.getCollection(s).drop();
@@ -42,12 +44,12 @@ public class TestMongoDriver {
           }
   
           // 取得集合emp(若：emp不存在，mongodb将自动创建该集合)
-          DBCollection coll = db.getCollection("emp");
+          DBCollection collection1 = db.getCollection("emp");
   
           //delete all
-          DBCursor dbCursor = coll.find();
+          DBCursor dbCursor = collection1.find();
           for (DBObject dbObject : dbCursor) {
-              coll.remove(dbObject);
+              collection1.remove(dbObject);
           }
   
           //create
@@ -56,22 +58,27 @@ public class TestMongoDriver {
                  .append("address",new BasicDBObject("postcode", "201202")
                  .append("street", "田林路888号")
                  .append("city", "上海"));
-          coll.insert(doc);
+          collection1.insert(doc);
   
+          
           //retrieve
           BasicDBObject docFind = new BasicDBObject("name", "杨俊明");
-          DBObject findResult = coll.findOne(docFind);
+          DBObject findResult = collection1.findOne(docFind);
+          Assert.assertEquals(findResult.get("name"), "杨俊明");
           System.out.println(findResult);
  
-         //update
+          
+          //update
           doc.put("sex", "MALE");// 把sex属性从"男"，改成"MALE"
-          coll.update(docFind, doc);
-          findResult = coll.findOne(docFind);
+          collection1.update(docFind, doc);
+          findResult = collection1.findOne(docFind);
+          Assert.assertEquals(findResult.get("sex"), "MALE");
           System.out.println(findResult);
   
-          coll.dropIndexes();// 先删除所有索引
+          
+          collection1.dropIndexes();// 先删除所有索引
           //create index
-          coll.createIndex(new BasicDBObject("name", 1)); // 1代表升序
+          collection1.createIndex(new BasicDBObject("name", 1)); // 1代表升序
   
           //复杂对象
           UserData userData = new UserData("jimmy", "123456");
@@ -86,8 +93,9 @@ public class TestMongoDriver {
           userData.setBirthday(getDate(1990, 5, 1));
           BasicDBObject objUser = new BasicDBObject("key", "jimmy").append(
                   "value", toDBObject(userData));
-          coll.insert(objUser);
-          System.out.println(coll.findOne(objUser));
+          
+          collection1.insert(objUser);          
+          System.out.println(collection1.findOne(objUser));
       }
   
       /**

@@ -5,3 +5,9 @@
 
 ###安装telnet
 打印控制面板->程序->启用或关闭windows功能->启用telnet
+
+
+查看端口占用
+netstat -an
+
+
