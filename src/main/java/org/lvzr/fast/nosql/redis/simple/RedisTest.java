@@ -13,7 +13,7 @@ import redis.clients.jedis.Jedis;
 import redis.clients.jedis.JedisPool;
 import redis.clients.jedis.JedisPoolConfig;
 
-public class MyJedisPool {
+public class RedisTest {
 
 	private static JedisPool pool;
 
@@ -21,7 +21,7 @@ public class MyJedisPool {
 	static {
 		try {
 			Properties props = new Properties();
-			props.load(MyJedisPool.class.getClassLoader().getResourceAsStream("MyJedisPool.properties"));
+			props.load(RedisTest.class.getClassLoader().getResourceAsStream("redis.properties"));
 
 			//¥¥Ω®jedis≥ÿ≈‰÷√ µ¿˝
 			JedisPoolConfig config = new JedisPoolConfig();
