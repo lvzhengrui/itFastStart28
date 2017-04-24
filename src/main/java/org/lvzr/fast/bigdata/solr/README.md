@@ -20,8 +20,10 @@ bin/solr restart          重启项目
 
 ###create
 如果是单机版要创建core，如果是分布式的要创建collection
+
 bin/solr create -help     查看create帮助
 bin/solr create -c abc
+
         abc是core或collection的名字，取决于solr是单机版还是cloud版本；刷新http://localhost:8983/solr ，可以看到core selector中多了一个abc
         abc目录的位置创建在solr.solr.home（默认是solr的server/solr目录）目录下
 

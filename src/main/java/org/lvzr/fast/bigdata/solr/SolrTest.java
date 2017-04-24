@@ -10,11 +10,13 @@ import org.apache.solr.client.solrj.response.QueryResponse;
 import org.apache.solr.common.SolrDocument;
 import org.apache.solr.common.SolrDocumentList;
 import org.apache.solr.common.SolrInputDocument;
+import org.lvzr.fast.vo.Person;
 
 
-public class SolrJTest {
+public class SolrTest {
+	
      //指定solr服务器的地址  
-     private final static String SOLR_URL = "http://localhost:8080/solr/";  
+     private final static String SOLR_URL = "http://127.0.0.1:8983/solr/";  
 
      /**
       * 创建SolrServer对象
@@ -46,7 +48,7 @@ public class SolrJTest {
          document.addField("name", "周新星");  
          document.addField("description", "一个灰常牛逼的军事家");  
          //获得一个solr服务端的请求，去提交  ,选择具体的某一个solr core
-        HttpSolrClient solr = new HttpSolrClient(SOLR_URL + "my_core");
+        HttpSolrClient solr = new HttpSolrClient(SOLR_URL + "abc");
         solr.add(document);
         solr.commit();
         solr.close();
@@ -58,7 +60,7 @@ public class SolrJTest {
       */
      public void deleteDocumentById() throws Exception {  
          //选择具体的某一个solr core
-         HttpSolrClient server = new HttpSolrClient(SOLR_URL+"my_core");  
+         HttpSolrClient server = new HttpSolrClient(SOLR_URL+"abc");  
          //删除文档  
          server.deleteById("8");  
          //删除所有的索引
@@ -73,7 +75,7 @@ public class SolrJTest {
      * @throws Exception 
       */
      public void querySolr() throws Exception{
-         HttpSolrClient solrServer = new HttpSolrClient(SOLR_URL+"my_core/");  
+         HttpSolrClient solrServer = new HttpSolrClient(SOLR_URL+"abc/");  
          SolrQuery query = new SolrQuery();  
          //下面设置solr查询参数
          //query.set("q", "*:*");// 参数q  查询所有   
@@ -127,7 +129,7 @@ public class SolrJTest {
      }
 
      public static void main(String[] args) throws Exception {
-         SolrJTest solr = new SolrJTest();
+         SolrTest solr = new SolrTest();
          //solr.createSolrServer();
          solr.addDoc();
          solr.deleteDocumentById();
