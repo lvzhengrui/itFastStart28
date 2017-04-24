@@ -16,9 +16,8 @@
   </property>
   <property>
     <name>hbase.zookeeper.quorum</name>
-	<value>127.0.0.1</value>
+	<value>jerry2016</value>
   </property>
- 
   <property>
     <name>hbase.zookeeper.property.dataDir</name>
 	<value>E:/开源项目/bigdata/hbase-1.3.1/zoo</value>

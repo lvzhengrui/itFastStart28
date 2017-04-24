@@ -1,10 +1,19 @@
 
 
 
+
+
 ###配置
 HBASE_HOME=E:\开源项目\bigdata\hbase-1.3.1
 Path=%HBASE_HOME%\bin
 echo %HBASE_HOME%
+
+###必须配置hosts
+hbase.zookeeper.quorum配置为计算机名jerry2016
+C:/Windows/System32/drivers/etc/hosts文件加上一句：
+127.0.0.1 jerry2016
+
+
 
 ###启停命令
 cd E:\开源项目\bigdata\hbase-1.3.1\bin
@@ -44,6 +53,13 @@ bin>alter 't1','f3','f4'
 bin>put 't1','r1','f1:c1','value0'
 bin>get 't1','r1'
 bin>get 't1','r1','f1'
+bin>delete 't1','rowkey001','f1:col1'
+bin>deleteall 't1','rowkey001'
+bin>truncate 't1'
+bin> count 't1', {INTERVAL => 100, CACHE => 500}
+
+
+
 
 
 
