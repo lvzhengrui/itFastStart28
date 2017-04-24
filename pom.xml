@@ -152,6 +152,7 @@
 			<artifactId>hadoop-mapreduce-client-common</artifactId>
 			<version>${hadoop.version}</version>
 		</dependency>
+		
 
 		<dependency>
 			<groupId>org.apache.hbase</groupId>

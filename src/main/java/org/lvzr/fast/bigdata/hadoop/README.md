@@ -8,6 +8,13 @@ hadoop-common-2.7.1-bin-master拷贝到%HADOOP_HOME%\bin目录
 hadoop.dll、winutils.exe、libwinutils.lib放到c:/windows/System32
 
 
+#JAVA API执行必须配置hosts文件
+C:/Windows/System32/drivers/etc/hosts文件加上：
+127.0.0.1 jerry2016
+127.0.0.1 localhost
+
+
+
 ###格式化namenode
 bin/hdfs namenode -format
 

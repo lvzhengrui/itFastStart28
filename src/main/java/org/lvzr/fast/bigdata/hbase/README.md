@@ -12,6 +12,7 @@ echo %HBASE_HOME%
 hbase.zookeeper.quorum配置为计算机名jerry2016
 C:/Windows/System32/drivers/etc/hosts文件加上一句：
 127.0.0.1 jerry2016
+127.0.0.1 localhost
 
 
 
