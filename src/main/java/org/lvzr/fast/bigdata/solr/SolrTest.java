@@ -44,7 +44,7 @@ public class SolrTest {
         //构造一篇文档  
          SolrInputDocument document = new SolrInputDocument();  
          //往doc中添加字段,在客户端这边添加的字段必须在服务端中有过定义  
-         document.addField("id", "5");  
+         document.addField("id", "11");  
          document.addField("name", "周星驰");  
          document.addField("description", "一个灰常牛逼的军事家");  
          //获得一个solr服务端的请求，去提交  ,选择具体的某一个solr core
