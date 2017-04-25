@@ -30,7 +30,7 @@ public class TestMongoDriver {
           //连接到mongodb
           Mongo mongo = new Mongo("127.0.0.1", 27017);
           
-          //打开数据库test
+          //打开数据库或创建数据库test
           DB db = mongo.getDB("test");
   
           //遍历所有集合的名字
