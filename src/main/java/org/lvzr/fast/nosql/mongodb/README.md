@@ -54,6 +54,42 @@ db.userInfo.find({"age": 22});
 db.userInfo.find({});
 
 
+-------------------------------------------------------------------------------------------------------
+###命令行方式mongofiles
+http://www.linuxidc.com/Linux/2013-06/85779.htm
+http://www.tuicool.com/articles/7BnQJz
+
+mongofiles命令行下向Mongodb数据库中插入文件数据。
+
+mongofiles  -host 127.0.0.1:27017 -d  mydb  put  文件名
+
+向数据库mydb中插入一个文件，其中put为命令，表示向Mongodb中上传文件，get、delete分别表示取得文件和删除文件。
+
+执行 db.fs.files.find()即可看到GridFS中的文件列表.
+
+mongo自带有一个实现mongofliles，基本操作如下：
+
+列出所有文件：
+mongofiles list
+
+上传一个文件：
+mongofiles put xxx.txt
+
+下载一个文件：
+mongofiles get xxx.txt
+
+查找文件：
+mongofiles search xxx //会查找所有文件名中包含“xxx”的文件
+mongofiles list xxx //会查找所有文件名以“xxx”为前缀的文件
+参数说明：
+–d 指定数据库 ，默认是fs，Mongofiles list –d testGridfs
+-u –p 指定用户名，密码
+-h 指定主机
+-port 指定主机端口
+-c 指定集合名，默认是fs
+-t 指定文件的MIME类型，默认会忽略
+
+
 
 -------------------------------------------------------------------------------------------------------
 如：如果你想创建一个“myTest”的数据库，先运行use myTest命令，之后就做一些操作（如：db.createCollection('user')）,
