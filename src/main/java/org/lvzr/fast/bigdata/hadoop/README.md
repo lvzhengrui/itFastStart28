@@ -1,4 +1,5 @@
 
+
 ###window
 set HADOOP_HOME=E:\开源项目\bigdata\hadoop-2.7.3
 set Path=%HADOOP_HOME%\bin;%HADOOP_HOME%\sbin;
@@ -60,13 +61,24 @@ yarn logs -applicationId application_1493001095325_0004
 
 
 
+-------------------------------------------------------------------------
+###hadoop能用到的系统端口
+http://blog.csdn.net/wulantian/article/details/46341043
+Daemon		缺省端口				配置参数
+HDFS		Namenode				50070	dfs.http.address
+			Datanodes				50075	dfs.datanode.http.address
+			Secondarynamenode		50090	dfs.secondary.http.address
+			Backup/Checkpoint node*	50105	dfs.backup.http.address
 
+MR			Jobracker				50030	mapred.job.tracker.http.address
+			Tasktrackers			50060	mapred.task.tracker.http.address
+			
+HBase		HMaster					60010	hbase.master.info.port
+			HRegionServer			60030	hbase.regionserver.info.port
 
-
-
-
-
-
+8088		Yarn任务监控端口
+8080		Spark监控UI端口
+4040		Spark任务UI端口
 
 
 
