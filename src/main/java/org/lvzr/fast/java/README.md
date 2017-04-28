@@ -70,5 +70,134 @@ http://soft.chinabyte.com/25/13169025.shtml
 《大规模分布式系统架构与设计实战》
 https://www.oschina.net/question/923302_153907
 
+---------------------------------------------------------------------------
+###Apache Commons是一个非常有用的工具包
+解决各种实际的通用问题，下面是一个简述表，
+详细信息访问http://jakarta.apache.org/commons/index.html
+
+BeanUtils
+Commons-BeanUtils 提供对 Java 反射和自省API的包装
+
+Betwixt
+Betwixt提供将 JavaBean 映射至 XML 文档，以及相反映射的服务.
+
+Chain
+Chain 提供实现组织复杂的处理流程的“责任链模式”.
+
+CLI
+CLI 提供针对命令行参数，选项，选项组，强制选项等的简单API.
+
+Codec
+Codec 包含一些通用的编码解码算法。包括一些语音编码器， Hex, Base64, 以及URL encoder.
+
+Collections
+Commons-Collections 提供一个类包来扩展和增加标准的 Java Collection框架
+
+Configuration
+Commons-Configuration 工具对各种各式的配置和参考文件提供读取帮助.
+
+Daemon
+一种 unix-daemon-like java 代码的替代机制
+
+DBCP
+Commons-DBCP 提供数据库连接池服务
+
+DbUtils
+DbUtils 是一个 JDBC helper 类库，完成数据库任务的简单的资源清除代码.
+
+Digester
+Commons-Digester 是一个 XML-Java对象的映射工具，用于解析 XML配置文件.
+
+Discovery
+Commons-Discovery 提供工具来定位资源 (包括类) ，通过使用各种模式来映射服务/引用名称和资源名称。.
+
+EL
+Commons-EL 提供在JSP2.0规范中定义的EL表达式的解释器.
+
+FileUpload
+FileUpload 使得在你可以在应用和Servlet中容易的加入强大和高性能的文件上传能力
+
+HttpClient
+Commons-HttpClient 提供了可以工作于HTTP协议客户端的一个框架.
+
+IO
+IO 是一个 I/O 工具集
+
+Jelly
+Jelly是一个基于 XML 的脚本和处理引擎。 Jelly 借鉴了 JSP 定指标签，Velocity, Cocoon和Xdoclet中的脚本引擎的许多优点。Jelly 可以用在命令行， Ant 或者 Servlet之中。
+
+Jexl
+Jexl是一个表达式语言，通过借鉴来自于Velocity的经验扩展了JSTL定义的表达式语言。.
+
+JXPath
+Commons-JXPath 提供了使用Xpath语法操纵符合Java类命名规范的 JavaBeans的工具。也支持 maps, DOM 和其他对象模型。.
+
+Lang
+Commons-Lang 提供了许多许多通用的工具类集，提供了一些java.lang中类的扩展功能
+
+Latka
+Commons-Latka 是一个HTTP 功能测试包，用于自动化的QA,验收和衰减测试.
+
+Launcher
+Launcher 组件是一个交叉平台的Java 应用载入器。 Commons-launcher 消除了需要批处理或者Shell脚本来载入Java 类。.原始的 Java 类来自于Jakarta Tomcat 4.0 项目
+
+Logging
+Commons-Logging 是一个各种 logging API实现的包裹类.
+
+Math
+Math 是一个轻量的，自包含的数学和统计组件，解决了许多非常通用但没有及时出现在Java标准语言中的实践问题.
+
+Modeler
+Commons-Modeler 提供了建模兼容JMX规范的 Mbean的机制.
+
+Net
+Net 是一个网络工具集，基于 NetComponents 代码，包括 FTP 客户端等等。
+
+Pool
+Commons-Pool 提供了通用对象池接口，一个用于创建模块化对象池的工具包，以及通常的对象池实现.
+
+Primitives
+Commons-Primitives提供了一个更小，更快和更易使用的对Java基本类型的支持。当前主要是针对基本类型的 collection。.
+
+Validator
+The commons-validator提供了一个简单的，可扩展的框架来在一个XML文件中定义校验器 (校验方法)和校验规则。支持校验规则的和错误消息的国际化。
+
+
+-------------------------------------------------
+###Jakarta项目
+是在Apache软件基金会营运的公开源代码软件开发项目之一。开发着面向编程语言Java的程序库，框架等。
+
+Jakarta是Apache组织下的一套Java解决方案的开源软件的名称，它包括了很多子项目。Tomcat、Ant、Struts等等现在是Apache下的开源项目，
+也曾是Jakarta的关联项目。
+
+Jakarta的名称是想把与Jakarta关系非常深的爪哇岛关联起来。编程语言Java的命名源自这个岛的名字Jawa，而城市雅加达(Jakarta)正是这
+个岛上的第一大城市，也是印度尼西亚的首府。
+
+子项目
+其中，雅加达项目所包括的相关工具、库以及框架等罗列如下:
+
+BCEL - 处理Java字节码的类库
+BSF - 脚本程序框架
+Cactus - 服务器端Java类测试工具框架
+ECS - The Element Construction Set is a Java API for generating elements for various markup anguages.
+HttpComponents- The Hyper-Text Transfer Protocol.
+JCS - JCS is a distributed caching system written in java.
+JMeter - 压力测试工具
+ORO - Java classes that provide Perl5 compatible regular expressions.
+Regexp - 纯Java正则表达式包
+Slide - a content repository primarily using WebDAV.
+Taglibs - Repository for JSP custom tag libraries.
+
+以前隶属于雅加达项目，但现在作为Aapche软件基金的单独项目，有:
+Ant - 构建工具
+Commons - 一组使用类的合集，主要作为Java标准库的补充
+HiveMind - a services and configuration microkernel
+Maven - a project build and management tool
+POI - a pure Java port of Microsoft's popular file formats.
+Struts - a web application development framework
+Tapestry - A component object model based on JavaBeans properties and strong specifications
+Tomcat - 服务器，提供JSP/Servlet相关容器类
+Turbine - a rapid development web application framework
+Velocity - a template engine
 
 

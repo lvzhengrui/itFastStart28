@@ -14,6 +14,8 @@ http://www.36dsj.com/archives/24325
 PAXOS协议（ZooKeeper集群本身使用一致性协议(PAXOS协议)保证每个节点状态的一致性）
 区块链技术
 POSIX表示可移植操作系统接口,（Portable Operating System Interface，缩写为POSIX），POSIX标准定义了操作系统应该为应用程序提供的接口标准
+CRC32校验
+
 
 
 
