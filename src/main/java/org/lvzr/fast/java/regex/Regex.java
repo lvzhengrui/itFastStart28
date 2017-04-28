@@ -196,7 +196,7 @@ public class Regex {
 				.matcher("ss")
 				.matches());
 		
-		//?前台没有限定字符，下面两句会抛异常
+		//前台没有限定字符，下面两句会抛异常
 		//Assert.assertFalse(Pattern.compile("?").matcher("").matches());
 		//Assert.assertFalse(Pattern.compile("?").matcher("s").matches());
 		
