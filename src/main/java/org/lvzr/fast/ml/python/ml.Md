@@ -1,4 +1,26 @@
 
+###numpy科学计算库、padas数据预处理&分析、scikit-learn机器学习库
+http://www.toutiao.com/i6363855766704620033/
+
+特征选择
+scikit-learn.feature_selection、selectbest
+scikit-learn.ensemble import randomForestClassifier
+scikit-learn.liner_model import LinerRegress线性回归
+scikit-learn.liner_model import LogisticRegress逻辑回归
+scikit-learn.cross_validation import KFold 交叉验证集
+集合多个算法进行学习 
+
+训练集titanic[train]，
+
+特征提取、潜在特征
+
+
+
+
+
+
+
+-----------------------------------------------------------
 基于 Python 和 Scikit-Learn 的机器学习介绍
 http://developer.51cto.com/art/201507/485276.htm
 
