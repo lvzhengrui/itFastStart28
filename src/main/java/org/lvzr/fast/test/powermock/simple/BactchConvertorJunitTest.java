@@ -1,4 +1,4 @@
-package org.lvzr.fast.test.powermock;
+package org.lvzr.fast.test.powermock.simple;
 
 import org.junit.Assert;
 import org.junit.Before;
@@ -7,7 +7,7 @@ import org.junit.runner.RunWith;
 import org.powermock.api.mockito.PowerMockito;
 import org.powermock.core.classloader.annotations.PrepareForTest;
 import org.powermock.modules.junit4.PowerMockRunner;
- 
+import org.powermock.reflect.Whitebox;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -35,20 +35,7 @@ public class BactchConvertorJunitTest {
 		mockResultList.add(LVZR_NAME);
 		mockResultList.add(ELVA_TIME);
     }
-    
-    /**
-     * 普通公共方法
-     * @throws Exception
-     */
-    @Test
-    public void testNormalMock() throws Exception {    	
-    	UnderscoreStringGenerator underscoreStringGenerator = PowerMockito.mock(UnderscoreStringGenerator.class);
-    	PowerMockito.when(underscoreStringGenerator.getRandomUnderscoreStringsNormal(2)).thenReturn(mockResultList);
-    	
-    	List<String> resultList = underscoreStringGenerator.getRandomUnderscoreStringsNormal(2);
-        Assert.assertEquals(resultList.get(0), LVZR_NAME);
-        Assert.assertEquals(resultList.get(1), ELVA_TIME);        
-    }
+
 
     /**
      * 静态方法
@@ -72,5 +59,21 @@ public class BactchConvertorJunitTest {
         Assert.assertEquals(resultList.get(0), LVZR_NAME_C);
         Assert.assertEquals(resultList.get(1), ELVA_TIME_C);
     }
-
+    
+    
+    /**
+     * 普通公共方法
+     * @throws Exception
+     */
+    @Test
+    public void testNormalMock() throws Exception {    	
+    	UnderscoreStringGenerator underscoreStringGenerator = PowerMockito.mock(UnderscoreStringGenerator.class);
+    	PowerMockito.when(underscoreStringGenerator.getRandomUnderscoreStringsNormal(2)).thenReturn(mockResultList);
+    	
+    	List<String> resultList = underscoreStringGenerator.getRandomUnderscoreStringsNormal(2);
+        Assert.assertEquals(resultList.get(0), LVZR_NAME);
+        Assert.assertEquals(resultList.get(1), ELVA_TIME);        
+    }
+    
+ 
 }

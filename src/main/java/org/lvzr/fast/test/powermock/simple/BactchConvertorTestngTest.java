@@ -1,4 +1,4 @@
-package org.lvzr.fast.test.powermock;
+package org.lvzr.fast.test.powermock.simple;
 
 import org.powermock.api.mockito.PowerMockito;
 import org.powermock.core.classloader.annotations.PrepareForTest;

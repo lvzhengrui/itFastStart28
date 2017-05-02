@@ -1,4 +1,4 @@
-package org.lvzr.fast.test.powermock;
+package org.lvzr.fast.test.powermock.simple;
 
 import java.util.ArrayList;
 import java.util.List;

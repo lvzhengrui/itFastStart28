@@ -1,4 +1,4 @@
-package org.lvzr.fast.test.powermock;
+package org.lvzr.fast.test.powermock.simple;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -38,8 +38,17 @@ public class UnderscoreStringGenerator{
             return resultList;
         }
         
+        private List<String> getRandomUnderscoreStringsPrivate(int itemNum){
+            List<String> resultList = new ArrayList<String>(itemNum);
+            int randomIndex = 0;
+            for(int i=0;i<itemNum;i++){
+                randomIndex = (int)Math.random()*(UnderscoreStrings.length-1);
+                resultList.add(UnderscoreStrings[randomIndex]);
+            }
+            return resultList;
+        }
         
-
+        
 
 
     }
