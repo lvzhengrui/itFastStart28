@@ -3,12 +3,13 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="org.lvzr.fast.test.powermock.BactchConvertorTest">
+      <class name="org.lvzr.fast.test.powermock.BactchConvertorTestngTest_$$_jvst4f0_0">
         <methods>
-          <include name="testStaticMock"/>
           <include name="before"/>
+          <include name="testNormalMock"/>
+          <include name="testStaticMock"/>
         </methods>
-      </class> <!-- org.lvzr.fast.test.powermock.BactchConvertorTest -->
+      </class> <!-- org.lvzr.fast.test.powermock.BactchConvertorTestngTest_$$_jvst4f0_0 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
