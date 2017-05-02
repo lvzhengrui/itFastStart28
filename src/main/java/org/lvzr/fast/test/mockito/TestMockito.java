@@ -75,9 +75,9 @@ public class TestMockito{
     	//调用两次
     	mockMap.get("city");
     	mockMap.get("city");
-    	//调用行为判断 
+    	//调用行为判断
     	verify(mockMap).get(Matchers.eq("city"));  
-    	//调用两次
+    	//是否调用两次
     	verify(mockMap, times(2));    
     	
     }
