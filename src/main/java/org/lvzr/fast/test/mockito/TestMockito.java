@@ -36,7 +36,9 @@ public class TestMockito{
           
         //验证方法调用(是否调用了get(0))  
         verify(list).get(0);  
-          
+        verify(list, times(1)).get(0);  
+        verify(list, atLeast(1)).get(0); 
+        
         //junit测试  
         Assert.assertEquals("helloworld", result);  
     }  
@@ -75,10 +77,8 @@ public class TestMockito{
     	//调用两次
     	mockMap.get("city");
     	mockMap.get("city");
-    	//调用行为判断
-    	verify(mockMap).get(Matchers.eq("city"));  
     	//是否调用两次
-    	verify(mockMap, times(2));    
+    	verify(mockMap, times(2)).get(anyString());    
     	
     }
 	

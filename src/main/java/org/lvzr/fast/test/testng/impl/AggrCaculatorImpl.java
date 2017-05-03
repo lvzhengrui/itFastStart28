@@ -2,8 +2,13 @@ package org.lvzr.fast.test.testng.impl;
 
 import org.lvzr.fast.test.testng.AggrCaculator;
 
+/**
+ * @author lvzr
+ *
+ */
 public class AggrCaculatorImpl implements AggrCaculator{
 
+	private String cc;
 	/**
 	 * 求最大值
 	 * @param items
@@ -34,5 +39,23 @@ public class AggrCaculatorImpl implements AggrCaculator{
         }
         return result/items.length;
     }
+    
+    /**
+     * 计算税金
+     * @param wage
+     * @return
+     */
+	public int getRate(int wage) {
+		if(wage>8000){
+			return 5;
+		}else if(wage>5000){
+			return 2;
+		}else if(wage>3500){
+			return 1;
+		}else{
+			return 0;
+		}
+	}
 
+ 
 }

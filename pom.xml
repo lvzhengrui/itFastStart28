@@ -112,7 +112,7 @@
             <version>${hamcrest.version}</version>
         </dependency>
  
-      	<dependency>
+        <dependency>
             <groupId>org.unitils</groupId>
             <artifactId>unitils-core</artifactId>
             <version>${unitils.version}</version>
@@ -135,27 +135,55 @@
                 </exclusion>
             </exclusions>
         </dependency>
-        
-         <dependency>
+
+        <dependency>
             <groupId>org.unitils</groupId>
-            <artifactId>unitils-testng</artifactId>
+            <artifactId>unitils-dbmaintainer</artifactId>
             <version>${unitils.version}</version>
             <exclusions>
                 <exclusion>
-                    <artifactId>junit</artifactId>
-                    <groupId>junit</groupId>
+                    <artifactId>dbunit</artifactId>
+                    <groupId>org.dbunit</groupId>
                 </exclusion>
                 <exclusion>
-                    <groupId>org.testng</groupId>
-                    <artifactId>testng</artifactId>
+                    <groupId>org.hibernate</groupId>
+                    <artifactId>hibernate</artifactId>
                 </exclusion>
-            </exclusions>            
+            </exclusions>
         </dependency>
-            
-         <dependency>
-            <groupId>org.dbunit</groupId>
-            <artifactId>dbunit</artifactId>
-            <version>${dbunit.version}</version> 
+
+        <dependency>
+            <groupId>org.unitils</groupId>
+            <artifactId>unitils-dbunit</artifactId>
+            <version>${unitils.version}</version>
+            <exclusions>
+                <exclusion>
+                    <artifactId>dbunit</artifactId>
+                    <groupId>org.dbunit</groupId>
+                </exclusion>
+                <exclusion>
+                    <artifactId>spring-jdbc</artifactId>
+                    <groupId>org.springframework</groupId>
+                </exclusion>
+                <exclusion>
+                    <groupId>org.slf4j</groupId>
+                    <artifactId>slf4j-api</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>org.springframework</groupId>
+                    <artifactId>spring-functions</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>org.springframework</groupId>
+                    <artifactId>spring-jdbc</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+
+        <dependency>
+            <groupId>org.unitils</groupId>
+            <artifactId>unitils-spring</artifactId>
+            <version>${unitils.version}</version>
             <exclusions>
                 <exclusion>
                     <artifactId>junit</artifactId>
@@ -185,8 +213,26 @@
                     <groupId>org.springframework</groupId>
                     <artifactId>spring-test</artifactId>
                 </exclusion>
-            </exclusions>                     
+            </exclusions>
         </dependency>
+
+
+        <dependency>
+            <groupId>org.unitils</groupId>
+            <artifactId>unitils-testng</artifactId>
+            <version>${unitils.version}</version>
+            <exclusions>
+                <exclusion>
+                    <artifactId>junit</artifactId>
+                    <groupId>junit</groupId>
+                </exclusion>
+                <exclusion>
+                    <groupId>org.testng</groupId>
+                    <artifactId>testng</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+
         
         <!-- test framework end -->
         

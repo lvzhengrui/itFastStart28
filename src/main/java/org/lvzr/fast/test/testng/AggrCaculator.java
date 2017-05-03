@@ -13,7 +13,14 @@ public interface AggrCaculator{
 	 * @param items
 	 * @return
 	 */
-    int avg(int[] items);
+   int avg(int[] items);
+   
+   /**
+    * ¼ÆËãË°½ğ
+    * @param wage
+    * @return
+    */
+   int getRate(int wage);
 }
 
 

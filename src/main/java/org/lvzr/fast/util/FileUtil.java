@@ -1,4 +1,4 @@
-package org.lvzr.fast.java.file;
+package org.lvzr.fast.util;
 
 import java.io.BufferedInputStream;
 import java.io.ByteArrayOutputStream;
