@@ -2,8 +2,8 @@ package org.lvzr.fast.test.unitils.service;
 
 import java.util.List;
 
-import org.lvzr.fast.test.powermock.complex.Employee;
 import org.lvzr.fast.test.unitils.dao.EmployeeDao;
+import org.lvzr.fast.test.unitils.model.Employee;
 
 public interface EmployeeService{
 

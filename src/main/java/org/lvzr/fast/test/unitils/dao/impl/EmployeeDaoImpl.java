@@ -5,8 +5,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import org.lvzr.fast.test.powermock.complex.Employee;
 import org.lvzr.fast.test.unitils.dao.EmployeeDao;
+import org.lvzr.fast.test.unitils.model.Employee;
 import org.springframework.stereotype.Repository;
 
 @Repository

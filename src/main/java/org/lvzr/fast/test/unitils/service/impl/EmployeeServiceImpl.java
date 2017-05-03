@@ -2,8 +2,8 @@ package org.lvzr.fast.test.unitils.service.impl;
 
 import java.util.List;
 
-import org.lvzr.fast.test.powermock.complex.Employee;
 import org.lvzr.fast.test.unitils.dao.EmployeeDao;
+import org.lvzr.fast.test.unitils.model.Employee;
 import org.lvzr.fast.test.unitils.service.EmployeeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

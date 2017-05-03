@@ -2,7 +2,7 @@ package org.lvzr.fast.test.unitils.dao;
 
 import java.util.List;
 
-import org.lvzr.fast.test.powermock.complex.Employee;
+import org.lvzr.fast.test.unitils.model.Employee;
 
 public interface EmployeeDao{
 
