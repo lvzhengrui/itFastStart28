@@ -12,7 +12,14 @@ import javax.persistence.Transient;
 
 import org.hibernate.annotations.GenericGenerator;
 
-
+/**
+ create table fs_employee(
+   id varchar(32),
+   name varchar(32),
+   salary double,
+   primary key (id)
+ );
+ */
 @Entity
 @Table(name="FS_EMPLOYEE")
 public class Employee{

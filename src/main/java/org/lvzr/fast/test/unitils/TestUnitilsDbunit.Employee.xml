@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset>
+     <fs_employee id="id1" name="name1" salary="7000"/>
+     <fs_employee id="id2" name="name2" salary="8000"/>
+     <fs_employee id="id3" name="name3" salary="9000"/>
+</dataset>

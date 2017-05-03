@@ -12,10 +12,11 @@
        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.2.xsd
        http://www.hsit.com.cn/schema/euler/cache http://www.hsit.com.cn/schema/euler/cache.xsd">
 
-    
+	 <!-- 引入属性文件 -->  
+    <context:property-placeholder location="classpath:spring-config.properties" />  
+  
+    <!-- 自动扫描dao和service包(自动注入) -->  
     <context:component-scan base-package="org.lvzr.fast.test.unitils.dao.impl"/>
 	<context:component-scan base-package="org.lvzr.fast.test.unitils.service.impl"/>
-
-
     
 </beans>

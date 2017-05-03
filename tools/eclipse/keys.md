@@ -3,6 +3,8 @@
 eclipse快捷键
 http://www.cnblogs.com/iamfy/archive/2012/07/11/2586869.html
 
+
+ctrl+d删除当前行
 自动添加set get方法，在声明的数据域中按Ctrl+1
 自动添加未实现方法，光标放到声明类的那一行，按住神键：Ctrl+1
 Window->Preferences->Java->Editor->Content Assist->auto activation triggers for java将.提示改成.abcdefghijklmnopqrstuvwxyz

@@ -1,5 +1,10 @@
 
 
+###Unitils的简单实用
+https://my.oschina.net/u/856702/blog/86302
+
+###unitil.properties配置文件 
+http://blog.sina.com.cn/s/blog_573a052b0102e9xu.html
 
 Test Stub 只参与测试， 不在乎它是何时何地以何种方式参与测试的，不验证产生的结果
 Test Spy  不但参与测试，你还要验证它的参与产生了某种结果。非mock模拟对象的监视，进行调用验证。

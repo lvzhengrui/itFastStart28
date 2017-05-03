@@ -43,6 +43,8 @@
         <hibernate.version>4.2.5.Final</hibernate.version>
         <mybatis-spring.version>1.2.0</mybatis-spring.version>
         
+        <ojdbc14.version>10.2.0.4.0</ojdbc14.version>
+        <mysql.version>5.1.25</mysql.version>
         
   </properties>
   
@@ -222,7 +224,6 @@
             </exclusions>
         </dependency>
 
-
         <dependency>
             <groupId>org.unitils</groupId>
             <artifactId>unitils-testng</artifactId>
@@ -239,6 +240,29 @@
             </exclusions>
         </dependency>
 
+        <dependency>
+            <groupId>org.dbunit</groupId>
+            <artifactId>dbunit</artifactId>
+            <version>${dbunit.version}</version>
+            <exclusions>
+                <exclusion>
+                    <artifactId>junit</artifactId>
+                    <groupId>junit</groupId>
+                </exclusion>
+                <exclusion>
+                    <groupId>org.slf4j</groupId>
+                    <artifactId>slf4j-api</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>org.springframework</groupId>
+                    <artifactId>spring-functions</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>org.springframework</groupId>
+                    <artifactId>spring-jdbc</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
         
         <!-- test framework end -->
         
@@ -325,9 +349,24 @@
         
         
         <!-- spring -->
-            
-		
-		
+ 
+ 		<!-- db -->
+		<dependency> 
+        	<groupId>com.oracle</groupId> 
+        	<artifactId>ojdbc14</artifactId> 
+        	<version>${ojdbc14.version}</version> 
+        </dependency> 
+
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>5.1.25</version>
+        </dependency>
+      
+      	<!-- db -->
+      
+      
+     	<!-- nosql -->
 		<dependency>  
 		    <groupId>redis.clients</groupId>  
 		    <artifactId>jedis</artifactId>  
@@ -338,9 +377,10 @@
 		  <artifactId>mongo-java-driver</artifactId>
 		  <version>2.10.1</version>
 		</dependency>
+		<!-- nosql -->
 
 
-
+		<!-- bigdata -->
 		<dependency>
 			<groupId>org.apache.hadoop</groupId>
 			<artifactId>hadoop-common</artifactId>
@@ -396,6 +436,10 @@
             <artifactId>spark-core_2.10</artifactId>
             <version>0.9.0-incubating</version>
         </dependency>
+        
+        <!-- bigdata -->
+        
+        
       	<dependency>
          	<groupId>log4j</groupId>
             <artifactId>log4j</artifactId>
