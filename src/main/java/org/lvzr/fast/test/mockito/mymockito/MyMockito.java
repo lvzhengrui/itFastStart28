@@ -13,7 +13,7 @@ public class MyMockito {
 		this.methodKey = methodKey;
 	}
     
-    public static Object mock(Class clazz){
+    public static Object mock(Class<?> clazz){
     	return new MyMockCglib().getInstance(clazz);
     }
 
@@ -24,5 +24,5 @@ public class MyMockito {
     public void thenReturn(final Object mockResult) {  
         MyMockito.MOCKED_METHOD_KEYS.put(methodKey, mockResult);  
     }  
- 
+     
 }  
