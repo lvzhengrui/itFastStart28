@@ -9,8 +9,8 @@ import org.lvzr.fast.test.unitils.dao.EmployeeDao;
 import org.lvzr.fast.test.unitils.model.Employee;
 import org.springframework.stereotype.Repository;
 
-@Repository
-public class EmployeeDaoImpl implements EmployeeDao{
+@Repository("employeeMemoryDao")
+public class EmployeeMemoryDaoImpl implements EmployeeDao{
 
 	Map<String, Employee> memoryStoreMap = new HashMap<String, Employee>();
 

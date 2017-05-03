@@ -1,11 +1,32 @@
 package org.lvzr.fast.test.unitils.model;
 
+import javax.persistence.Column;
+import javax.persistence.Id;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.Table;
+import javax.persistence.Transient;
+
+import org.hibernate.annotations.GenericGenerator;
+
+
+@Entity
+@Table(name="FS_EMPLOYEE")
 public class Employee{
 	
+	@Id 
+	@Column(name="id")
+	@GeneratedValue(generator="Id")
+	@GenericGenerator(name="Id", strategy="uuid")
 	private String id;
 
+	@Column(name="NAME")
 	private String name;
 	
+	@Column(name="SALARY")
 	private double salary;
 	
 	public Employee(String id){
