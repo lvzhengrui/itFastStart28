@@ -22,19 +22,6 @@ public class AggrCaculatorTest {
         aggrCaculator = new AggrCaculatorImpl();
     }
 
-    @Test
-    public void testMax() throws Exception {
-    	//最大值
-        Assert.assertEquals( aggrCaculator.max(new int[]{1,2,3,4,10}), 10 );
-    }
-
-    @Test
-    public void testAvg() throws Exception {
-    	//最小值
-        Assert.assertEquals( aggrCaculator.avg(new int[]{1,2,3,4,5}) ,3 );
-    }
-
-	
 	/**
 	 * DataProvider的使用
 	 * @return
@@ -56,6 +43,21 @@ public class AggrCaculatorTest {
     public void testGetRate(int wage,int rate){
     	Assert.assertEquals(aggrCaculator.getRate(wage), rate);
     }
+    
+    @Test
+    public void testMax() throws Exception {
+    	//最大值
+        Assert.assertEquals( aggrCaculator.max(new int[]{1,2,3,4,10}), 10 );
+    }
+
+    @Test
+    public void testAvg() throws Exception {
+    	//最小值
+        Assert.assertEquals( aggrCaculator.avg(new int[]{1,2,3,4,5}) ,3 );
+    }
+
+	
+
     
     
 
