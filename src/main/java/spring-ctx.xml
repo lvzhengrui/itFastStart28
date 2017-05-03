@@ -13,8 +13,9 @@
        http://www.hsit.com.cn/schema/euler/cache http://www.hsit.com.cn/schema/euler/cache.xsd">
 
     
-    <context:component-scan base-package="org.lvzr.fast.test.unitils>
-    </context:component-scan>
+    <context:component-scan base-package="org.lvzr.fast.test.unitils.dao.impl"/>
+	<context:component-scan base-package="org.lvzr.fast.test.unitils.service.impl"/>
+
 
     
 </beans>
