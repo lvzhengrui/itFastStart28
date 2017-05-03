@@ -1,38 +1,16 @@
 package org.lvzr.fast.test.unitils.dao;
 
-import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 import org.lvzr.fast.test.powermock.complex.Employee;
-import org.springframework.stereotype.Repository;
 
-@Repository
-public class EmployeeDao{
+public interface EmployeeDao{
 
-	Map<String, Employee> memoryStoreMap = new HashMap<String, Employee>();
-
-	public List<Employee> findAll(){
-		List<Employee> resultList = new ArrayList<Employee>();
-		for(Employee employee:memoryStoreMap.values()){
-			resultList.add(employee);
-		}
-		return resultList;
-	}
+	public List<Employee> findAll();
 	
-	public boolean save(Employee employee){
-		memoryStoreMap.put(employee.getId(), employee);
-		return true;
-	}
+	public boolean save(Employee employee);
 	
-	public boolean delete(String id){
-		memoryStoreMap.remove(id);
-		return true;
-	}
+	public boolean delete(String id);
 	
-	public Employee get(String id){
-		return memoryStoreMap.get(id);
-	}
-	
+	public Employee get(String id);
 }
