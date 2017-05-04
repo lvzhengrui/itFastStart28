@@ -2,6 +2,11 @@ package org.lvzr.fast.util;
 
 import java.util.*;
 
+/**
+ * 集合类转换
+ * @author lvzr
+ *
+ */
 public class Util{
 	
 	private final static String ITEM_SPLIT_FLAG = ",";
