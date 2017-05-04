@@ -9,7 +9,7 @@ ctrl+D 删除当前行
 ctrl+E 快速切换编辑窗口
 
 ctrl+H 文件搜索
-ctrl+K 定拉到一下个word
+ctrl+K 定拉到一下个word ,ctrl+shift+k上一个
 ctrl+L 定位某行
 
 ctrl+O 查看当前类所有方法
@@ -37,6 +37,8 @@ alt+shift+x   执行当前类
 
 alt+shift+s 生成geter,seter方法
 alt+shift+m 一段代码生成一个方法
+alt+ship+z 配置代码模板
+
 
 
 背景色RGB 199,237,204
@@ -96,6 +98,15 @@ Alt+Shift+I 合并变量(可能这样说有点不妥Inline)
 Alt+Shift+V 移动函数和变量(不怎么常用)
 Alt+Shift+Z 重构的后悔药(Undo)
 
+
+重构
+作用域 功能 快捷键 
+全局 撤销重构 Alt+Shift+Z 
+全局 抽取方法 Alt+Shift+M 
+全局 抽取局部变量 Alt+Shift+L 
+全局 内联 Alt+Shift+I 
+全局 移动 Alt+Shift+V 
+全局 重命名 Alt+Shift+R
 
 
 编辑
@@ -212,15 +223,6 @@ Java编辑器 使用try/catch块来包围 未设置，太常用了，所以在这里列出,建议自己设置。
 全局 运行上次启动 Ctrl+F11 
 全局 运行至行 Ctrl+R 
 全局 执行 Ctrl+U 
-
-重构
-作用域 功能 快捷键 
-全局 撤销重构 Alt+Shift+Z 
-全局 抽取方法 Alt+Shift+M 
-全局 抽取局部变量 Alt+Shift+L 
-全局 内联 Alt+Shift+I 
-全局 移动 Alt+Shift+V 
-全局 重命名 Alt+Shift+R
 
 
 
