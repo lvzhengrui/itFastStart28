@@ -5,7 +5,6 @@ import java.util.*;
 /**
  * 集合类转换
  * @author lvzr
- *
  */
 public class Util{
 	
@@ -13,6 +12,7 @@ public class Util{
  	
 	private final static String KEY_VALUE_SPLIT_FLAG = ":";
 
+	
 	/*Array********************************************************/
 	
 	/**

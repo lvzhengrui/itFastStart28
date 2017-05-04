@@ -7,6 +7,9 @@ http://www.iteye.com/news/28296
 ### JAVA集合详解(Collection和Map接口)
 http://blog.csdn.net/lioncode/article/details/8673391
 
+###Java 集合转换(数组、List、Set、Map相互转换)
+http://blog.csdn.net/top_code/article/details/10552827
+
 
 在Java的util包中有两个所有集合的父接口Collection和Map,它们的父子关系： 
            java.util
