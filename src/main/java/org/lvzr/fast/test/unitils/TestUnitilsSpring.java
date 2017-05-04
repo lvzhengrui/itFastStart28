@@ -19,7 +19,7 @@ import org.unitils.spring.annotation.SpringBeanByType;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.*;
 
-@SpringApplicationContext({"spring-ctx.xml"})
+@SpringApplicationContext({"org/lvzr/fast/test/unitils/spring-ctx.xml"})
 public class TestUnitilsSpring extends UnitilsJUnit4{ //±ØÐë¼Ì³ÐUnitilsJUnit4
 
     //@SpringApplicationContext({"spring-ctx.xml"})
