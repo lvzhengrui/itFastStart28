@@ -26,7 +26,11 @@ alt+shift+r   重构
 alt+shift+?   输入参考
 alt+shift+x   执行当前类
 
+alt+shift+s 生成geter,seter方法
+alt+shift+m 一段代码生成一个方法
 
+
+背景色RGB 199,237,204
 
  
 生成代码模板Java -> Editor -> Templates
