@@ -3,7 +3,7 @@
 eclipse快捷键
 http://www.cnblogs.com/iamfy/archive/2012/07/11/2586869.html
 
-
+去掉无用import java->editor->save actions->organize imports
 设置注释Java -> Code Style -> Code Templates 
 生成代码模板Java -> Editor -> Templates
 shift+alt+r重构
