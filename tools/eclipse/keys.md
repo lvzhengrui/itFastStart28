@@ -3,23 +3,41 @@
 eclipse快捷键
 http://www.cnblogs.com/iamfy/archive/2012/07/11/2586869.html
 
+
+alt+shift+? 输入参考
+alt+shift+x 执行当前类
+
+
+
 保存自动去掉无用import java->editor->save actions->organize imports
 设置注释Java -> Code Style -> Code Templates 
-生成代码模板Java -> Editor -> Templates
 shift+alt+r重构
 ctrl+d删除当前行
+
+Ctrl+1自动添加未实现方法，光标放到声明类的那一行，按住神键
 自动添加set get方法，在声明的数据域中按Ctrl+1
-自动添加未实现方法，光标放到声明类的那一行，按住神键：Ctrl+1
 Java -> Editor -> Content Assist -> auto activation triggers for java将.提示改成.abcdefghijklmnopqrstuvwxyz
+
 ctrl+o 查看当前类所有方法
 ctrl+shift+o 导入所有没导入的包同时会去掉无用import
 alt+/ 代码补全(输入main之后，按alt+/自动生成main方法)
 
 
+生成代码模板Java -> Editor -> Templates
 ctrl+shift+r 查找类
 ctrl+T某个类的继承树关系
+ctrl+e快速切换编辑窗口
+
+alt+上下键 上下移动当前行
+ctrl+shipt+/ 注释代码块/**/
+ctrl+d 删除当前行
+ctrl+shift+x/y 大小写转换
 
 
+
+ctrl+alt+↓  复制增加行
+ctrl+L 定位某行
+ctrl+q 定位最后编辑，可多窗口回跳
 
 
 
@@ -44,6 +62,8 @@ Ctrl+/ 注释当前行,再按则取消注释
 Ctrl+O 快速显示 OutLine
 Ctrl+T 快速显示当前类的继承结构
 Ctrl+W 关闭当前Editer
+
+
 Ctrl+K 参照选中的Word快速定位到下一个
 Ctrl+E 快速显示当前Editer的下拉列表(如果当前页面没有显示的用黑体表示)
 Ctrl+/(小键盘) 折叠当前类中的所有代码
