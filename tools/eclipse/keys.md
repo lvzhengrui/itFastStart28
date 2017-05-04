@@ -3,7 +3,7 @@
 eclipse快捷键
 http://www.cnblogs.com/iamfy/archive/2012/07/11/2586869.html
 
-去掉无用import java->editor->save actions->organize imports
+保存自动去掉无用import java->editor->save actions->organize imports
 设置注释Java -> Code Style -> Code Templates 
 生成代码模板Java -> Editor -> Templates
 shift+alt+r重构
@@ -12,7 +12,7 @@ ctrl+d删除当前行
 自动添加未实现方法，光标放到声明类的那一行，按住神键：Ctrl+1
 Java -> Editor -> Content Assist -> auto activation triggers for java将.提示改成.abcdefghijklmnopqrstuvwxyz
 ctrl+o 查看当前类所有方法
-ctrl+shift+o 导入所有没导入的包
+ctrl+shift+o 导入所有没导入的包同时会去掉无用import
 alt+/ 代码补全(输入main之后，按alt+/自动生成main方法)
 
 
