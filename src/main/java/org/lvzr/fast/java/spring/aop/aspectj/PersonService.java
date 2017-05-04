@@ -1,4 +1,4 @@
-package org.lvzr.fast.spring.aop.aspectj;  
+package org.lvzr.fast.java.spring.aop.aspectj;
   
 import org.springframework.stereotype.Service;  
   
