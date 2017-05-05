@@ -36,19 +36,6 @@ NLPµÄ ËÄ´ó¾­µä¡°AI ÍêÈ« ¡± ÄÑÌâ£ºÎÊ´ð¡¢¸´Êö¡¢ÎÄÕª¡¢·­Òë£¬Ö»Òª½â¾öÆäÖÐÒ»¸ö£¬ÁíÍâÈ
 ÈÃÄãÐ´Ò»¸ö100×ÖµÄÎÄÕª£¬°ÑËü×ö³öÀ´ÊÇ·Ç³£ÄÑ×öµÄ£»·­ÒëÒ²ÊÇºÜÀ§ÄÑµÄ£¬Ó¢ÓïË¼Î¬·½Ê½ºÍÖÐÎÄË¼Î¬·½Ê½×ª»»¹ýÀ´£¬ÖÐ¼ä»áÉæ¼°µ½ºÜ¶à¸´ÔÓµÄÎÊÌâ¡£
 
 
-ÎÄ±¾ÒþÓïÒå·ÖÎö
-TD-IDF¾ØÕó×ª»»ÆæÒìÖµ·Ö½âSVDÍÆµ¼¼°Ó¦ÓÃ
-
-
-###ÈçºÎÀûÓÃÆæÒìÖµ·Ö½â¼ò»¯Êý¾Ý
-http://www.ituring.com.cn/article/179996
-
-
-SVD²»½öÊÇÒ»¸öÊýÑ§ÎÊÌâ£¬ÔÚ¹¤³ÌÓ¦ÓÃÖÐµÄºÜ¶àµØ·½¶¼ÓÐËüµÄÉíÓ°£¬±ÈÈçÇ°Ãæ½²µÄPCA£¬ÕÆÎÕÁËSVDÔ­ÀíºóÔÙÈ¥¿´PCAÄÇÊÇÏàµ±¼òµ¥µÄ£¬
-ÔÚÍÆ¼öÏµÍ³·½Ãæ£¬SVD¸üÊÇÃûÉù´óÔë£¬½«ËüÓ¦ÓÃÓÚÍÆ¼öÏµÍ³µÄÊÇNetflix´ó½±µÄ»ñµÃÕßKoren£¬¿ÉÒÔÔÚGoogleÉÏÕÒµ½ËûÐ´µÄÎÄÕÂ£»
-ÓÃSVD¿ÉÒÔºÜÈÝÒ×µÃµ½ÈÎÒâ¾ØÕóµÄÂúÖÈ·Ö½â£¬ÓÃÂúÖÈ·Ö½â¿ÉÒÔ¶ÔÊý¾Ý×öÑ¹Ëõ¡£¿ÉÒÔÓÃSVDÀ´Ö¤Ã÷¶ÔÈÎÒâM*NµÄ¾ØÕó¾ù´æÔÚÈçÏÂ·Ö
-A(m x n)=X(m x k)Y(k x n)
-
 
 
 
