@@ -3,6 +3,9 @@
 ##Mahout推荐算法API详解
 http://blog.csdn.net/zhoubl668/article/details/13297663/
 
+###基于Mahout的电影推荐系统
+http://blog.csdn.net/huhui_cs/article/details/8596388
+
 
 
 Mahout起源于2008年，最初是Apache Lucent的子项目，它在极短的时间内取得了长足的发展，现在是Apache的顶级项目。
