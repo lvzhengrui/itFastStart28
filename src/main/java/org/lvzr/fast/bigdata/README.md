@@ -1,4 +1,7 @@
 
+###大数据技术原理与应用PPT
+https://wenku.baidu.com/view/efd47fde5ebfc77da26925c52cc58bd631869305.html
+
 
 ###Hadoop生态系统介绍
 http://blog.csdn.net/woshiwanxin102213/article/details/19688393
