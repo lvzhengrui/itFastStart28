@@ -16,7 +16,16 @@ PAXOS协议（ZooKeeper集群本身使用一致性协议(PAXOS协议)保证每个节点状态的一致性）
 POSIX表示可移植操作系统接口,（Portable Operating System Interface，缩写为POSIX），POSIX标准定义了操作系统应该为应用程序提供的接口标准
 CRC32校验
 有限状态机
+逆波兰表达式
 奇异值分解SVD
+PCA分析
+损失函数
+凸优化
+拉格朗日对偶性
+向量范数
+关联Aprior
+分类C4.5
+
 
 
 

@@ -212,7 +212,8 @@ http://blog.csdn.net/u010536377/article/details/50252027
 http://blog.sina.com.cn/s/blog_6cb263210101csq0.html
 
 
-
+###机器学习中的数学(4)-线性判别分析（LDA）, 主成分分析(PCA)
+http://www.cnblogs.com/LeftNotEasy/archive/2011/01/08/lda-and-pca-machine-learning.html
 
 
 
