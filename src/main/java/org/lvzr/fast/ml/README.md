@@ -203,15 +203,31 @@ A(m x n)=X(m x k)Y(k x n)
 奇异值分解是一个有着很明显的物理意义的一种方法，它可以将一个比较复杂的矩阵用更小更简单的几个子矩阵的相乘来表示，降维到为原来90%的能量的维度数
 
 
+###数学之美-奇异值分解
+http://blog.csdn.net/wangzhiqing3/article/details/7431276
+
 
 ###机器学习中的数学(5)-强大的矩阵奇异值分解(SVD)及其应用
 http://www.cnblogs.com/LeftNotEasy/archive/2011/01/19/svd-and-applications.html
 PCA的实现一般有两种，一种是用特征值分解去实现的，一种是用奇异值分解去实现的
 
+###矩阵特征值分解与奇异值分解含义解析及应用
+http://blog.csdn.net/xiahouzuoxin/article/details/41118351
 
 ###[机器学习]机器学习之数学知识回顾-矩阵及优化理论
 http://blog.csdn.net/u010536377/article/details/50252027
 向量范数和矩阵范数、凸优化、拉格朗日对偶性
+
+
+###【机器学习算法实现】主成分分析(PCA)——基于python+numpy
+http://blog.csdn.net/u012162613/article/details/42177327
+
+###特征值分解、奇异值分解、PCA概念整理
+http://blog.csdn.net/jinshengtao/article/details/18448355
+
+
+
+
 
 
 ###矩阵的迹，矩阵求导
