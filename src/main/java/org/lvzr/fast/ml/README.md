@@ -200,6 +200,8 @@ SVD不仅是一个数学问题，在工程应用中的很多地方都有它的身影，比如前面讲的PCA，掌握
 用SVD可以很容易得到任意矩阵的满秩分解，用满秩分解可以对数据做压缩。可以用SVD来证明对任意M*N的矩阵均存在如下分解
 A(m x n)=X(m x k)Y(k x n)
 
+奇异值分解是一个有着很明显的物理意义的一种方法，它可以将一个比较复杂的矩阵用更小更简单的几个子矩阵的相乘来表示，降维到为原来90%的能量的维度数
+
 
 
 ###机器学习中的数学(5)-强大的矩阵奇异值分解(SVD)及其应用
@@ -216,8 +218,6 @@ http://blog.csdn.net/u010536377/article/details/50252027
 http://blog.sina.com.cn/s/blog_6cb263210101csq0.html
 
 
-###机器学习中的数学(4)-线性判别分析（LDA）, 主成分分析(PCA)
-http://www.cnblogs.com/LeftNotEasy/archive/2011/01/08/lda-and-pca-machine-learning.html
 
 
 
