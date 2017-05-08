@@ -217,9 +217,9 @@ http://blog.csdn.net/u010536377/article/details/50252027
 ###矩阵的迹，矩阵求导
 http://blog.sina.com.cn/s/blog_6cb263210101csq0.html
 
-
-
-
+ 
+###梯度下降(gradient descent)
+http://f.dataguru.cn/thread-684653-1-1.html
 
 
 
