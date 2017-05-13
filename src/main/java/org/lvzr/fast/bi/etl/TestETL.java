@@ -49,6 +49,8 @@ public class TestETL{
 		return true;
 	}
 	
+	
+	
 	public static void main(String[] args) {
 
 		TestETL.createNewFile("e:/etl/register.txt", 10*1000*10000, 50);
