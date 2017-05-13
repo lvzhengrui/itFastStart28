@@ -31,14 +31,14 @@ public class MongoTest {
             //查询所有的数据库名
             List<String> databaseNames = client.getDatabaseNames();
             for(String name:databaseNames){
-                System.out.println(name);
+                System.out.println("db:"+name);
             }
             //获得一个数据库连接
             DB db = client.getDB("xxlong_db");
             //查询该数据库所有的集合名
             Set<String> collectionNames = db.getCollectionNames();
             for(String name:collectionNames){
-                System.out.println(name);
+                System.out.println("coll:"+name);
             }
 
             //创建一个teacher集合

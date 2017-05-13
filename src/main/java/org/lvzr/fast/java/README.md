@@ -1,5 +1,10 @@
 
 
+
+###几个主流的Java连接池整理
+http://www.cnblogs.com/linjian/p/4831088.html
+
+
 ###Tomcat实现原理详解之手写实现
 http://www.toutiao.com/i6357630888234189313/
 

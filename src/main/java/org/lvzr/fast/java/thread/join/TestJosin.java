@@ -5,6 +5,9 @@ public class TestJosin {
 	public static void main(String[] args) {
 
 		MyThread2 t1 = new MyThread2("TestJoin");
+		
+		//t1.setDaemon(true);
+		
 		t1.start();
 		
 		try {
