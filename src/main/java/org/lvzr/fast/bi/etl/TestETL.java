@@ -12,6 +12,14 @@ import java.io.IOException;
  */
 public class TestETL{
 	
+	/**
+	 * 创建文本文件
+	 * 1亿条，50个字段，字段内容fieldN，字段间用\t间隔，文件大小为36G，写入时间10分钟
+	 * @param filePath
+	 * @param rowNum
+	 * @param ColNum
+	 * @return
+	 */
 	public static boolean createNewFile (String filePath,int rowNum,int ColNum) {
 		try {
 			long startTime = System.currentTimeMillis();
@@ -42,7 +50,7 @@ public class TestETL{
 	}
 	
 	public static void main(String[] args) {
-		//1亿条50个字段，字段内容fieldN文件大小为36G		
+
 		TestETL.createNewFile("e:/etl/register.txt", 10*1000*10000, 50);
 		
 	}
