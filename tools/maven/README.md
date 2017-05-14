@@ -28,6 +28,6 @@ http://www.cnblogs.com/justinzhang/p/4975727.html
 
 ###使用Maven Assembly plugin将依赖打包进jar
 http://www.cnblogs.com/justinzhang/p/4983633.html
-
+http://blog.csdn.net/WANGYAN9110/article/details/38646677/
 
 
