@@ -36,7 +36,7 @@
 						<target>1.8</target>
 						<archive>
 							<manifest>
-								<mainClass>com.cetc.di.hellocetc.App</mainClass>
+								<mainClass>org.lvzr.fast.bi.etl.TestETL</mainClass>
 								<addClasspath>true</addClasspath>
 								<classpathPrefix>lib/</classpathPrefix>
 							</manifest>

@@ -5,7 +5,7 @@
 
 	<groupId>org.lvzr</groupId>
 	<artifactId>fast</artifactId>
-	<packaging>war</packaging>
+	<packaging>jar</packaging>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>fast Maven Webapp</name>
 	<url>http://maven.apache.org</url>
@@ -523,13 +523,21 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-jar-plugin</artifactId>
-				<!-- <configuration> <excludes> <exclude>**/META-INF/conf/**</exclude> 
-					<exclude>**/not-released/**</exclude> <exclude>**/log4j.properties</exclude> 
-					</excludes> <archive>       <addMavenDescriptor>false</addMavenDescriptor>       
-					<index>false</index>    <manifest>        <addDefaultImplementationEntries>true</addDefaultImplementationEntries>       
-					</manifest> <manifestEntries>        <Built-By>org.lvzr</Built-By>        
-					<GROUPID>org.lvzr</GROUPID>       </manifestEntries> </archive> </configuration> -->
+				<configuration>
+					<source>1.8</source>
+					<target>1.8</target>
+					<archive>
+						<manifest>
+							<mainClass>org.lvzr.fast.bi.etl.TestETL</mainClass>
+							<addClasspath>true</addClasspath>
+							<classpathPrefix>lib/</classpathPrefix>
+						</manifest>
+					</archive>
+					<classesDirectory>
+					</classesDirectory>
+				</configuration>
 			</plugin>
+
 		</plugins>
 	</build>
 
