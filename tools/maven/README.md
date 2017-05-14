@@ -18,3 +18,16 @@ C:\Users\${loginName}\.m2\settings.xml配置如下：
 ###nuex设置方式    
 http://blog.csdn.net/mexican_jacky/article/details/50275695
 
+###修改mvn jdk
+settings.xml里修改profile节点jdk版本号，然eclipse下update maven
+
+
+
+###使用maven生成可执行的jar包
+http://www.cnblogs.com/justinzhang/p/4975727.html
+
+###使用Maven Assembly plugin将依赖打包进jar
+http://www.cnblogs.com/justinzhang/p/4983633.html
+
+
+
