@@ -1,0 +1,78 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>com.cetc.di</groupId>
+	<artifactId>hellocetc</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>jar</packaging>
+
+	<name>hellocetc</name>
+	<url>http://maven.apache.org</url>
+ 
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>3.8.1</version>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
+
+
+	<build>
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-jar-plugin</artifactId>
+					<configuration>
+						<source>1.8</source>
+						<target>1.8</target>
+						<archive>
+							<manifest>
+								<mainClass>com.cetc.di.hellocetc.App</mainClass>
+								<addClasspath>true</addClasspath>
+								<classpathPrefix>lib/</classpathPrefix>
+							</manifest>
+						</archive>
+						<classesDirectory>
+						</classesDirectory>
+					</configuration>
+				</plugin>
+			</plugins>
+		</pluginManagement>
+		<!-- 
+		 <plugins>
+			<plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <configuration>
+                    <excludes>
+                        <exclude>**/META-INF/conf/**</exclude>
+                        <exclude>**/not-released/**</exclude>
+                        <exclude>**/log4j.properties</exclude>
+                    </excludes>
+                    <archive>      
+                        <addMavenDescriptor>false</addMavenDescriptor>      
+                        <index>false</index>   
+                        <manifest>       
+                            <addDefaultImplementationEntries>true</addDefaultImplementationEntries>      
+                        </manifest>
+                        <manifestEntries>       
+                            <Built-By>org.lvzr</Built-By>       
+                            <GROUPID>org.lvzr</GROUPID>      
+                        </manifestEntries>
+                    </archive>
+                </configuration>
+            </plugin>
+        </plugins>
+		 -->
+	</build>
+ 
+</project>
