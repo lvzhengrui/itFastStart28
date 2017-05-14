@@ -21,7 +21,7 @@ import com.mongodb.MongoClient;
  */
 public class TestETL2{
 
-	private static Executor executor = Executors.newFixedThreadPool(200);  
+	private static Executor executor = Executors.newFixedThreadPool(100);  
 	 
 	/**
 	 * –¥»Îmogodb
@@ -110,7 +110,7 @@ public class TestETL2{
 	  
 	static class MongoDbContext{
 		
-		private static Integer DB_POOL_SIZE = 100;
+		private static Integer DB_POOL_SIZE = 110;
 		
 		private static Integer DB_STATE_FREE = 0;
 		private static Integer DB_STATE_BUSY = 1;
