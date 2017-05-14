@@ -47,6 +47,8 @@
         <ojdbc14.version>10.2.0.4.0</ojdbc14.version>
         <mysql.version>5.1.25</mysql.version>
         
+        <spring-data-neo4j.version>4.1.2.RELEASE</spring-data-neo4j.version>
+        
   </properties>
   
   
@@ -389,6 +391,11 @@
 		  <artifactId>mongo-java-driver</artifactId>
 		  <version>2.10.1</version>
 		</dependency>
+		<dependency>
+			<groupId>org.neo4j</groupId>
+			<artifactId>neo4j</artifactId>
+			<version>3.1.4</version>
+		</dependency>
 		<!-- nosql -->
 
 
@@ -497,6 +504,7 @@
 		</dependency>  
 
 		<!-- local register library end-->
+
 
   </dependencies>
   
