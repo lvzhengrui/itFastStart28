@@ -1,6 +1,13 @@
 
+
+###使用POI操作excel（读取和创建）快速开发指南
+http://soukenan.blog.51cto.com/5130995/1188971
+
+
 Workbook workbook = new HSSFWorkbook();;
 Sheet sheet = workbook.createSheet();
+
+workbook.write(response.getOutputStream());
 
 
 Row row = sheet.createRow(rowIndex);	
