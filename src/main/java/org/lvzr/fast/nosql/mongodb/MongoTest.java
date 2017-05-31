@@ -6,6 +6,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
+import java.util.regex.Pattern;
 
 import org.bson.BSONObject;
 import org.bson.types.ObjectId;
@@ -24,6 +25,25 @@ import com.mongodb.gridfs.GridFSInputFile;
 import com.mongodb.util.JSON;
 
 public class MongoTest {
+	
+	//用Java实现MongoDB正则查询小技巧：
+	//模糊查询
+	 private BasicDBObject getLikeStr(String findStr) {
+	     Pattern pattern = Pattern.compile("^.*" + findStr + ".*$", Pattern.CASE_INSENSITIVE);
+	     return new BasicDBObject("$regex", pattern);
+	 }	 
+	 //DBObject query = new BasicDBObject();
+	 //query.put("real_name", getLikeStr(userName));
+
+	 //endWith文件扩展名
+	 private BasicDBObject endWithStr(String findStr) {
+	     Pattern pattern = Pattern.compile(findStr + "$", Pattern.MULTILINE);
+	     return new BasicDBObject("$regex", pattern);
+	 }
+	 //DBObject query = new BasicDBObject();
+	 //query.put("filename", endWithStr(“.pdf”));
+	  
+	  
     public static void main(String[] args) {
         try {
             //创建Mongo数据库连接
