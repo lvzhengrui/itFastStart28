@@ -1,4 +1,9 @@
 
+
+###Java对mongodb进行正则查询
+https://zhidao.baidu.com/question/1575753989910107820.html
+
+
 ###MongoDB在系统中的使用
 http://www.cnblogs.com/bfchuan/p/4090249.html
 
