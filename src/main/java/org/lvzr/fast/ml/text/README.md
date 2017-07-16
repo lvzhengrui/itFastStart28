@@ -1,6 +1,29 @@
 
 
+#NLP点滴——文本相似度
+http://www.cnblogs.com/huilixieqi/p/6493089.html
 
+//相同字符数
+int dis = StringUtils.getFuzzyDistance(term, query, Locale.CHINA);
+
+//莱文斯坦距离(编辑距离)
+int dis2 = StringUtils.getLevenshteinDistance(term, query);
+
+//Jaro距离
+//Jaro Distance也是字符串相似性的一种度量方式，也是一种编辑距离，Jaro 距离越高本文相似性越高;
+//而Jaro–Winkler distance是Jaro Distance的一个变种。据说是用来判定健康记录上两个名字是否相同，也有说是是用于人口普查。
+//从最初其应用我们便可看出其用法和用途，其定义如下：
+double dis3 = StringUtils.getJaroWinklerDistance(term.toLowerCase(), query.toLowerCase());
+
+
+<dependency>
+    <groupId>org.apache.commons</groupId>
+    <artifactId>commons-lang3</artifactId>
+    <version>3.5</version>
+</dependency>
+		
+		
+		 
 ###文本挖掘(Text Mining)技术基础
 https://wenku.baidu.com/view/581b414302020740be1e9b7e.html
 
