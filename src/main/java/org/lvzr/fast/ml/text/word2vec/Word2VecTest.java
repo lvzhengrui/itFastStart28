@@ -64,7 +64,8 @@ public class Word2VecTest {
     }
 
     private static void paserStr(FileOutputStream fos, String title) throws IOException {
-        List<Term> parse2 = ToAnalysis.parse(title);
+    	//TODO 
+        List<Term> parse2 = null;//ToAnalysis.parse(title);
         StringBuilder sb = new StringBuilder() ;
         for (Term term : parse2) {
             sb.append(term.getName()) ;
