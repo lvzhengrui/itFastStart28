@@ -1,5 +1,18 @@
 
 
+
+
+# Java版本word2vec跑中文数据使用心得
+http://blog.csdn.net/czs1130/article/details/53355376
+
+#Word2VEC_java github
+https://github.com/NLPchina/Word2VEC_java
+
+#搜狗全网数据
+http://www.sogou.com/labs/resource/ca.php
+
+
+
 #NLP点滴——文本相似度
 http://www.cnblogs.com/huilixieqi/p/6493089.html
 
